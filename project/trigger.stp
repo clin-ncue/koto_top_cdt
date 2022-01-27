@@ -1,0 +1,873 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@2: EP2S90 (0x020940DD)" sof_file="" top_level_entity="sigma_delta">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1436,799,398,124,356,50,124,0,50"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2018/04/06 11:24:14  #0">
+      <clock name="The_clock" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="4096" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="0_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="inputbus[0]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[10]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[11]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[12]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[13]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[14]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[15]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[1]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[2]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[3]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[4]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[5]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[6]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[7]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[8]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[9]" tap_mode="classic" type="input pin"/>
+          <wire name="live_output" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_generator:inst45|out_lv1a" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_plv1" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[9]" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="0_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="inputbus[0]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[10]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[11]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[12]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[13]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[14]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[15]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[1]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[2]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[3]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[4]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[5]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[6]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[7]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[8]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[9]" tap_mode="classic" type="input pin"/>
+          <wire name="live_output" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_generator:inst45|out_lv1a" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_plv1" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[9]" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="0_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="2_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="inputbus[0]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[10]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[11]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[12]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[13]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[14]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[15]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[1]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[2]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[3]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[4]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[5]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[6]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[7]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[8]" tap_mode="classic" type="input pin"/>
+          <wire name="inputbus[9]" tap_mode="classic" type="input pin"/>
+          <wire name="live_output" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_generator:inst45|out_lv1a" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|delay_out_lv1a[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|in_nclus[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|lv1a_cnt[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst73|out_plv1" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="vme_register_2[9]" tap_mode="classic" type="combinatorial"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="0_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="0_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="1_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="1_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="2_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="2_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="inputbus" order="lsb_to_msb" radix="hex" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="inputbus[0]"/>
+            <net is_signal_inverted="no" name="inputbus[1]"/>
+            <net is_signal_inverted="no" name="inputbus[2]"/>
+            <net is_signal_inverted="no" name="inputbus[3]"/>
+            <net is_signal_inverted="no" name="inputbus[4]"/>
+            <net is_signal_inverted="no" name="inputbus[5]"/>
+            <net is_signal_inverted="no" name="inputbus[6]"/>
+            <net is_signal_inverted="no" name="inputbus[7]"/>
+            <net is_signal_inverted="no" name="inputbus[8]"/>
+            <net is_signal_inverted="no" name="inputbus[9]"/>
+            <net is_signal_inverted="no" name="inputbus[10]"/>
+            <net is_signal_inverted="no" name="inputbus[11]"/>
+            <net is_signal_inverted="no" name="inputbus[12]"/>
+            <net is_signal_inverted="no" name="inputbus[13]"/>
+            <net is_signal_inverted="no" name="inputbus[14]"/>
+            <net is_signal_inverted="no" name="inputbus[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="live_output"/>
+          <net is_signal_inverted="no" name="out_ena"/>
+          <bus is_signal_inverted="no" link="all" name="vme_register_2" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="vme_register_2[0]"/>
+            <net is_signal_inverted="no" name="vme_register_2[1]"/>
+            <net is_signal_inverted="no" name="vme_register_2[2]"/>
+            <net is_signal_inverted="no" name="vme_register_2[3]"/>
+            <net is_signal_inverted="no" name="vme_register_2[4]"/>
+            <net is_signal_inverted="no" name="vme_register_2[5]"/>
+            <net is_signal_inverted="no" name="vme_register_2[6]"/>
+            <net is_signal_inverted="no" name="vme_register_2[7]"/>
+            <net is_signal_inverted="no" name="vme_register_2[8]"/>
+            <net is_signal_inverted="no" name="vme_register_2[9]"/>
+            <net is_signal_inverted="no" name="vme_register_2[10]"/>
+            <net is_signal_inverted="no" name="vme_register_2[11]"/>
+            <net is_signal_inverted="no" name="vme_register_2[12]"/>
+            <net is_signal_inverted="no" name="vme_register_2[13]"/>
+            <net is_signal_inverted="no" name="vme_register_2[14]"/>
+            <net is_signal_inverted="no" name="vme_register_2[15]"/>
+            <net is_signal_inverted="no" name="vme_register_2[16]"/>
+            <net is_signal_inverted="no" name="vme_register_2[17]"/>
+            <net is_signal_inverted="no" name="vme_register_2[18]"/>
+            <net is_signal_inverted="no" name="vme_register_2[19]"/>
+            <net is_signal_inverted="no" name="vme_register_2[20]"/>
+            <net is_signal_inverted="no" name="vme_register_2[21]"/>
+            <net is_signal_inverted="no" name="vme_register_2[22]"/>
+            <net is_signal_inverted="no" name="vme_register_2[23]"/>
+            <net is_signal_inverted="no" name="vme_register_2[24]"/>
+            <net is_signal_inverted="no" name="vme_register_2[25]"/>
+            <net is_signal_inverted="no" name="vme_register_2[26]"/>
+            <net is_signal_inverted="no" name="vme_register_2[27]"/>
+            <net is_signal_inverted="no" name="vme_register_2[28]"/>
+            <net is_signal_inverted="no" name="vme_register_2[29]"/>
+            <net is_signal_inverted="no" name="vme_register_2[30]"/>
+            <net is_signal_inverted="no" name="vme_register_2[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_generator:inst45|out_lv1a"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst73|delay_out_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[8]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst73|in_nclus" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst73|lv1a_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[15]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[16]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[17]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[18]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[19]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[20]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[21]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[22]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[23]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[24]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst73|out_nclus" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_nclus[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_nclus[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_nclus[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_nclus[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_plv1"/>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="0_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="0_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="1_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="1_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="2_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="2_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="2_RXD_Buffered[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="inputbus" order="lsb_to_msb" radix="hex" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="inputbus[0]"/>
+            <net is_signal_inverted="no" name="inputbus[1]"/>
+            <net is_signal_inverted="no" name="inputbus[2]"/>
+            <net is_signal_inverted="no" name="inputbus[3]"/>
+            <net is_signal_inverted="no" name="inputbus[4]"/>
+            <net is_signal_inverted="no" name="inputbus[5]"/>
+            <net is_signal_inverted="no" name="inputbus[6]"/>
+            <net is_signal_inverted="no" name="inputbus[7]"/>
+            <net is_signal_inverted="no" name="inputbus[8]"/>
+            <net is_signal_inverted="no" name="inputbus[9]"/>
+            <net is_signal_inverted="no" name="inputbus[10]"/>
+            <net is_signal_inverted="no" name="inputbus[11]"/>
+            <net is_signal_inverted="no" name="inputbus[12]"/>
+            <net is_signal_inverted="no" name="inputbus[13]"/>
+            <net is_signal_inverted="no" name="inputbus[14]"/>
+            <net is_signal_inverted="no" name="inputbus[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="live_output"/>
+          <net is_signal_inverted="no" name="out_ena"/>
+          <bus is_signal_inverted="no" link="all" name="vme_register_2" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="vme_register_2[0]"/>
+            <net is_signal_inverted="no" name="vme_register_2[1]"/>
+            <net is_signal_inverted="no" name="vme_register_2[2]"/>
+            <net is_signal_inverted="no" name="vme_register_2[3]"/>
+            <net is_signal_inverted="no" name="vme_register_2[4]"/>
+            <net is_signal_inverted="no" name="vme_register_2[5]"/>
+            <net is_signal_inverted="no" name="vme_register_2[6]"/>
+            <net is_signal_inverted="no" name="vme_register_2[7]"/>
+            <net is_signal_inverted="no" name="vme_register_2[8]"/>
+            <net is_signal_inverted="no" name="vme_register_2[9]"/>
+            <net is_signal_inverted="no" name="vme_register_2[10]"/>
+            <net is_signal_inverted="no" name="vme_register_2[11]"/>
+            <net is_signal_inverted="no" name="vme_register_2[12]"/>
+            <net is_signal_inverted="no" name="vme_register_2[13]"/>
+            <net is_signal_inverted="no" name="vme_register_2[14]"/>
+            <net is_signal_inverted="no" name="vme_register_2[15]"/>
+            <net is_signal_inverted="no" name="vme_register_2[16]"/>
+            <net is_signal_inverted="no" name="vme_register_2[17]"/>
+            <net is_signal_inverted="no" name="vme_register_2[18]"/>
+            <net is_signal_inverted="no" name="vme_register_2[19]"/>
+            <net is_signal_inverted="no" name="vme_register_2[20]"/>
+            <net is_signal_inverted="no" name="vme_register_2[21]"/>
+            <net is_signal_inverted="no" name="vme_register_2[22]"/>
+            <net is_signal_inverted="no" name="vme_register_2[23]"/>
+            <net is_signal_inverted="no" name="vme_register_2[24]"/>
+            <net is_signal_inverted="no" name="vme_register_2[25]"/>
+            <net is_signal_inverted="no" name="vme_register_2[26]"/>
+            <net is_signal_inverted="no" name="vme_register_2[27]"/>
+            <net is_signal_inverted="no" name="vme_register_2[28]"/>
+            <net is_signal_inverted="no" name="vme_register_2[29]"/>
+            <net is_signal_inverted="no" name="vme_register_2[30]"/>
+            <net is_signal_inverted="no" name="vme_register_2[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_generator:inst45|out_lv1a"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst73|delay_out_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|delay_out_lv1a[8]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst73|in_nclus" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|in_nclus[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst73|lv1a_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[15]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[16]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[17]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[18]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[19]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[20]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[21]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[22]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[23]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|lv1a_cnt[24]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst73|out_nclus" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_nclus[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_nclus[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_nclus[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_nclus[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst73|out_plv1"/>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2018/04/06 11:24:14  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+</session>

@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Tue Jan 25 14:41:46 2022
+Quartus II 64-Bit Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : sigma_delta
+Top-level Entity Name : sigma_delta
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 19,901
+    Dedicated logic registers : 18,611
+Total registers : 18611
+Total pins : 341
+Total virtual pins : 0
+Total block memory bits : 1,266,176
+DSP block 9-bit elements : 0
+Total PLLs : 4
+Total DLLs : 0

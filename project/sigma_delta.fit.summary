@@ -1,0 +1,17 @@
+Fitter Status : Successful - Tue Jan 25 14:46:51 2022
+Quartus II 64-Bit Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : sigma_delta
+Top-level Entity Name : sigma_delta
+Family : Stratix II
+Device : EP2S90F1020C3
+Timing Models : Final
+Logic utilization : 44 %
+    Combinational ALUTs : 20,282 / 72,768 ( 28 % )
+    Dedicated logic registers : 18,559 / 72,768 ( 26 % )
+Total registers : 18640
+Total pins : 406 / 719 ( 56 % )
+Total virtual pins : 0
+Total block memory bits : 1,266,176 / 4,520,448 ( 28 % )
+DSP block 9-bit elements : 0 / 384 ( 0 % )
+Total PLLs : 4 / 12 ( 33 % )
+Total DLLs : 0 / 2 ( 0 % )

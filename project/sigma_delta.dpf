@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="1st_outputbus[15]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[15](n)" >
+		</pin>
+		<pin name="1st_outputbus[14]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[14](n)" >
+		</pin>
+		<pin name="1st_outputbus[13]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[13](n)" >
+		</pin>
+		<pin name="1st_outputbus[12]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[12](n)" >
+		</pin>
+		<pin name="1st_outputbus[11]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[11](n)" >
+		</pin>
+		<pin name="1st_outputbus[10]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[10](n)" >
+		</pin>
+		<pin name="1st_outputbus[9]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[9](n)" >
+		</pin>
+		<pin name="1st_outputbus[8]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[8](n)" >
+		</pin>
+		<pin name="1st_outputbus[7]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[7](n)" >
+		</pin>
+		<pin name="1st_outputbus[6]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[6](n)" >
+		</pin>
+		<pin name="1st_outputbus[5]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[5](n)" >
+		</pin>
+		<pin name="1st_outputbus[4]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[4](n)" >
+		</pin>
+		<pin name="1st_outputbus[3]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[3](n)" >
+		</pin>
+		<pin name="1st_outputbus[2]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[2](n)" >
+		</pin>
+		<pin name="1st_outputbus[1]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[1](n)" >
+		</pin>
+		<pin name="1st_outputbus[0]" direction="Output" source="Hierarchy Database" diff_pair_node="1st_outputbus[0](n)" >
+		</pin>
+		<pin name="2nd_outputbus[15]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[15](n)" >
+		</pin>
+		<pin name="2nd_outputbus[14]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[14](n)" >
+		</pin>
+		<pin name="2nd_outputbus[13]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[13](n)" >
+		</pin>
+		<pin name="2nd_outputbus[12]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[12](n)" >
+		</pin>
+		<pin name="2nd_outputbus[11]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[11](n)" >
+		</pin>
+		<pin name="2nd_outputbus[10]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[10](n)" >
+		</pin>
+		<pin name="2nd_outputbus[9]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[9](n)" >
+		</pin>
+		<pin name="2nd_outputbus[8]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[8](n)" >
+		</pin>
+		<pin name="2nd_outputbus[7]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[7](n)" >
+		</pin>
+		<pin name="2nd_outputbus[6]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[6](n)" >
+		</pin>
+		<pin name="2nd_outputbus[5]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[5](n)" >
+		</pin>
+		<pin name="2nd_outputbus[4]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[4](n)" >
+		</pin>
+		<pin name="2nd_outputbus[3]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[3](n)" >
+		</pin>
+		<pin name="2nd_outputbus[2]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[2](n)" >
+		</pin>
+		<pin name="2nd_outputbus[1]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[1](n)" >
+		</pin>
+		<pin name="2nd_outputbus[0]" direction="Output" source="Hierarchy Database" diff_pair_node="2nd_outputbus[0](n)" >
+		</pin>
+		<pin name="Debug_LVDS_IN_0" direction="Input" source="Hierarchy Database" diff_pair_node="Debug_LVDS_IN_0(n)" >
+		</pin>
+		<pin name="Debug_LVDS_IN_1" direction="Input" source="Hierarchy Database" diff_pair_node="Debug_LVDS_IN_1(n)" >
+		</pin>
+		<pin name="Debug_LVDS_OUT_0" direction="Output" source="Hierarchy Database" diff_pair_node="Debug_LVDS_OUT_0(n)" >
+		</pin>
+		<pin name="Debug_LVDS_OUT_1" direction="Output" source="Hierarchy Database" diff_pair_node="Debug_LVDS_OUT_1(n)" >
+		</pin>
+		<pin name="DigIn[1]" direction="Input" source="Hierarchy Database" diff_pair_node="DigIn[1](n)" >
+		</pin>
+		<pin name="DigIn[0]" direction="Input" source="Hierarchy Database" diff_pair_node="DigIn[0](n)" >
+		</pin>
+		<pin name="DigIn_AUX" direction="Input" source="Hierarchy Database" diff_pair_node="DigIn_AUX(n)" >
+		</pin>
+		<pin name="DigOutput" direction="Output" source="Hierarchy Database" diff_pair_node="DigOutput(n)" >
+		</pin>
+		<pin name="DigOutput_AUX1" direction="Output" source="Hierarchy Database" diff_pair_node="DigOutput_AUX1(n)" >
+		</pin>
+		<pin name="DigOutput_AUX2" direction="Output" source="Hierarchy Database" diff_pair_node="DigOutput_AUX2(n)" >
+		</pin>
+		<pin name="DigOutput_AUX3" direction="Output" source="Hierarchy Database" diff_pair_node="DigOutput_AUX3(n)" >
+		</pin>
+		<pin name="inputbus[15]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[15](n)" >
+		</pin>
+		<pin name="inputbus[14]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[14](n)" >
+		</pin>
+		<pin name="inputbus[13]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[13](n)" >
+		</pin>
+		<pin name="inputbus[12]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[12](n)" >
+		</pin>
+		<pin name="inputbus[11]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[11](n)" >
+		</pin>
+		<pin name="inputbus[10]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[10](n)" >
+		</pin>
+		<pin name="inputbus[9]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[9](n)" >
+		</pin>
+		<pin name="inputbus[8]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[8](n)" >
+		</pin>
+		<pin name="inputbus[7]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[7](n)" >
+		</pin>
+		<pin name="inputbus[6]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[6](n)" >
+		</pin>
+		<pin name="inputbus[5]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[5](n)" >
+		</pin>
+		<pin name="inputbus[4]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[4](n)" >
+		</pin>
+		<pin name="inputbus[3]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[3](n)" >
+		</pin>
+		<pin name="inputbus[2]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[2](n)" >
+		</pin>
+		<pin name="inputbus[1]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[1](n)" >
+		</pin>
+		<pin name="inputbus[0]" direction="Input" source="Hierarchy Database" diff_pair_node="inputbus[0](n)" >
+		</pin>
+		<pin name="LocalClock" direction="Input" source="Hierarchy Database" diff_pair_node="LocalClock(n)" >
+		</pin>
+		<pin name="master_clock0" direction="Input" source="Hierarchy Database" diff_pair_node="master_clock0(n)" >
+		</pin>
+		<pin name="master_clock2" direction="Input" source="Hierarchy Database" diff_pair_node="master_clock2(n)" >
+		</pin>
+		<pin name="master_clock3" direction="Input" source="Hierarchy Database" diff_pair_node="master_clock3(n)" >
+		</pin>
+		<pin name="master_clock4" direction="Input" source="Hierarchy Database" diff_pair_node="master_clock4(n)" >
+		</pin>
+		<pin name="samplingclock" direction="Output" source="Hierarchy Database" diff_pair_node="samplingclock(n)" >
+		</pin>
+		<pin name="inputbus[8](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[8]" >
+		</pin>
+		<pin name="2nd_outputbus[11](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[11]" >
+		</pin>
+		<pin name="2nd_outputbus[1](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[1]" >
+		</pin>
+		<pin name="1st_outputbus[14](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[14]" >
+		</pin>
+		<pin name="inputbus[2](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[2]" >
+		</pin>
+		<pin name="1st_outputbus[9](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[9]" >
+		</pin>
+		<pin name="inputbus[4](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[4]" >
+		</pin>
+		<pin name="1st_outputbus[4](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[4]" >
+		</pin>
+		<pin name="master_clock1" direction="Input" source="Assignments" diff_pair_node="master_clock1(n)" >
+		</pin>
+		<pin name="inputbus[15](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[15]" >
+		</pin>
+		<pin name="2nd_outputbus[15](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[15]" >
+		</pin>
+		<pin name="inputbus[14](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[14]" >
+		</pin>
+		<pin name="2nd_outputbus[10](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[10]" >
+		</pin>
+		<pin name="2nd_outputbus[5](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[5]" >
+		</pin>
+		<pin name="DigOutput_AUX2(n)" direction="Output" source="Assignments" diff_pair_node="DigOutput_AUX2" >
+		</pin>
+		<pin name="2nd_outputbus[0](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[0]" >
+		</pin>
+		<pin name="1st_outputbus[13](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[13]" >
+		</pin>
+		<pin name="inputbus[0](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[0]" >
+		</pin>
+		<pin name="1st_outputbus[8](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[8]" >
+		</pin>
+		<pin name="inputbus[3](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[3]" >
+		</pin>
+		<pin name="1st_outputbus[3](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[3]" >
+		</pin>
+		<pin name="inputbus[11](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[11]" >
+		</pin>
+		<pin name="2nd_outputbus[14](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[14]" >
+		</pin>
+		<pin name="2nd_outputbus[9](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[9]" >
+		</pin>
+		<pin name="2nd_outputbus[4](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[4]" >
+		</pin>
+		<pin name="DigIn[0](n)" direction="Input" source="Assignments" diff_pair_node="DigIn[0]" >
+		</pin>
+		<pin name="1st_outputbus[12](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[12]" >
+		</pin>
+		<pin name="inputbus[7](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[7]" >
+		</pin>
+		<pin name="1st_outputbus[7](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[7]" >
+		</pin>
+		<pin name="inputbus[1](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[1]" >
+		</pin>
+		<pin name="1st_outputbus[2](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[2]" >
+		</pin>
+		<pin name="inputbus[10](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[10]" >
+		</pin>
+		<pin name="2nd_outputbus[13](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[13]" >
+		</pin>
+		<pin name="2nd_outputbus[8](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[8]" >
+		</pin>
+		<pin name="DigIn_AUX(n)" direction="Input" source="Assignments" diff_pair_node="DigIn_AUX" >
+		</pin>
+		<pin name="2nd_outputbus[3](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[3]" >
+		</pin>
+		<pin name="DigOutput_AUX1(n)" direction="Output" source="Assignments" diff_pair_node="DigOutput_AUX1" >
+		</pin>
+		<pin name="DigIn[1](n)" direction="Input" source="Assignments" diff_pair_node="DigIn[1]" >
+		</pin>
+		<pin name="1st_outputbus[11](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[11]" >
+		</pin>
+		<pin name="inputbus[6](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[6]" >
+		</pin>
+		<pin name="1st_outputbus[6](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[6]" >
+		</pin>
+		<pin name="inputbus[13](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[13]" >
+		</pin>
+		<pin name="1st_outputbus[1](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[1]" >
+		</pin>
+		<pin name="inputbus[12](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[12]" >
+		</pin>
+		<pin name="2nd_outputbus[12](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[12]" >
+		</pin>
+		<pin name="2nd_outputbus[7](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[7]" >
+		</pin>
+		<pin name="samplingclock(n)" direction="Output" source="Assignments" diff_pair_node="samplingclock" >
+		</pin>
+		<pin name="2nd_outputbus[2](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[2]" >
+		</pin>
+		<pin name="1st_outputbus[15](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[15]" >
+		</pin>
+		<pin name="master_clock0(n)" direction="Input" source="Assignments" diff_pair_node="master_clock0" >
+		</pin>
+		<pin name="1st_outputbus[10](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[10]" >
+		</pin>
+		<pin name="inputbus[5](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[5]" >
+		</pin>
+		<pin name="1st_outputbus[5](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[5]" >
+		</pin>
+		<pin name="inputbus[9](n)" direction="Input" source="Assignments" diff_pair_node="inputbus[9]" >
+		</pin>
+		<pin name="1st_outputbus[0](n)" direction="Output" source="Assignments" diff_pair_node="1st_outputbus[0]" >
+		</pin>
+		<pin name="2nd_outputbus[6](n)" direction="Output" source="Assignments" diff_pair_node="2nd_outputbus[6]" >
+		</pin>
+		<pin name="DigOutput(n)" direction="Output" source="Assignments" diff_pair_node="DigOutput" >
+		</pin>
+		<pin name="master_clock2(n)" direction="Input" source="Assignments" diff_pair_node="master_clock2" >
+		</pin>
+		<pin name="master_clock1(n)" direction="Input" source="Assignments" diff_pair_node="master_clock1" >
+		</pin>
+		<pin name="LocalClock(n)" direction="Input" source="Assignments" diff_pair_node="LocalClock" >
+		</pin>
+		<pin name="master_clock4(n)" direction="Input" source="Assignments" diff_pair_node="master_clock4" >
+		</pin>
+		<pin name="master_clock3(n)" direction="Input" source="Assignments" diff_pair_node="master_clock3" >
+		</pin>
+		<pin name="Debug_LVDS_IN_1(n)" direction="Input" source="Assignments" diff_pair_node="Debug_LVDS_IN_1" >
+		</pin>
+		<pin name="Debug_LVDS_OUT_0(n)" direction="Output" source="Assignments" diff_pair_node="Debug_LVDS_OUT_0" >
+		</pin>
+		<pin name="Debug_LVDS_IN_0(n)" direction="Input" source="Assignments" diff_pair_node="Debug_LVDS_IN_0" >
+		</pin>
+		<pin name="Debug_LVDS_OUT_1(n)" direction="Output" source="Assignments" diff_pair_node="Debug_LVDS_OUT_1" >
+		</pin>
+		<pin name="DigOutput_AUX3(n)" direction="Output" source="Assignments" diff_pair_node="DigOutput_AUX3" >
+		</pin>
+		<pin name="inst180" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

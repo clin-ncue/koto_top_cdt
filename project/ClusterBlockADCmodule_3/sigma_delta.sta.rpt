@@ -1,0 +1,628 @@
+TimeQuest Timing Analyzer report for sigma_delta
+Tue Nov 20 11:59:27 2007
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. SDC File List
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width
+ 11. Fast Model Setup Summary
+ 12. Fast Model Hold Summary
+ 13. Fast Model Recovery Summary
+ 14. Fast Model Removal Summary
+ 15. Fast Model Minimum Pulse Width
+ 16. Setup Transfers
+ 17. Hold Transfers
+ 18. Recovery Transfers
+ 19. Removal Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                     ;
++--------------------+--------------------------------------------------+
+; Quartus II Version ; Version 7.2 Build 151 09/26/2007 SJ Full Version ;
+; Revision Name      ; sigma_delta                                      ;
+; Device Family      ; Stratix II                                       ;
+; Device Name        ; EP2S60F1020C5                                    ;
+; Timing Models      ; Final                                            ;
+; Delay Model        ; Combined                                         ;
+; Rise/Fall Delays   ; Unavailable                                      ;
++--------------------+--------------------------------------------------+
+
+
++-----------------------------------------------------+
+; SDC File List                                       ;
++-----------------+--------+--------------------------+
+; SDC File Path   ; Status ; Read at                  ;
++-----------------+--------+--------------------------+
+; sigma_delta.sdc ; OK     ; Tue Nov 20 11:59:24 2007 ;
++-----------------+--------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                      ;
++-----------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+--------------------------------------+----------------------------------------+
+; Clock Name                                    ; Type      ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master        ; Source                               ; Targets                                ;
++-----------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+--------------------------------------+----------------------------------------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; Generated ; 8.000  ; 125.0 MHz ; 0.000 ; 4.000  ; 50.00      ; 1         ; 1           ;       ;        ;           ;            ; false    ; master_clock0 ; inst82|altpll_component|pll|inclk[0] ; { inst82|altpll_component|pll|clk[0] } ;
+; altpll00:inst82|altpll:altpll_component|_clk1 ; Generated ; 8.000  ; 125.0 MHz ; 0.000 ; 4.000  ; 50.00      ; 1         ; 1           ;       ;        ;           ;            ; false    ; master_clock0 ; inst82|altpll_component|pll|inclk[0] ; { inst82|altpll_component|pll|clk[1] } ;
+; altpll00:inst82|altpll:altpll_component|_clk2 ; Generated ; 50.000 ; 20.0 MHz  ; 0.000 ; 25.000 ; 50.00      ; 25        ; 4           ;       ;        ;           ;            ; false    ; master_clock0 ; inst82|altpll_component|pll|inclk[0] ; { inst82|altpll_component|pll|clk[2] } ;
+; master_clock0                                 ; Base      ; 8.000  ; 125.0 MHz ; 0.000 ; 4.000  ;            ;           ;             ;       ;        ;           ;            ;          ;               ;                                      ; { master_clock0 }                      ;
++-----------------------------------------------+-----------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+---------------+--------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                             ;
++------------+-----------------+-----------------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                                    ; Note ;
++------------+-----------------+-----------------------------------------------+------+
+; 176.96 MHz ; 176.96 MHz      ; altpll00:inst82|altpll:altpll_component|_clk0 ;      ;
+; 376.22 MHz ; 376.22 MHz      ; altpll00:inst82|altpll:altpll_component|_clk2 ;      ;
++------------+-----------------+-----------------------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------------------------------------+
+; Slow Model Setup Summary                                               ;
++-----------------------------------------------+--------+---------------+
+; Clock                                         ; Slack  ; End Point TNS ;
++-----------------------------------------------+--------+---------------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; 2.349  ; 0.000         ;
+; altpll00:inst82|altpll:altpll_component|_clk2 ; 47.342 ; 0.000         ;
++-----------------------------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------+
+; Slow Model Hold Summary                                               ;
++-----------------------------------------------+-------+---------------+
+; Clock                                         ; Slack ; End Point TNS ;
++-----------------------------------------------+-------+---------------+
+; altpll00:inst82|altpll:altpll_component|_clk2 ; 0.478 ; 0.000         ;
+; altpll00:inst82|altpll:altpll_component|_clk0 ; 0.580 ; 0.000         ;
++-----------------------------------------------+-------+---------------+
+
+
++-----------------------------------------------------------------------+
+; Slow Model Recovery Summary                                           ;
++-----------------------------------------------+-------+---------------+
+; Clock                                         ; Slack ; End Point TNS ;
++-----------------------------------------------+-------+---------------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; 5.085 ; 0.000         ;
++-----------------------------------------------+-------+---------------+
+
+
++-----------------------------------------------------------------------+
+; Slow Model Removal Summary                                            ;
++-----------------------------------------------+-------+---------------+
+; Clock                                         ; Slack ; End Point TNS ;
++-----------------------------------------------+-------+---------------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; 1.120 ; 0.000         ;
++-----------------------------------------------+-------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width                                                                                                                                                                                                                                                        ;
++-------+--------------+----------------+-------+-----------------------------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Pulse ; Clock                                         ; Clock Edge ; Target                                                                                                                                                                   ;
++-------+--------------+----------------+-------+-----------------------------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg6  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg6  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg1   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg1   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_we_reg        ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_we_reg        ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg0  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg0  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg1  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg1  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg2  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg2  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg3  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg3  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg4  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg4  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg5  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg5  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg7  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg7  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg8  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg8  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg9  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg9  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg10 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg10 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg11 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg11 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a165~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a165~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg51  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg51  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a166~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a166~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg52  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg52  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a167~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a167~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg53  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg53  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a168~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a168~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg54  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg54  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a192~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a192~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg55  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg55  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a193~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a193~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg56  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg56  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a194~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a194~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg57  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg57  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a195~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a195~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg58  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg58  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a196~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a196~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg59  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg59  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a197~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a197~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg60  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg60  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a198~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a198~portb_memory_reg0 ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg61  ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg61  ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a1~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a1~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg2   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg2   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a2~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a2~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg3   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg3   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a3~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a3~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg4   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg4   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a4~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a4~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg5   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg5   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a5~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a5~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg6   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg6   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a6~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a6~portb_memory_reg0   ;
+; 2.085 ; 4.000        ; 1.915          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg7   ;
+; 2.085 ; 4.000        ; 1.915          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg7   ;
++-------+--------------+----------------+-------+-----------------------------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Fast Model Setup Summary                                               ;
++-----------------------------------------------+--------+---------------+
+; Clock                                         ; Slack  ; End Point TNS ;
++-----------------------------------------------+--------+---------------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; 5.648  ; 0.000         ;
+; altpll00:inst82|altpll:altpll_component|_clk2 ; 48.705 ; 0.000         ;
++-----------------------------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------+
+; Fast Model Hold Summary                                               ;
++-----------------------------------------------+-------+---------------+
+; Clock                                         ; Slack ; End Point TNS ;
++-----------------------------------------------+-------+---------------+
+; altpll00:inst82|altpll:altpll_component|_clk2 ; 0.214 ; 0.000         ;
+; altpll00:inst82|altpll:altpll_component|_clk0 ; 0.251 ; 0.000         ;
++-----------------------------------------------+-------+---------------+
+
+
++-----------------------------------------------------------------------+
+; Fast Model Recovery Summary                                           ;
++-----------------------------------------------+-------+---------------+
+; Clock                                         ; Slack ; End Point TNS ;
++-----------------------------------------------+-------+---------------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; 6.732 ; 0.000         ;
++-----------------------------------------------+-------+---------------+
+
+
++-----------------------------------------------------------------------+
+; Fast Model Removal Summary                                            ;
++-----------------------------------------------+-------+---------------+
+; Clock                                         ; Slack ; End Point TNS ;
++-----------------------------------------------+-------+---------------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; 0.528 ; 0.000         ;
++-----------------------------------------------+-------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width                                                                                                                                                                                                                                                        ;
++-------+--------------+----------------+-------+-----------------------------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Pulse ; Clock                                         ; Clock Edge ; Target                                                                                                                                                                   ;
++-------+--------------+----------------+-------+-----------------------------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg6  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg6  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg1   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg1   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_we_reg        ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_we_reg        ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg0  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg0  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg1  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg1  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg2  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg2  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg3  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg3  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg4  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg4  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg5  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg5  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg7  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg7  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg8  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg8  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg9  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg9  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg10 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg10 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg11 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_address_reg11 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a165~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a165~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg51  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg51  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a166~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a166~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg52  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg52  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a167~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a167~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg53  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg53  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a168~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a168~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg54  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg54  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a192~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a192~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg55  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg55  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a193~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a193~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg56  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg56  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a194~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a194~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg57  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg57  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a195~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a195~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg58  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg58  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a196~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a196~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg59  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg59  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a197~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a197~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg60  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg60  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a198~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a198~portb_memory_reg0 ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg61  ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg61  ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a1~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a1~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg2   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg2   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a2~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a2~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg3   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg3   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a3~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a3~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg4   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg4   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a4~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a4~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg5   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg5   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a5~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a5~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg6   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg6   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a6~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a6~portb_memory_reg0   ;
+; 2.572 ; 4.000        ; 1.428          ; High  ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg7   ;
+; 2.572 ; 4.000        ; 1.428          ; Low   ; altpll00:inst82|altpll:altpll_component|_clk0 ; Rise       ; vme_buffer:inst47|altsyncram:altsyncram_component|altsyncram_r182:auto_generated|altsyncram:ram_block1a0|altsyncram_kt63:auto_generated|ram_block1a0~portb_datain_reg7   ;
++-------+--------------+----------------+-------+-----------------------------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                           ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+; From Clock                                    ; To Clock                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; altpll00:inst82|altpll:altpll_component|_clk0 ; 12696    ; 0        ; 0        ; 0        ;
+; altpll00:inst82|altpll:altpll_component|_clk2 ; altpll00:inst82|altpll:altpll_component|_clk2 ; 655      ; 0        ; 0        ; 0        ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                            ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+; From Clock                                    ; To Clock                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; altpll00:inst82|altpll:altpll_component|_clk0 ; 12696    ; 0        ; 0        ; 0        ;
+; altpll00:inst82|altpll:altpll_component|_clk2 ; altpll00:inst82|altpll:altpll_component|_clk2 ; 655      ; 0        ; 0        ; 0        ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                                                                        ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+; From Clock                                    ; To Clock                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; altpll00:inst82|altpll:altpll_component|_clk0 ; 27       ; 0        ; 0        ; 0        ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+; From Clock                                    ; To Clock                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+; altpll00:inst82|altpll:altpll_component|_clk0 ; altpll00:inst82|altpll:altpll_component|_clk0 ; 27       ; 0        ; 0        ; 0        ;
++-----------------------------------------------+-----------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------+
+; Report TCCS                    ;
++--------------------------------+
+; LVDS Transmitter Constant TCCS ;
++--------------------------------+
+; 0.200                          ;
++--------------------------------+
+
+
+---------------
+; Report RSKM ;
+---------------
+No LVDS receiver found in design.
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 5     ; 5    ;
+; Unconstrained Clocks            ; 22    ; 22   ;
+; Unconstrained Input Ports       ; 329   ; 329  ;
+; Unconstrained Input Port Paths  ; 993   ; 993  ;
+; Unconstrained Output Ports      ; 60    ; 60   ;
+; Unconstrained Output Port Paths ; 1587  ; 1587 ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II TimeQuest Timing Analyzer
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Tue Nov 20 11:59:16 2007
+Info: Command: quartus_sta sigma_delta -c sigma_delta
+Info: qsta_default_script.tcl version: 25.0.1.4
+Info: Reading SDC File: 'sigma_delta.sdc'
+Info: Deriving PLL Clocks
+    Info: create_generated_clock -source inst82|altpll_component|pll|inclk[0] -duty_cycle 50.00 -name altpll00:inst82|altpll:altpll_component|_clk0 inst82|altpll_component|pll|clk[0]
+    Info: create_generated_clock -source inst82|altpll_component|pll|inclk[1] -duty_cycle 50.00 -name altpll00:inst82|altpll:altpll_component|_clk0~1 inst82|altpll_component|pll|clk[0]
+    Info: create_generated_clock -source inst82|altpll_component|pll|inclk[0] -duty_cycle 50.00 -name altpll00:inst82|altpll:altpll_component|_clk1 inst82|altpll_component|pll|clk[1]
+    Info: create_generated_clock -source inst82|altpll_component|pll|inclk[1] -duty_cycle 50.00 -name altpll00:inst82|altpll:altpll_component|_clk1~1 inst82|altpll_component|pll|clk[1]
+    Info: create_generated_clock -source inst82|altpll_component|pll|inclk[0] -divide_by 25 -multiply_by 4 -duty_cycle 50.00 -name altpll00:inst82|altpll:altpll_component|_clk2 inst82|altpll_component|pll|clk[2]
+    Info: create_generated_clock -source inst82|altpll_component|pll|inclk[1] -divide_by 25 -multiply_by 4 -duty_cycle 50.00 -name altpll00:inst82|altpll:altpll_component|_clk2~1 inst82|altpll_component|pll|clk[2]
+    Info: create_generated_clock -source inst28|altlvds_tx_component|auto_generated|pll|inclk[0] -divide_by 4 -multiply_by 3 -phase -22.50 -duty_cycle 50.00 -name alt_lvds_tx:inst28|altlvds_tx:altlvds_tx_component|lvds_tx_h1b1:auto_generated|pll inst28|altlvds_tx_component|auto_generated|pll|clk[0]
+    Info: create_generated_clock -source inst28|altlvds_tx_component|auto_generated|pll|inclk[0] -multiply_by 6 -phase -180.00 -duty_cycle 50.00 -name alt_lvds_tx:inst28|altlvds_tx:altlvds_tx_component|lvds_tx_h1b1:auto_generated|pll~SCLKOUT0 inst28|altlvds_tx_component|auto_generated|pll|sclkout[0]
+    Info: set_false_path -from [get_pins [list inst28|altlvds_tx_component|auto_generated|outclock_tx|clk0]]
+    Info: set_multicycle_path -setup -end 7 -to [get_pins [list inst28|altlvds_tx_component|auto_generated|tx[1]|datain[7] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[6] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[5] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[4] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[3] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[2] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[1] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[0]]]
+    Info: set_multicycle_path -hold -end 7 -to [get_pins [list inst28|altlvds_tx_component|auto_generated|tx[1]|datain[7] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[6] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[5] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[4] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[3] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[2] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[1] inst28|altlvds_tx_component|auto_generated|tx[1]|datain[0]]]
+    Info: set_false_path -from [get_pins [list inst28|altlvds_tx_component|auto_generated|tx[1]|clk0]]
+    Info: set_multicycle_path -setup -end 7 -to [get_pins [list inst28|altlvds_tx_component|auto_generated|tx[0]|datain[7] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[6] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[5] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[4] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[3] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[2] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[1] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[0]]]
+    Info: set_multicycle_path -hold -end 7 -to [get_pins [list inst28|altlvds_tx_component|auto_generated|tx[0]|datain[7] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[6] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[5] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[4] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[3] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[2] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[1] inst28|altlvds_tx_component|auto_generated|tx[0]|datain[0]]]
+    Info: set_false_path -from [get_pins [list inst28|altlvds_tx_component|auto_generated|tx[0]|clk0]]
+Warning: Found combinational loop of 2 nodes
+    Warning: Node "inst2|_vme_data_str~68|combout"
+    Warning: Node "inst2|_vme_data_str~68|dataf"
+Warning: Found combinational loop of 2 nodes
+    Warning: Node "inst2|_modsel~58|combout"
+    Warning: Node "inst2|_modsel~58|datad"
+Warning: The master clock for this clock assignment could not be derived.  Clock: altpll00:inst82|altpll:altpll_component|_clk0~1 was not created.
+    Warning: No clocks found on or feeding the specified source node: inst82|altpll_component|pll|inclk[1]
+Warning: The master clock for this clock assignment could not be derived.  Clock: altpll00:inst82|altpll:altpll_component|_clk1~1 was not created.
+    Warning: No clocks found on or feeding the specified source node: inst82|altpll_component|pll|inclk[1]
+Warning: The master clock for this clock assignment could not be derived.  Clock: altpll00:inst82|altpll:altpll_component|_clk2~1 was not created.
+    Warning: No clocks found on or feeding the specified source node: inst82|altpll_component|pll|inclk[1]
+Warning: The master clock for this clock assignment could not be derived.  Clock: alt_lvds_tx:inst28|altlvds_tx:altlvds_tx_component|lvds_tx_h1b1:auto_generated|pll was not created.
+    Warning: Clock: altpll00:inst82|altpll:altpll_component|_clk0 found as a potential master clock candidate
+    Warning: Clock: altpll00:inst82|altpll:altpll_component|_clk0~1 found as a potential master clock candidate
+Warning: The master clock for this clock assignment could not be derived.  Clock: alt_lvds_tx:inst28|altlvds_tx:altlvds_tx_component|lvds_tx_h1b1:auto_generated|pll~SCLKOUT0 was not created.
+    Warning: Clock: altpll00:inst82|altpll:altpll_component|_clk0 found as a potential master clock candidate
+    Warning: Clock: altpll00:inst82|altpll:altpll_component|_clk0~1 found as a potential master clock candidate
+Warning: Node: _vme_write was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: tapdel10:inst13|del1 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: _as was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: vme_interface:inst2|del80 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk1 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk3 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk5 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk7 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk9 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk11 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk13 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk15 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: tapdel10:inst13|del5 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk2 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk4 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk6 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk8 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk10 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk12 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk14 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk16 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: sysclk was determined to be a clock but was found without an associated clock assignment.
+Info: PLL cross checking found inconsistent PLL clock settings:
+    Info: Node: inst82|altpll_component|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+    Info: Node: inst82|altpll_component|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+    Info: Node: inst82|altpll_component|pll|clk[2] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+    Info: Node: inst28|altlvds_tx_component|auto_generated|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+    Info: Node: inst28|altlvds_tx_component|auto_generated|pll|sclkout[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+Info: Analyzing Slow Model
+Info: Worst-case setup slack is 2.349
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     2.349         0.000 altpll00:inst82|altpll:altpll_component|_clk0 
+    Info:    47.342         0.000 altpll00:inst82|altpll:altpll_component|_clk2 
+Info: Worst-case hold slack is 0.478
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.478         0.000 altpll00:inst82|altpll:altpll_component|_clk2 
+    Info:     0.580         0.000 altpll00:inst82|altpll:altpll_component|_clk0 
+Info: Worst-case recovery slack is 5.085
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     5.085         0.000 altpll00:inst82|altpll:altpll_component|_clk0 
+Info: Worst-case removal slack is 1.120
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     1.120         0.000 altpll00:inst82|altpll:altpll_component|_clk0 
+Info: Analyzing Fast Model
+Warning: Found combinational loop of 2 nodes
+    Warning: Node "inst2|_vme_data_str~68|combout"
+    Warning: Node "inst2|_vme_data_str~68|dataf"
+Warning: Found combinational loop of 2 nodes
+    Warning: Node "inst2|_modsel~58|combout"
+    Warning: Node "inst2|_modsel~58|datad"
+Warning: The master clock for this clock assignment could not be derived.  Clock: altpll00:inst82|altpll:altpll_component|_clk0~1 was not created.
+    Warning: No clocks found on or feeding the specified source node: inst82|altpll_component|pll|inclk[1]
+Warning: The master clock for this clock assignment could not be derived.  Clock: altpll00:inst82|altpll:altpll_component|_clk1~1 was not created.
+    Warning: No clocks found on or feeding the specified source node: inst82|altpll_component|pll|inclk[1]
+Warning: The master clock for this clock assignment could not be derived.  Clock: altpll00:inst82|altpll:altpll_component|_clk2~1 was not created.
+    Warning: No clocks found on or feeding the specified source node: inst82|altpll_component|pll|inclk[1]
+Warning: The master clock for this clock assignment could not be derived.  Clock: alt_lvds_tx:inst28|altlvds_tx:altlvds_tx_component|lvds_tx_h1b1:auto_generated|pll was not created.
+    Warning: Clock: altpll00:inst82|altpll:altpll_component|_clk0 found as a potential master clock candidate
+    Warning: Clock: altpll00:inst82|altpll:altpll_component|_clk0~1 found as a potential master clock candidate
+Warning: The master clock for this clock assignment could not be derived.  Clock: alt_lvds_tx:inst28|altlvds_tx:altlvds_tx_component|lvds_tx_h1b1:auto_generated|pll~SCLKOUT0 was not created.
+    Warning: Clock: altpll00:inst82|altpll:altpll_component|_clk0 found as a potential master clock candidate
+    Warning: Clock: altpll00:inst82|altpll:altpll_component|_clk0~1 found as a potential master clock candidate
+Warning: Node: _vme_write was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: tapdel10:inst13|del1 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: _as was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: vme_interface:inst2|del80 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk1 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk3 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk5 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk7 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk9 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk11 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk13 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk15 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: tapdel10:inst13|del5 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk2 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk4 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk6 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk8 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk10 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk12 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk14 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: ADCclk16 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: sysclk was determined to be a clock but was found without an associated clock assignment.
+Info: PLL cross checking found inconsistent PLL clock settings:
+    Info: Node: inst82|altpll_component|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+    Info: Node: inst82|altpll_component|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+    Info: Node: inst82|altpll_component|pll|clk[2] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+    Info: Node: inst28|altlvds_tx_component|auto_generated|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+    Info: Node: inst28|altlvds_tx_component|auto_generated|pll|sclkout[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 8.000
+Info: Worst-case setup slack is 5.648
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     5.648         0.000 altpll00:inst82|altpll:altpll_component|_clk0 
+    Info:    48.705         0.000 altpll00:inst82|altpll:altpll_component|_clk2 
+Info: Worst-case hold slack is 0.214
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.214         0.000 altpll00:inst82|altpll:altpll_component|_clk2 
+    Info:     0.251         0.000 altpll00:inst82|altpll:altpll_component|_clk0 
+Info: Worst-case recovery slack is 6.732
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     6.732         0.000 altpll00:inst82|altpll:altpll_component|_clk0 
+Info: Worst-case removal slack is 0.528
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.528         0.000 altpll00:inst82|altpll:altpll_component|_clk0 
+Warning: Advanced I/O Timing is not enabled
+Info: Report TCCS:
+    Info: Maximum TCCS for all channels: 0.200
+Info: Design is not fully constrained for setup requirements
+Info: Design is not fully constrained for hold requirements
+Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 81 warnings
+    Info: Allocated 159 megabytes of memory during processing
+    Info: Processing ended: Tue Nov 20 11:59:27 2007
+    Info: Elapsed time: 00:00:11
+
+

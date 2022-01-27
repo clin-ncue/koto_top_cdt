@@ -1,0 +1,606 @@
+Partition Merge report for sigma_delta
+Thu Apr 05 13:08:38 2018
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Connections to In-System Debugging Instance "auto_signaltap_0"
+  4. Partition Merge Netlist Types Used
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Partition Merge Summary                                                       ;
++-------------------------------+-----------------------------------------------+
+; Partition Merge Status        ; Successful - Thu Apr 05 13:08:38 2018         ;
+; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
+; Revision Name                 ; sigma_delta                                   ;
+; Top-level Entity Name         ; sigma_delta                                   ;
+; Family                        ; Stratix II                                    ;
+; Logic utilization             ; N/A                                           ;
+;     Combinational ALUTs       ; 4,534                                         ;
+;     Dedicated logic registers ; 6,172                                         ;
+; Total registers               ; 6172                                          ;
+; Total pins                    ; 341                                           ;
+; Total virtual pins            ; 0                                             ;
+; Total block memory bits       ; 882,176                                       ;
+; DSP block 9-bit elements      ; 0                                             ;
+; Total PLLs                    ; 4                                             ;
+; Total DLLs                    ; 0                                             ;
++-------------------------------+-----------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                            ;
++----------------------------------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------+---------+
+; Name                                   ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                     ; Details ;
++----------------------------------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------+---------+
+; 0_RXD_Buffered[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[0]   ; N/A     ;
+; 0_RXD_Buffered[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[0]   ; N/A     ;
+; 0_RXD_Buffered[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[10]  ; N/A     ;
+; 0_RXD_Buffered[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[10]  ; N/A     ;
+; 0_RXD_Buffered[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[11]  ; N/A     ;
+; 0_RXD_Buffered[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[11]  ; N/A     ;
+; 0_RXD_Buffered[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[12]  ; N/A     ;
+; 0_RXD_Buffered[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[12]  ; N/A     ;
+; 0_RXD_Buffered[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[13]  ; N/A     ;
+; 0_RXD_Buffered[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[13]  ; N/A     ;
+; 0_RXD_Buffered[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[14]  ; N/A     ;
+; 0_RXD_Buffered[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[14]  ; N/A     ;
+; 0_RXD_Buffered[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[15]  ; N/A     ;
+; 0_RXD_Buffered[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[15]  ; N/A     ;
+; 0_RXD_Buffered[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[1]   ; N/A     ;
+; 0_RXD_Buffered[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[1]   ; N/A     ;
+; 0_RXD_Buffered[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[2]   ; N/A     ;
+; 0_RXD_Buffered[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[2]   ; N/A     ;
+; 0_RXD_Buffered[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[3]   ; N/A     ;
+; 0_RXD_Buffered[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[3]   ; N/A     ;
+; 0_RXD_Buffered[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[4]   ; N/A     ;
+; 0_RXD_Buffered[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[4]   ; N/A     ;
+; 0_RXD_Buffered[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[5]   ; N/A     ;
+; 0_RXD_Buffered[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[5]   ; N/A     ;
+; 0_RXD_Buffered[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[6]   ; N/A     ;
+; 0_RXD_Buffered[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[6]   ; N/A     ;
+; 0_RXD_Buffered[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[7]   ; N/A     ;
+; 0_RXD_Buffered[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[7]   ; N/A     ;
+; 0_RXD_Buffered[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[8]   ; N/A     ;
+; 0_RXD_Buffered[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[8]   ; N/A     ;
+; 0_RXD_Buffered[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[9]   ; N/A     ;
+; 0_RXD_Buffered[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[9]   ; N/A     ;
+; 1_RXD_Buffered[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[0]   ; N/A     ;
+; 1_RXD_Buffered[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[0]   ; N/A     ;
+; 1_RXD_Buffered[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[10]  ; N/A     ;
+; 1_RXD_Buffered[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[10]  ; N/A     ;
+; 1_RXD_Buffered[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[11]  ; N/A     ;
+; 1_RXD_Buffered[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[11]  ; N/A     ;
+; 1_RXD_Buffered[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[12]  ; N/A     ;
+; 1_RXD_Buffered[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[12]  ; N/A     ;
+; 1_RXD_Buffered[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[13]  ; N/A     ;
+; 1_RXD_Buffered[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[13]  ; N/A     ;
+; 1_RXD_Buffered[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[14]  ; N/A     ;
+; 1_RXD_Buffered[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[14]  ; N/A     ;
+; 1_RXD_Buffered[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[15]  ; N/A     ;
+; 1_RXD_Buffered[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[15]  ; N/A     ;
+; 1_RXD_Buffered[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[1]   ; N/A     ;
+; 1_RXD_Buffered[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[1]   ; N/A     ;
+; 1_RXD_Buffered[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[2]   ; N/A     ;
+; 1_RXD_Buffered[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[2]   ; N/A     ;
+; 1_RXD_Buffered[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[3]   ; N/A     ;
+; 1_RXD_Buffered[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[3]   ; N/A     ;
+; 1_RXD_Buffered[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[4]   ; N/A     ;
+; 1_RXD_Buffered[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[4]   ; N/A     ;
+; 1_RXD_Buffered[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[5]   ; N/A     ;
+; 1_RXD_Buffered[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[5]   ; N/A     ;
+; 1_RXD_Buffered[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[6]   ; N/A     ;
+; 1_RXD_Buffered[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[6]   ; N/A     ;
+; 1_RXD_Buffered[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[7]   ; N/A     ;
+; 1_RXD_Buffered[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[7]   ; N/A     ;
+; 1_RXD_Buffered[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[8]   ; N/A     ;
+; 1_RXD_Buffered[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[8]   ; N/A     ;
+; 1_RXD_Buffered[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[9]   ; N/A     ;
+; 1_RXD_Buffered[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[9]   ; N/A     ;
+; 2_RXD_Buffered[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[0]  ; N/A     ;
+; 2_RXD_Buffered[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[0]  ; N/A     ;
+; 2_RXD_Buffered[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[10] ; N/A     ;
+; 2_RXD_Buffered[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[10] ; N/A     ;
+; 2_RXD_Buffered[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[11] ; N/A     ;
+; 2_RXD_Buffered[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[11] ; N/A     ;
+; 2_RXD_Buffered[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[12] ; N/A     ;
+; 2_RXD_Buffered[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[12] ; N/A     ;
+; 2_RXD_Buffered[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[13] ; N/A     ;
+; 2_RXD_Buffered[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[13] ; N/A     ;
+; 2_RXD_Buffered[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[14] ; N/A     ;
+; 2_RXD_Buffered[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[14] ; N/A     ;
+; 2_RXD_Buffered[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[15] ; N/A     ;
+; 2_RXD_Buffered[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[15] ; N/A     ;
+; 2_RXD_Buffered[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[1]  ; N/A     ;
+; 2_RXD_Buffered[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[1]  ; N/A     ;
+; 2_RXD_Buffered[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[2]  ; N/A     ;
+; 2_RXD_Buffered[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[2]  ; N/A     ;
+; 2_RXD_Buffered[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[3]  ; N/A     ;
+; 2_RXD_Buffered[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[3]  ; N/A     ;
+; 2_RXD_Buffered[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[4]  ; N/A     ;
+; 2_RXD_Buffered[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[4]  ; N/A     ;
+; 2_RXD_Buffered[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[5]  ; N/A     ;
+; 2_RXD_Buffered[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[5]  ; N/A     ;
+; 2_RXD_Buffered[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[6]  ; N/A     ;
+; 2_RXD_Buffered[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[6]  ; N/A     ;
+; 2_RXD_Buffered[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[7]  ; N/A     ;
+; 2_RXD_Buffered[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[7]  ; N/A     ;
+; 2_RXD_Buffered[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[8]  ; N/A     ;
+; 2_RXD_Buffered[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[8]  ; N/A     ;
+; 2_RXD_Buffered[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[9]  ; N/A     ;
+; 2_RXD_Buffered[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[9]  ; N/A     ;
+; 3_RXD_Buffered[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[0]  ; N/A     ;
+; 3_RXD_Buffered[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[0]  ; N/A     ;
+; 3_RXD_Buffered[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[10] ; N/A     ;
+; 3_RXD_Buffered[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[10] ; N/A     ;
+; 3_RXD_Buffered[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[11] ; N/A     ;
+; 3_RXD_Buffered[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[11] ; N/A     ;
+; 3_RXD_Buffered[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[12] ; N/A     ;
+; 3_RXD_Buffered[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[12] ; N/A     ;
+; 3_RXD_Buffered[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[13] ; N/A     ;
+; 3_RXD_Buffered[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[13] ; N/A     ;
+; 3_RXD_Buffered[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[14] ; N/A     ;
+; 3_RXD_Buffered[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[14] ; N/A     ;
+; 3_RXD_Buffered[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[15] ; N/A     ;
+; 3_RXD_Buffered[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[15] ; N/A     ;
+; 3_RXD_Buffered[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[1]  ; N/A     ;
+; 3_RXD_Buffered[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[1]  ; N/A     ;
+; 3_RXD_Buffered[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[2]  ; N/A     ;
+; 3_RXD_Buffered[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[2]  ; N/A     ;
+; 3_RXD_Buffered[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[3]  ; N/A     ;
+; 3_RXD_Buffered[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[3]  ; N/A     ;
+; 3_RXD_Buffered[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[4]  ; N/A     ;
+; 3_RXD_Buffered[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[4]  ; N/A     ;
+; 3_RXD_Buffered[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[5]  ; N/A     ;
+; 3_RXD_Buffered[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[5]  ; N/A     ;
+; 3_RXD_Buffered[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[6]  ; N/A     ;
+; 3_RXD_Buffered[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[6]  ; N/A     ;
+; 3_RXD_Buffered[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[7]  ; N/A     ;
+; 3_RXD_Buffered[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[7]  ; N/A     ;
+; 3_RXD_Buffered[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[8]  ; N/A     ;
+; 3_RXD_Buffered[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[8]  ; N/A     ;
+; 3_RXD_Buffered[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[9]  ; N/A     ;
+; 3_RXD_Buffered[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|q_b[9]  ; N/A     ;
+; The_clock                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; altpll00:inst233|altpll:altpll_component|_clk0                                                        ; N/A     ;
+; adc_trg_dff0:inst159|q                 ; pre-synthesis ; connected ; Top            ; post-synthesis    ; adc_trg_dff0:inst159|lpm_ff:lpm_ff_component|dffs[0]                                                  ; N/A     ;
+; adc_trg_dff0:inst159|q                 ; pre-synthesis ; connected ; Top            ; post-synthesis    ; adc_trg_dff0:inst159|lpm_ff:lpm_ff_component|dffs[0]                                                  ; N/A     ;
+; err_input0                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lvds16_input0_dff:inst43|lpm_ff:lpm_ff_component|dffs[0]                                              ; N/A     ;
+; err_input0                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lvds16_input0_dff:inst43|lpm_ff:lpm_ff_component|dffs[0]                                              ; N/A     ;
+; et_after_peak_sensing[0]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[0]                                                                      ; N/A     ;
+; et_after_peak_sensing[0]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[0]                                                                      ; N/A     ;
+; et_after_peak_sensing[10]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[10]                                                                     ; N/A     ;
+; et_after_peak_sensing[10]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[10]                                                                     ; N/A     ;
+; et_after_peak_sensing[11]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[11]                                                                     ; N/A     ;
+; et_after_peak_sensing[11]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[11]                                                                     ; N/A     ;
+; et_after_peak_sensing[12]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[12]                                                                     ; N/A     ;
+; et_after_peak_sensing[12]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[12]                                                                     ; N/A     ;
+; et_after_peak_sensing[13]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[13]                                                                     ; N/A     ;
+; et_after_peak_sensing[13]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[13]                                                                     ; N/A     ;
+; et_after_peak_sensing[14]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[14]                                                                     ; N/A     ;
+; et_after_peak_sensing[14]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[14]                                                                     ; N/A     ;
+; et_after_peak_sensing[15]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[15]                                                                     ; N/A     ;
+; et_after_peak_sensing[15]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[15]                                                                     ; N/A     ;
+; et_after_peak_sensing[16]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[16]                                                                     ; N/A     ;
+; et_after_peak_sensing[16]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[16]                                                                     ; N/A     ;
+; et_after_peak_sensing[1]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[1]                                                                      ; N/A     ;
+; et_after_peak_sensing[1]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[1]                                                                      ; N/A     ;
+; et_after_peak_sensing[2]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[2]                                                                      ; N/A     ;
+; et_after_peak_sensing[2]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[2]                                                                      ; N/A     ;
+; et_after_peak_sensing[3]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[3]                                                                      ; N/A     ;
+; et_after_peak_sensing[3]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[3]                                                                      ; N/A     ;
+; et_after_peak_sensing[4]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[4]                                                                      ; N/A     ;
+; et_after_peak_sensing[4]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[4]                                                                      ; N/A     ;
+; et_after_peak_sensing[5]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[5]                                                                      ; N/A     ;
+; et_after_peak_sensing[5]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[5]                                                                      ; N/A     ;
+; et_after_peak_sensing[6]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[6]                                                                      ; N/A     ;
+; et_after_peak_sensing[6]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[6]                                                                      ; N/A     ;
+; et_after_peak_sensing[7]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[7]                                                                      ; N/A     ;
+; et_after_peak_sensing[7]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[7]                                                                      ; N/A     ;
+; et_after_peak_sensing[8]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[8]                                                                      ; N/A     ;
+; et_after_peak_sensing[8]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[8]                                                                      ; N/A     ;
+; et_after_peak_sensing[9]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[9]                                                                      ; N/A     ;
+; et_after_peak_sensing[9]               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[9]                                                                      ; N/A     ;
+; et_first_input[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w0_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w0_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w10_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[10]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w10_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w11_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[11]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w11_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w12_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[12]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w12_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w13_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[13]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w13_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w14_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[14]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w14_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w15_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[15]                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w15_n0_mux_dataout~0             ; N/A     ;
+; et_first_input[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w1_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w1_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w2_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w2_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w3_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w3_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w4_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w4_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w5_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w5_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w6_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w6_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w7_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w7_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w8_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[8]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w8_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w9_n0_mux_dataout~0              ; N/A     ;
+; et_first_input[9]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_mux14:inst48|lpm_mux:lpm_mux_component|mux_lmc:auto_generated|l1_w9_n0_mux_dataout~0              ; N/A     ;
+; live_output                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; live_fanout_switch:inst138|lpm_mux:lpm_mux_component|mux_vkc:auto_generated|l1_w0_n0_mux_dataout~0    ; N/A     ;
+; live_output                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; live_fanout_switch:inst138|lpm_mux:lpm_mux_component|mux_vkc:auto_generated|l1_w0_n0_mux_dataout~0    ; N/A     ;
+; time_controller:inst44|in_et[0]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[0]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[0]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[0]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[10]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[10]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[10]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[10]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[11]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[11]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[11]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[11]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[12]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[12]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[12]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[12]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[13]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[13]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[13]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[13]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[14]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[14]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[14]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[14]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[15]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[15]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[15]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[15]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[16]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[16]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[16]       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[16]                                                                     ; N/A     ;
+; time_controller:inst44|in_et[1]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[1]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[1]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[1]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[2]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[2]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[2]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[2]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[3]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[3]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[3]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[3]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[4]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[4]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[4]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[4]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[5]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[5]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[5]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[5]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[6]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[6]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[6]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[6]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[7]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[7]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[7]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[7]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[8]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[8]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[8]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[8]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[9]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[9]                                                                      ; N/A     ;
+; time_controller:inst44|in_et[9]        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; et_peak_sensing:inst71|out_et[9]                                                                      ; N/A     ;
+; time_controller:inst44|out_delay_et[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[0]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[0]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[1]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[1]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[2]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[2]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[3]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[3]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[4]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[4]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[5]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[5]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[6]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[6]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[7] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[7]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[7] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[7]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[8] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[8]                                                                ; N/A     ;
+; time_controller:inst44|out_delay_et[8] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; time_controller:inst44|out_delay_et[8]                                                                ; N/A     ;
+; time_controller:inst44|align_cnt[0]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[0]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[0]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[0]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[1]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[1]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[1]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[1]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[2]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[2]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[2]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[2]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[3]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[3]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[3]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[3]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[4]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[4]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[4]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[4]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[5]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[5]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[5]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[5]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[6]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[6]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[6]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[6]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[7]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[7]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[7]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[7]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[8]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[8]                                                                   ; N/A     ;
+; time_controller:inst44|align_cnt[8]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|align_cnt[8]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[0]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[0]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[0]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[0]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[10]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[10]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[10]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[10]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[11]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[11]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[11]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[11]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[12]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[12]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[12]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[12]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[13]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[13]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[13]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[13]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[14]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[14]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[14]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[14]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[15]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[15]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[15]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[15]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[16]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[16]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[16]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[16]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[17]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[17]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[17]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[17]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[18]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[18]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[18]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[18]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[19]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[19]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[19]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[19]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[1]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[1]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[1]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[1]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[20]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[20]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[20]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[20]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[21]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[21]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[21]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[21]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[22]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[22]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[22]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[22]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[23]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[23]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[23]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[23]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[24]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[24]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[24]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[24]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[25]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[25]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[25]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[25]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[26]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[26]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[26]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[26]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[27]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[27]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[27]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[27]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[28]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[28]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[28]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[28]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[29]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[29]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[29]   ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[29]                                                                  ; N/A     ;
+; time_controller:inst44|timestamp[2]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[2]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[2]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[2]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[3]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[3]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[3]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[3]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[4]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[4]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[4]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[4]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[5]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[5]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[5]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[5]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[6]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[6]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[6]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[6]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[7]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[7]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[7]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[7]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[8]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[8]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[8]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[8]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[9]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[9]                                                                   ; N/A     ;
+; time_controller:inst44|timestamp[9]    ; post-fitting  ; connected ; Top            ; post-synthesis    ; time_controller:inst44|timestamp[9]                                                                   ; N/A     ;
++----------------------------------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                       ;
++-----------------------------------------------+--------+------------------+--------------------------------+
+; Statistic                                     ; Top    ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ;
++-----------------------------------------------+--------+------------------+--------------------------------+
+; Estimated ALUTs Used                          ; 3668   ; 92               ; 774                            ;
+; Dedicated logic registers                     ; 3611   ; 79               ; 2482                           ;
+;                                               ;        ;                  ;                                ;
+; Estimated ALUTs Unavailable                   ; 19     ; 1                ; 1                              ;
+;                                               ;        ;                  ;                                ;
+; Total combinational functions                 ; 3668   ; 92               ; 774                            ;
+; Combinational ALUT usage by number of inputs  ;        ;                  ;                                ;
+;     -- 7 input functions                      ; 19     ; 1                ; 1                              ;
+;     -- 6 input functions                      ; 1804   ; 15               ; 59                             ;
+;     -- 5 input functions                      ; 537    ; 16               ; 360                            ;
+;     -- 4 input functions                      ; 258    ; 13               ; 226                            ;
+;     -- <=3 input functions                    ; 1050   ; 47               ; 128                            ;
+;                                               ;        ;                  ;                                ;
+; Combinational ALUTs by mode                   ;        ;                  ;                                ;
+;     -- normal mode                            ; 3555   ; 91               ; 744                            ;
+;     -- extended LUT mode                      ; 19     ; 1                ; 1                              ;
+;     -- arithmetic mode                        ; 94     ; 0                ; 29                             ;
+;     -- shared arithmetic mode                 ; 0      ; 0                ; 0                              ;
+;                                               ;        ;                  ;                                ;
+; Estimated ALUT/register pairs used            ; 6193   ; 102              ; 2583                           ;
+;                                               ;        ;                  ;                                ;
+; Total registers                               ; 3611   ; 79               ; 2482                           ;
+;     -- Dedicated logic registers              ; 3611   ; 79               ; 2482                           ;
+;     -- I/O registers                          ; 0      ; 0                ; 0                              ;
+;                                               ;        ;                  ;                                ;
+; Estimated ALMs:  partially or completely used ; 3100   ; 52               ; 1294                           ;
+;                                               ;        ;                  ;                                ;
+; Virtual pins                                  ; 0      ; 0                ; 0                              ;
+; I/O pins                                      ; 341    ; 0                ; 0                              ;
+; DSP block 9-bit elements                      ; 0      ; 0                ; 0                              ;
+; Total block memory bits                       ; 206336 ; 0                ; 675840                         ;
+; Total block memory implementation bits        ; 0      ; 0                ; 0                              ;
+; JTAG                                          ; 1      ; 0                ; 0                              ;
+; PLL                                           ; 4      ; 0                ; 0                              ;
+;                                               ;        ;                  ;                                ;
+; Connections                                   ;        ;                  ;                                ;
+;     -- Input Connections                      ; 1      ; 116              ; 3403                           ;
+;     -- Registered Input Connections           ; 0      ; 88               ; 2839                           ;
+;     -- Output Connections                     ; 3253   ; 266              ; 1                              ;
+;     -- Registered Output Connections          ; 296    ; 265              ; 0                              ;
+;                                               ;        ;                  ;                                ;
+; Internal Connections                          ;        ;                  ;                                ;
+;     -- Total Connections                      ; 30524  ; 861              ; 15046                          ;
+;     -- Registered Connections                 ; 11450  ; 688              ; 11552                          ;
+;                                               ;        ;                  ;                                ;
+; External Connections                          ;        ;                  ;                                ;
+;     -- Top                                    ; 0      ; 108              ; 3146                           ;
+;     -- sld_hub:auto_hub                       ; 108    ; 16               ; 258                            ;
+;     -- sld_signaltap:auto_signaltap_0         ; 3146   ; 258              ; 0                              ;
+;                                               ;        ;                  ;                                ;
+; Partition Interface                           ;        ;                  ;                                ;
+;     -- Input Ports                            ; 147    ; 18               ; 387                            ;
+;     -- Output Ports                           ; 246    ; 36               ; 340                            ;
+;     -- Bidir Ports                            ; 80     ; 0                ; 0                              ;
+;                                               ;        ;                  ;                                ;
+; Registered Ports                              ;        ;                  ;                                ;
+;     -- Registered Input Ports                 ; 0      ; 4                ; 335                            ;
+;     -- Registered Output Ports                ; 0      ; 26               ; 1                              ;
+;                                               ;        ;                  ;                                ;
+; Port Connectivity                             ;        ;                  ;                                ;
+;     -- Input Ports driven by GND              ; 0      ; 1                ; 0                              ;
+;     -- Output Ports driven by GND             ; 0      ; 0                ; 0                              ;
+;     -- Input Ports driven by VCC              ; 0      ; 0                ; 0                              ;
+;     -- Output Ports driven by VCC             ; 0      ; 0                ; 0                              ;
+;     -- Input Ports with no Source             ; 0      ; 0                ; 35                             ;
+;     -- Output Ports with no Source            ; 0      ; 0                ; 0                              ;
+;     -- Input Ports with no Fanout             ; 0      ; 1                ; 40                             ;
+;     -- Output Ports with no Fanout            ; 0      ; 14               ; 331                            ;
++-----------------------------------------------+--------+------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++------------------------------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                                         ;
++-----------------------------------------------+------------------------------------------------+
+; Resource                                      ; Usage                                          ;
++-----------------------------------------------+------------------------------------------------+
+; Estimated ALUTs Used                          ; 4534                                           ;
+; Dedicated logic registers                     ; 6172                                           ;
+;                                               ;                                                ;
+; Estimated ALUTs Unavailable                   ; 21                                             ;
+;                                               ;                                                ;
+; Total combinational functions                 ; 4534                                           ;
+; Combinational ALUT usage by number of inputs  ;                                                ;
+;     -- 7 input functions                      ; 21                                             ;
+;     -- 6 input functions                      ; 1878                                           ;
+;     -- 5 input functions                      ; 913                                            ;
+;     -- 4 input functions                      ; 497                                            ;
+;     -- <=3 input functions                    ; 1225                                           ;
+;                                               ;                                                ;
+; Combinational ALUTs by mode                   ;                                                ;
+;     -- normal mode                            ; 4390                                           ;
+;     -- extended LUT mode                      ; 21                                             ;
+;     -- arithmetic mode                        ; 123                                            ;
+;     -- shared arithmetic mode                 ; 0                                              ;
+;                                               ;                                                ;
+; Estimated ALUT/register pairs used            ; 8613                                           ;
+;                                               ;                                                ;
+; Total registers                               ; 6172                                           ;
+;     -- Dedicated logic registers              ; 6172                                           ;
+;     -- I/O registers                          ; 0                                              ;
+;                                               ;                                                ;
+; Estimated ALMs:  partially or completely used ; 4,307                                          ;
+;                                               ;                                                ;
+; I/O pins                                      ; 341                                            ;
+; Total block memory bits                       ; 882176                                         ;
+; Total PLLs                                    ; 4                                              ;
+; Maximum fan-out node                          ; altpll00:inst233|altpll:altpll_component|_clk0 ;
+; Maximum fan-out                               ; 3075                                           ;
+; Total fan-out                                 ; 42672                                          ;
+; Average fan-out                               ; 3.76                                           ;
++-----------------------------------------------+------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                          ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+; Name                                                                                                                                                           ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF  ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM                                                        ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
+; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM                                                       ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
+; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM                                                       ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
+; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM                                                        ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
+; lv1a_pipeline:inst73|nclus_mem:_nclusmem|altsyncram:altsyncram_component|altsyncram_ego1:auto_generated|ALTSYNCRAM                                             ; AUTO ; Simple Dual Port ; 1024         ; 4            ; 1024         ; 4            ; 4096   ; None ;
+; raw_sim_mem:inst33|altsyncram:altsyncram_component|altsyncram_tgn1:auto_generated|ALTSYNCRAM                                                                   ; AUTO ; Simple Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; None ;
+; raw_sim_mem:inst86|altsyncram:altsyncram_component|altsyncram_tgn1:auto_generated|ALTSYNCRAM                                                                   ; AUTO ; Simple Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; None ;
+; raw_sim_mem:inst8|altsyncram:altsyncram_component|altsyncram_tgn1:auto_generated|ALTSYNCRAM                                                                    ; AUTO ; Simple Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; None ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_jrs3:auto_generated|ALTSYNCRAM ; M4K  ; Simple Dual Port ; 4096         ; 165          ; 4096         ; 165          ; 675840 ; None ;
+; time_controller:inst44|et_raw_mem:_etmem|altsyncram:altsyncram_component|altsyncram_8eo1:auto_generated|ALTSYNCRAM                                             ; AUTO ; Simple Dual Port ; 512          ; 17           ; 512          ; 17           ; 8704   ; None ;
+; time_controller:inst44|raw_mem:_vetomem|altsyncram:altsyncram_component|altsyncram_6eo1:auto_generated|ALTSYNCRAM                                              ; AUTO ; Simple Dual Port ; 512          ; 16           ; 512          ; 16           ; 8192   ; None ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu Apr 05 13:08:34 2018
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --merge=on
+Warning: Tcl Script File clustering_db/lpm_dff0.qip not found
+    Info: set_global_assignment -name QIP_FILE clustering_db/lpm_dff0.qip
+Warning: Tcl Script File ../../CDT_CDT1_v26/lpm_counter20.qip not found
+    Info: set_global_assignment -name QIP_FILE ../../CDT_CDT1_v26/lpm_counter20.qip
+Warning: Tcl Script File lpm_counter20.qip not found
+    Info: set_global_assignment -name QIP_FILE lpm_counter20.qip
+Warning: Tcl Script File ../../CDT_CDT1_v26/sim_mem_switch1.qip not found
+    Info: set_global_assignment -name QIP_FILE ../../CDT_CDT1_v26/sim_mem_switch1.qip
+Warning: Tcl Script File ../../CDT_CDT1_v26/live_dff.qip not found
+    Info: set_global_assignment -name QIP_FILE ../../CDT_CDT1_v26/live_dff.qip
+Warning: Tcl Script File ../../CDT_CDT1_v26/adc_trg_dff0.qip not found
+    Info: set_global_assignment -name QIP_FILE ../../CDT_CDT1_v26/adc_trg_dff0.qip
+Warning: Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
+    Info: Forcing the Quartus II software to use the previously generated Fitter netlist is allowed by setting the Netlist Type to Post-Fit (Strict)
+Info: Using synthesis netlist for partition "Top"
+Info: Using synthesis netlist for partition "sld_hub:auto_hub"
+Info: Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info: Succesfully connected in-system debug instance "auto_signaltap_0" to all 331 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info: Resolved and merged 3 partition(s)
+Warning: Design contains 17 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "am[2]"
+    Warning (15610): No output dependent on input pin "inputbus[15]"
+    Warning (15610): No output dependent on input pin "inputbus[14]"
+    Warning (15610): No output dependent on input pin "inputbus[13]"
+    Warning (15610): No output dependent on input pin "inputbus[12]"
+    Warning (15610): No output dependent on input pin "inputbus[11]"
+    Warning (15610): No output dependent on input pin "inputbus[10]"
+    Warning (15610): No output dependent on input pin "inputbus[9]"
+    Warning (15610): No output dependent on input pin "inputbus[8]"
+    Warning (15610): No output dependent on input pin "inputbus[7]"
+    Warning (15610): No output dependent on input pin "inputbus[6]"
+    Warning (15610): No output dependent on input pin "inputbus[5]"
+    Warning (15610): No output dependent on input pin "inputbus[4]"
+    Warning (15610): No output dependent on input pin "inputbus[3]"
+    Warning (15610): No output dependent on input pin "inputbus[2]"
+    Warning (15610): No output dependent on input pin "inputbus[1]"
+    Warning (15610): No output dependent on input pin "DigIn[1]"
+Info: Implemented 10183 device resources after synthesis - the final resource count might be different
+    Info: Implemented 147 input pins
+    Info: Implemented 119 output pins
+    Info: Implemented 80 bidirectional pins
+    Info: Implemented 9535 logic cells
+    Info: Implemented 297 RAM segments
+    Info: Implemented 4 PLLs
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 374 megabytes
+    Info: Processing ended: Thu Apr 05 13:08:39 2018
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
+
+

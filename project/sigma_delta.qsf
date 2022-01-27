@@ -1,0 +1,1552 @@
+# Copyright (C) 1991-2005 Altera Corporation
+# Any  megafunction  design,  and related netlist (encrypted  or  decrypted),
+# support information,  device programming or simulation file,  and any other
+# associated  documentation or information  provided by  Altera  or a partner
+# under  Altera's   Megafunction   Partnership   Program  may  be  used  only
+# to program  PLD  devices (but not masked  PLD  devices) from  Altera.   Any
+# other  use  of such  megafunction  design,  netlist,  support  information,
+# device programming or simulation file,  or any other  related documentation
+# or information  is prohibited  for  any  other purpose,  including, but not
+# limited to  modification,  reverse engineering,  de-compiling, or use  with
+# any other  silicon devices,  unless such use is  explicitly  licensed under
+# a separate agreement with  Altera  or a megafunction partner.  Title to the
+# intellectual property,  including patents,  copyrights,  trademarks,  trade
+# secrets,  or maskworks,  embodied in any such megafunction design, netlist,
+# support  information,  device programming or simulation file,  or any other
+# related documentation or information provided by  Altera  or a megafunction
+# partner, remains with Altera, the megafunction partner, or their respective
+# licensors. No other licenses, including any licenses needed under any third
+# party's intellectual property, are provided herein.
+
+
+# The default values for assignments are stored in the file
+#		sigma_delta_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "3.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:35:31  DECEMBER 09, 2004"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.1
+
+# Pin & Location Assignments
+# ==========================
+
+# Timing Assignments
+# ==================
+set_global_assignment -name DO_MIN_ANALYSIS ON
+set_global_assignment -name INCLUDE_EXTERNAL_PIN_DELAYS_IN_FMAX_CALCULATIONS OFF
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "<NONE>"
+set_global_assignment -name FAMILY "Stratix II"
+set_global_assignment -name CYCLONE_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name STRATIX_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name APEX20K_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name TOP_LEVEL_ENTITY sigma_delta
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name AUTO_ENABLE_SMART_COMPILE ON
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP2S90F1020C3
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name OPTIMIZE_TIMING "NORMAL COMPILATION"
+set_global_assignment -name AUTO_PACKED_REGISTERS_CYCLONE NORMAL
+set_global_assignment -name AUTO_PACKED_REGISTERS_STRATIX NORMAL
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT FAST
+set_global_assignment -name DEVICE_MIGRATION_LIST "EP2S90F1020C3,EP2S60F1020C3,EP2S60F1020C4,EP2S60F1020I4,EP2S60F1020C5,EP2S60F1020C3ES,EP2S60F1020C4ES,EP2S60F1020C5ES,EP2S90F1020C4,EP2S90F1020I4,EP2S90F1020C5,EP2S130F1020C3,EP2S130F1020C4,EP2S130F1020I4,EP2S130F1020C5,EP2S180F1020C3,EP2S180F1020C4,EP2S180F1020I4,EP2S180F1020C5"
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 2
+
+# Timing Analysis Assignments
+# ===========================
+set_global_assignment -name MAX_SCC_SIZE 50
+
+# EDA Netlist Writer Assignments
+# ==============================
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_TIMING_ANALYSIS_TOOL "<NONE>"
+set_global_assignment -name EDA_BOARD_DESIGN_TOOL "<None>"
+
+# Assembler Assignments
+# =====================
+set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION OFF
+set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPC16
+set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
+
+# Simulator Assignments
+# =====================
+set_global_assignment -name START_TIME "0 ns"
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
+
+# Design Assistant Assignments
+# ============================
+set_global_assignment -name DRC_REPORT_TOP_FANOUT ON
+set_global_assignment -name DRC_REPORT_FANOUT_EXCEEDING ON
+set_global_assignment -name ASSG_CAT OFF
+set_global_assignment -name ASSG_RULE_MISSING_FMAX OFF
+set_global_assignment -name ASSG_RULE_MISSING_TIMING OFF
+set_global_assignment -name SIGNALRACE_RULE_TRISTATE OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_ASYN_RAM ON
+set_global_assignment -name CLK_CAT OFF
+set_global_assignment -name CLK_RULE_COMB_CLOCK OFF
+set_global_assignment -name CLK_RULE_INV_CLOCK OFF
+set_global_assignment -name CLK_RULE_INPINS_CLKNET OFF
+set_global_assignment -name CLK_RULE_CLKNET_CLKSPINES OFF
+set_global_assignment -name CLK_RULE_MIX_EDGES OFF
+set_global_assignment -name RESET_CAT OFF
+set_global_assignment -name RESET_RULE_INPINS_RESETNET OFF
+set_global_assignment -name RESET_RULE_UNSYNCH_EXRESET OFF
+set_global_assignment -name RESET_RULE_IMSYNCH_EXRESET OFF
+set_global_assignment -name RESET_RULE_COMB_ASYNCH_RESET OFF
+set_global_assignment -name RESET_RULE_UNSYNCH_ASYNCH_DOMAIN OFF
+set_global_assignment -name RESET_RULE_IMSYNCH_ASYNCH_DOMAIN OFF
+set_global_assignment -name TIMING_CAT ON
+set_global_assignment -name TIMING_RULE_SHIFT_REG ON
+set_global_assignment -name TIMING_RULE_COIN_CLKEDGE ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_COMB_DRIVES_RAM_WE ON
+set_global_assignment -name NONSYNCHSTRUCT_CAT ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_COMBLOOP ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_REG_LOOP ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_DELAY_CHAIN ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_RIPPLE_CLK ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_ILLEGAL_PULSE_GEN ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_MULTI_VIBRATOR ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_SRLATCH ON
+set_global_assignment -name NONSYNCHSTRUCT_RULE_LATCH_UNIDENTIFIED ON
+set_global_assignment -name SIGNALRACE_CAT OFF
+set_global_assignment -name ACLK_CAT OFF
+set_global_assignment -name ACLK_RULE_NO_SZER_ACLK_DOMAIN OFF
+set_global_assignment -name ACLK_RULE_SZER_BTW_ACLK_DOMAIN OFF
+set_global_assignment -name ACLK_RULE_IMSZER_ADOMAIN OFF
+set_global_assignment -name HCPY_CAT ON
+set_global_assignment -name HCPY_VREF_PINS OFF
+
+# SignalTap II Assignments
+# ========================
+set_global_assignment -name HUB_ENTITY_NAME sld_hub
+set_global_assignment -name HUB_INSTANCE_NAME auto_hub
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE multiTest.stp
+
+# -----------------------------------------
+# start EDA_TOOL_SETTINGS(eda_board_design)
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+
+# end EDA_TOOL_SETTINGS(eda_board_design)
+# ---------------------------------------
+
+# ---------------------------------------
+# start EDA_TOOL_SETTINGS(eda_simulation)
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+
+# end EDA_TOOL_SETTINGS(eda_simulation)
+# -------------------------------------
+
+# ---------------------------------------------------
+# start AUTO_INSERT_SLD_NODE_ENTITY(auto_signaltap_0)
+
+	# SignalTap II Assignments
+	# ========================
+
+# end AUTO_INSERT_SLD_NODE_ENTITY(auto_signaltap_0)
+# -------------------------------------------------
+
+# -------------------------
+# start ENTITY(sigma_delta)
+
+	# Fitter Assignments
+	# ==================
+
+
+# end ENTITY(sigma_delta)
+# -----------------------
+
+set_global_assignment -name EDA_BOARD_DESIGN_SIGNAL_INTEGRITY_TOOL "<None>"
+set_global_assignment -name STRATIXII_CONFIGURATION_DEVICE EPC16
+set_global_assignment -name AUTO_INCREMENT_CONFIG_DEVICE_JTAG_USER_CODE OFF
+set_global_assignment -name GENERATE_CONFIG_JBC_FILE_COMPRESSED OFF
+set_global_assignment -name CONFIGURATION_CLOCK_DIVISOR 1.0
+set_global_assignment -name POWER_USE_INPUT_FILES OFF
+set_global_assignment -name SIMULATOR_GENERATE_SIGNAL_ACTIVITY_FILE OFF
+set_global_assignment -name COMPRESSION_MODE ON
+set_instance_assignment -name IO_STANDARD LVDS -to samplingclock
+set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT OFF
+set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_FILE atom_netlists/sigma_delta.vqm
+set_global_assignment -name SAVE_DISK_SPACE OFF
+set_location_assignment PIN_AM17 -to master_clock0
+set_global_assignment -name POWER_INPUT_FILE_NAME 14_BIT_DAQ_3.saf -section_id 14_bit_daq_3.saf
+set_instance_assignment -name POWER_READ_INPUT_FILE 14_bit_daq_3.saf -to sigma_delta
+set_instance_assignment -name IO_STANDARD LVDS -to DigIn
+set_instance_assignment -name IO_STANDARD LVDS -to master_clock0
+set_instance_assignment -name STRATIXII_TERMINATION DIFFERENTIAL -to DigIn
+set_global_assignment -name SIMULATOR_GENERATE_POWERPLAY_VCD_FILE OFF
+set_global_assignment -name POWER_USE_PVA OFF
+set_global_assignment -name POWER_INPUT_FILE_NAME sigma_delta.vcd -section_id sigma_delta.vcd
+set_instance_assignment -name POWER_READ_INPUT_FILE sigma_delta.vcd -to sigma_delta
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE 100%
+set_global_assignment -name POWER_DEFAULT_TOGGLE_RATE 100%
+set_global_assignment -name NUMBER_OF_PATHS_TO_REPORT 10000
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA ON
+set_global_assignment -name STRATIXII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name ROUTER_TIMING_OPTIMIZATION_LEVEL MAXIMUM
+set_global_assignment -name AUTO_GLOBAL_MEMORY_CONTROLS ON
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING "NORMAL COMPILATION"
+set_global_assignment -name ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP ON
+set_global_assignment -name ADV_NETLIST_OPT_SYNTH_GATE_RETIME ON
+set_global_assignment -name MUX_RESTRUCTURE OFF
+set_global_assignment -name IGNORE_LCELL_BUFFERS ON
+set_global_assignment -name AUTO_PACKED_REGISTERS_STRATIXII NORMAL
+set_global_assignment -name AUTO_PACKED_REGISTERS_MAXII NORMAL
+set_global_assignment -name AUTO_PACKED_REGISTERS NORMAL
+set_global_assignment -name ENABLE_DRC_SETTINGS ON
+set_global_assignment -name STATE_MACHINE_PROCESSING "ONE-HOT"
+set_global_assignment -name AUTO_RAM_RECOGNITION OFF
+set_global_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF
+set_global_assignment -name IGNORE_CARRY_BUFFERS ON
+set_global_assignment -name IGNORE_CASCADE_BUFFERS ON
+set_global_assignment -name PLACEMENT_EFFORT_MULTIPLIER 4.0
+set_global_assignment -name SETUP_HOLD_DETECTION ON
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_COLOR 2147039 -section_id Top
+set_global_assignment -name INCREMENTAL_COMPILATION FULL_INCREMENTAL_COMPILATION
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "dff32:inst10"
+set_global_assignment -name PARTITION_COLOR 6360612 -section_id "dff32:inst10"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "dff32:inst11"
+set_global_assignment -name PARTITION_COLOR 5639777 -section_id "dff32:inst11"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst27"
+set_global_assignment -name PARTITION_COLOR 921185 -section_id "Basic_DAQ_Block_trigg:inst27"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst33"
+set_global_assignment -name PARTITION_COLOR 14611962 -section_id "Basic_DAQ_Block_trigg:inst33"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst34"
+set_global_assignment -name PARTITION_COLOR 14613223 -section_id "Basic_DAQ_Block_trigg:inst34"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst39"
+set_global_assignment -name PARTITION_COLOR 15596254 -section_id "Basic_DAQ_Block_trigg:inst39"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst41"
+set_global_assignment -name PARTITION_COLOR 16445150 -section_id "Basic_DAQ_Block_trigg:inst41"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst43"
+set_global_assignment -name PARTITION_COLOR 16441062 -section_id "Basic_DAQ_Block_trigg:inst43"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst45"
+set_global_assignment -name PARTITION_COLOR 16244474 -section_id "Basic_DAQ_Block_trigg:inst45"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst48"
+set_global_assignment -name PARTITION_COLOR 14606074 -section_id "Basic_DAQ_Block_trigg:inst48"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst49"
+set_global_assignment -name PARTITION_COLOR 2352827 -section_id "Basic_DAQ_Block_trigg:inst49"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst50"
+set_global_assignment -name PARTITION_COLOR 2341842 -section_id "Basic_DAQ_Block_trigg:inst50"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst51"
+set_global_assignment -name PARTITION_COLOR 3717923 -section_id "Basic_DAQ_Block_trigg:inst51"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst52"
+set_global_assignment -name PARTITION_COLOR 12311331 -section_id "Basic_DAQ_Block_trigg:inst52"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst53"
+set_global_assignment -name PARTITION_COLOR 12264237 -section_id "Basic_DAQ_Block_trigg:inst53"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst54"
+set_global_assignment -name PARTITION_COLOR 8987579 -section_id "Basic_DAQ_Block_trigg:inst54"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst55"
+set_global_assignment -name PARTITION_COLOR 2302907 -section_id "Basic_DAQ_Block_trigg:inst55"
+set_global_assignment -name PARTITION_NETLIST_TYPE STRICT_POST_FIT -section_id "Basic_DAQ_Block_trigg:inst85"
+set_global_assignment -name PARTITION_COLOR 6101260 -section_id "Basic_DAQ_Block_trigg:inst85"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "dff32:inst10"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "dff32:inst11"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst27"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst33"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst34"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst39"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst41"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst43"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst45"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst48"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst49"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst50"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst51"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst52"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst53"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst54"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst55"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "Basic_DAQ_Block_trigg:inst85"
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to HRX_CLK
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to HXCLK
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to RX_CLK
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to XCLK
+set_instance_assignment -name IO_STANDARD LVDS -to DigOutput
+set_global_assignment -name ENABLE_CLOCK_LATENCY ON
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to "altpll00:inst82|altpll:altpll_component|_clk3"
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to "altpll00:inst82|altpll:altpll_component|_clk4"
+set_global_assignment -name CRC_ERROR_CHECKING ON
+set_instance_assignment -name IO_STANDARD LVDS -to 1st_outputbus
+set_instance_assignment -name IO_STANDARD LVDS -to 2nd_outputbus
+set_instance_assignment -name IO_STANDARD LVDS -to inputbus
+set_instance_assignment -name STRATIXII_TERMINATION DIFFERENTIAL -to inputbus
+set_global_assignment -name END_TIME "1 us"
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_instance_assignment -name IO_STANDARD LVDS -to DigIn_AUX
+set_instance_assignment -name IO_STANDARD LVDS -to DigOutput_AUX2
+set_instance_assignment -name STRATIXII_TERMINATION DIFFERENTIAL -to DigIn_AUX
+set_instance_assignment -name IO_STANDARD LVDS -to DigOutput_AUX1
+set_global_assignment -name MISC_FILE "C:/Users/bogdan/Desktop/CL/NEW_MT_1/sigma_delta.dpf"
+set_global_assignment -name MISC_FILE "D:/AlteraStuff/NEW_MT_2/sigma_delta.dpf"
+set_global_assignment -name DO_COMBINED_ANALYSIS ON
+set_location_assignment PIN_AA29 -to "inputbus[8](n)"
+set_location_assignment PIN_U6 -to "2nd_outputbus[11](n)"
+set_location_assignment PIN_E1 -to DigIn[1]
+set_location_assignment PIN_Y29 -to inputbus[12]
+set_location_assignment PIN_Y11 -to "2nd_outputbus[1](n)"
+set_location_assignment PIN_K9 -to "1st_outputbus[14](n)"
+set_location_assignment PIN_V4 -to 2nd_outputbus[7]
+set_location_assignment PIN_AH30 -to inputbus[2]
+set_location_assignment PIN_AH29 -to "inputbus[2](n)"
+set_location_assignment PIN_M11 -to "1st_outputbus[9](n)"
+set_location_assignment PIN_Y8 -to 2nd_outputbus[2]
+set_location_assignment PIN_L24 -to DigOutput_AUX1
+set_location_assignment PIN_L9 -to 1st_outputbus[13]
+set_location_assignment PIN_AE29 -to "inputbus[4](n)"
+set_location_assignment PIN_P9 -to "1st_outputbus[4](n)"
+set_location_assignment PIN_M8 -to 1st_outputbus[8]
+set_location_assignment PIN_AK17 -to master_clock1
+set_location_assignment PIN_AB27 -to "inputbus[15](n)"
+set_location_assignment PIN_R5 -to "2nd_outputbus[15](n)"
+set_location_assignment PIN_P6 -to 1st_outputbus[3]
+set_location_assignment PIN_AB31 -to "inputbus[14](n)"
+set_location_assignment PIN_U11 -to "2nd_outputbus[10](n)"
+set_location_assignment PIN_E3 -to DigIn[0]
+set_location_assignment PIN_AC32 -to inputbus[11]
+set_location_assignment PIN_W7 -to "2nd_outputbus[5](n)"
+set_location_assignment PIN_H27 -to "DigOutput_AUX2(n)"
+set_location_assignment PIN_U5 -to 2nd_outputbus[11]
+set_location_assignment PIN_AH32 -to inputbus[6]
+set_location_assignment PIN_AB6 -to "2nd_outputbus[0](n)"
+set_location_assignment PIN_L10 -to "1st_outputbus[13](n)"
+set_location_assignment PIN_W8 -to 2nd_outputbus[6]
+set_location_assignment PIN_AF32 -to inputbus[1]
+set_location_assignment PIN_AJ31 -to "inputbus[0](n)"
+set_location_assignment PIN_M9 -to "1st_outputbus[8](n)"
+set_location_assignment PIN_Y10 -to 2nd_outputbus[1]
+set_location_assignment PIN_L7 -to 1st_outputbus[12]
+set_location_assignment PIN_AG31 -to "inputbus[3](n)"
+set_location_assignment PIN_P7 -to "1st_outputbus[3](n)"
+set_location_assignment PIN_M6 -to 1st_outputbus[7]
+set_location_assignment PIN_AC31 -to "inputbus[11](n)"
+set_location_assignment PIN_R11 -to "2nd_outputbus[14](n)"
+set_location_assignment PIN_P4 -to 1st_outputbus[2]
+set_location_assignment PIN_AB28 -to inputbus[15]
+set_location_assignment PIN_V10 -to "2nd_outputbus[9](n)"
+set_location_assignment PIN_R4 -to 2nd_outputbus[15]
+set_location_assignment PIN_AB30 -to inputbus[10]
+set_location_assignment PIN_W5 -to "2nd_outputbus[4](n)"
+set_location_assignment PIN_U10 -to 2nd_outputbus[10]
+set_location_assignment PIN_AF30 -to inputbus[5]
+set_location_assignment PIN_E4 -to "DigIn[0](n)"
+set_location_assignment PIN_L8 -to "1st_outputbus[12](n)"
+set_location_assignment PIN_W6 -to 2nd_outputbus[5]
+set_location_assignment PIN_K25 -to DigOutput
+set_location_assignment PIN_AJ32 -to inputbus[0]
+set_location_assignment PIN_AG29 -to "inputbus[7](n)"
+set_location_assignment PIN_M7 -to "1st_outputbus[7](n)"
+set_location_assignment PIN_AB5 -to 2nd_outputbus[0]
+set_location_assignment PIN_K6 -to 1st_outputbus[11]
+set_location_assignment PIN_AF31 -to "inputbus[1](n)"
+set_location_assignment PIN_P5 -to "1st_outputbus[2](n)"
+set_location_assignment PIN_N6 -to 1st_outputbus[6]
+set_location_assignment PIN_AB29 -to "inputbus[10](n)"
+set_location_assignment PIN_T6 -to "2nd_outputbus[13](n)"
+set_location_assignment PIN_P10 -to 1st_outputbus[1]
+set_location_assignment PIN_AB32 -to inputbus[14]
+set_location_assignment PIN_V7 -to "2nd_outputbus[8](n)"
+set_location_assignment PIN_D2 -to "DigIn_AUX(n)"
+set_location_assignment PIN_R10 -to 2nd_outputbus[14]
+set_location_assignment PIN_AD32 -to inputbus[9]
+set_location_assignment PIN_Y7 -to "2nd_outputbus[3](n)"
+set_location_assignment PIN_L23 -to "DigOutput_AUX1(n)"
+set_location_assignment PIN_V9 -to 2nd_outputbus[9]
+set_location_assignment PIN_AM19 -to samplingclock
+set_location_assignment PIN_AE30 -to inputbus[4]
+set_location_assignment PIN_E2 -to "DigIn[1](n)"
+set_location_assignment PIN_K7 -to "1st_outputbus[11](n)"
+set_location_assignment PIN_W4 -to 2nd_outputbus[4]
+set_location_assignment PIN_H28 -to DigOutput_AUX2
+set_location_assignment PIN_J8 -to 1st_outputbus[15]
+set_location_assignment PIN_AH31 -to "inputbus[6](n)"
+set_location_assignment PIN_N7 -to "1st_outputbus[6](n)"
+set_location_assignment PIN_L5 -to 1st_outputbus[10]
+set_location_assignment PIN_AE31 -to "inputbus[13](n)"
+set_location_assignment PIN_P11 -to "1st_outputbus[1](n)"
+set_location_assignment PIN_N8 -to 1st_outputbus[5]
+set_location_assignment PIN_Y28 -to "inputbus[12](n)"
+set_location_assignment PIN_T11 -to "2nd_outputbus[12](n)"
+set_location_assignment PIN_R6 -to 1st_outputbus[0]
+set_location_assignment PIN_AE32 -to inputbus[13]
+set_location_assignment PIN_V5 -to "2nd_outputbus[7](n)"
+set_location_assignment PIN_AL19 -to "samplingclock(n)"
+set_location_assignment PIN_T5 -to 2nd_outputbus[13]
+set_location_assignment PIN_AA30 -to inputbus[8]
+set_location_assignment PIN_Y9 -to "2nd_outputbus[2](n)"
+set_location_assignment PIN_J9 -to "1st_outputbus[15](n)"
+set_location_assignment PIN_V6 -to 2nd_outputbus[8]
+set_location_assignment PIN_AG32 -to inputbus[3]
+set_location_assignment PIN_AL17 -to "master_clock0(n)"
+set_location_assignment PIN_L6 -to "1st_outputbus[10](n)"
+set_location_assignment PIN_Y6 -to 2nd_outputbus[3]
+set_location_assignment PIN_K8 -to 1st_outputbus[14]
+set_location_assignment PIN_AF29 -to "inputbus[5](n)"
+set_location_assignment PIN_N9 -to "1st_outputbus[5](n)"
+set_location_assignment PIN_M10 -to 1st_outputbus[9]
+set_location_assignment PIN_AD31 -to "inputbus[9](n)"
+set_location_assignment PIN_R7 -to "1st_outputbus[0](n)"
+set_location_assignment PIN_P8 -to 1st_outputbus[4]
+set_location_assignment PIN_W9 -to "2nd_outputbus[6](n)"
+set_location_assignment PIN_K24 -to "DigOutput(n)"
+set_location_assignment PIN_T10 -to 2nd_outputbus[12]
+set_location_assignment PIN_D1 -to DigIn_AUX
+set_location_assignment PIN_AG30 -to inputbus[7]
+set_global_assignment -name MISC_FILE "C:/Users/bogdan/Desktop/CL/NEW_MT_3/sigma_delta.dpf"
+set_instance_assignment -name IO_STANDARD LVDS -to master_clock1
+set_instance_assignment -name IO_STANDARD LVDS -to master_clock2
+set_instance_assignment -name IO_STANDARD LVDS -to LocalClock
+set_global_assignment -name MISC_FILE "C:/Users/bogdan/Desktop/CL/NEW_MT_4/sigma_delta.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_C17 -to master_clock2
+set_location_assignment PIN_D17 -to "master_clock2(n)"
+set_location_assignment PIN_A17 -to LocalClock
+set_location_assignment PIN_AJ17 -to "master_clock1(n)"
+set_location_assignment PIN_B17 -to "LocalClock(n)"
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to ARX_CLK
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to sysclk
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to BRX_CLK
+set_global_assignment -name MISC_FILE "C:/Users/bogdan/Desktop/CL/NEW_MT_5/sigma_delta.dpf"
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to master_clock0
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to master_clock1
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to master_clock2
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to LocalClock
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to AXCLK
+set_instance_assignment -name AUTO_GLOBAL_CLOCK_MAX ON -to BXCLK
+set_location_assignment PIN_F16 -to clkswitch_Local
+set_location_assignment PIN_AG16 -to clkswitch
+set_location_assignment PIN_H19 -to ~DATA0~
+set_location_assignment PIN_G20 -to ~CRC_ERROR~
+set_global_assignment -name MISC_FILE "C:/Users/bogdan/Desktop/CL/NEW_MT_6/sigma_delta.dpf"
+set_location_assignment PIN_F12 -to 1_RXD[14]
+set_location_assignment PIN_AG18 -to vme_data[27]
+set_location_assignment PIN_AL4 -to 2_RXD[11]
+set_location_assignment PIN_A14 -to 1_TX_ER
+set_location_assignment PIN_AJ21 -to address[20]
+set_location_assignment PIN_C10 -to 1_TXD[12]
+set_location_assignment PIN_AL12 -to debug[10]
+set_location_assignment PIN_A16 -to sysclk
+set_location_assignment PIN_AD22 -to 3_TXD[15]
+set_location_assignment PIN_B8 -to 1_RXD[9]
+set_location_assignment PIN_AE19 -to vme_data[22]
+set_location_assignment PIN_AE13 -to 2_TXD[12]
+set_location_assignment PIN_AM4 -to 2_RXD[6]
+set_location_assignment PIN_AC12 -to 2_RX_ER
+set_location_assignment PIN_H20 -to address[15]
+set_location_assignment PIN_J13 -to 1_TXD[7]
+set_location_assignment PIN_AD21 -to debug[5]
+set_location_assignment PIN_K11 -to led_1
+set_location_assignment PIN_AM27 -to 3_TXD[10]
+set_location_assignment PIN_B6 -to 1_RXD[4]
+set_location_assignment PIN_AC18 -to vme_data[17]
+set_location_assignment PIN_AJ10 -to 2_TXD[7]
+set_location_assignment PIN_AJ13 -to 2_RXD[1]
+set_location_assignment PIN_AH26 -to 3_RX_DV
+set_location_assignment PIN_B24 -to address[10]
+set_location_assignment PIN_D10 -to 1_TXD[2]
+set_location_assignment PIN_H23 -to 0_RXD[14]
+set_location_assignment PIN_D26 -to 0_TXD[15]
+set_location_assignment PIN_AL26 -to 3_TXD[5]
+set_location_assignment PIN_J20 -to _dtack
+set_location_assignment PIN_L18 -to vme_data[12]
+set_location_assignment PIN_AJ8 -to 2_TXD[2]
+set_location_assignment PIN_AK29 -to 3_RXD[12]
+set_location_assignment PIN_G24 -to 0_RX_CLK
+set_location_assignment PIN_C24 -to address[5]
+set_location_assignment PIN_D27 -to 0_RXD[9]
+set_location_assignment PIN_AL15 -to 2_XCLK
+set_location_assignment PIN_B14 -to _ga[2]
+set_location_assignment PIN_A26 -to 0_TXD[10]
+set_location_assignment PIN_AJ27 -to 3_TXD[0]
+set_location_assignment PIN_C20 -to vme_data[7]
+set_location_assignment PIN_AE20 -to 3_RXD[7]
+set_location_assignment PIN_F13 -to am[4]
+set_location_assignment PIN_F24 -to 0_RXD[4]
+set_location_assignment PIN_L22 -to 0_ENABLE
+set_location_assignment PIN_AK22 -to address[29]
+set_location_assignment PIN_B26 -to 0_TXD[5]
+set_location_assignment PIN_AC15 -to debug[19]
+set_location_assignment PIN_C21 -to vme_data[2]
+set_location_assignment PIN_AH24 -to 3_RXD[2]
+set_location_assignment PIN_AD18 -to vme_data[31]
+set_location_assignment PIN_AC11 -to 2_RXD[15]
+set_location_assignment PIN_D21 -to 0_LCKREFN
+set_location_assignment PIN_AH20 -to address[24]
+set_location_assignment PIN_E27 -to 0_TXD[0]
+set_location_assignment PIN_C27 -to debug[14]
+set_location_assignment PIN_C7 -to 1_RXD[13]
+set_location_assignment PIN_AH19 -to vme_data[26]
+set_location_assignment PIN_AH8 -to 2_RXD[10]
+set_location_assignment PIN_K17 -to 1_TX_EN
+set_location_assignment PIN_AM23 -to address[19]
+set_location_assignment PIN_D11 -to 1_TXD[11]
+set_location_assignment PIN_AC22 -to debug[9]
+set_location_assignment PIN_AJ28 -to 3_TXD[14]
+set_location_assignment PIN_A12 -to 1_RXD[8]
+set_location_assignment PIN_AG17 -to vme_data[21]
+set_location_assignment PIN_AF12 -to 2_TXD[11]
+set_location_assignment PIN_AL6 -to 2_RXD[5]
+set_location_assignment PIN_AL13 -to 2_TX_ER
+set_location_assignment PIN_B22 -to address[14]
+set_location_assignment PIN_H14 -to 1_TXD[6]
+set_location_assignment PIN_C9 -to debug[4]
+set_location_assignment PIN_F14 -to led_2
+set_location_assignment PIN_AG20 -to 3_TXD[9]
+set_location_assignment PIN_E14 -to 1_RXD[3]
+set_location_assignment PIN_AH17 -to vme_data[16]
+set_location_assignment PIN_AB12 -to 2_TXD[6]
+set_location_assignment PIN_AH6 -to 2_RXD[0]
+set_location_assignment PIN_AM25 -to 3_RX_ER
+set_location_assignment PIN_C23 -to address[9]
+set_location_assignment PIN_E9 -to 1_TXD[1]
+set_location_assignment PIN_L21 -to 0_RXD[13]
+set_location_assignment PIN_B28 -to _ds[1]
+set_location_assignment PIN_K21 -to 0_TXD[14]
+set_location_assignment PIN_AH28 -to 3_TXD[4]
+set_location_assignment PIN_G13 -to _lword
+set_location_assignment PIN_E19 -to vme_data[11]
+set_location_assignment PIN_F9 -to 1_TXD[13]
+set_location_assignment PIN_AF11 -to 2_TXD[1]
+set_location_assignment PIN_AF21 -to debug[11]
+set_location_assignment PIN_AF23 -to 3_RXD[11]
+set_location_assignment PIN_L12 -to led_0
+set_location_assignment PIN_AJ5 -to 2_RX_CLK
+set_location_assignment PIN_F23 -to address[4]
+set_location_assignment PIN_E28 -to 0_RXD[8]
+set_location_assignment PIN_D5 -to 1_RXD[10]
+set_location_assignment PIN_AH15 -to 3_XCLK
+set_location_assignment PIN_K15 -to _ga[1]
+set_location_assignment PIN_AL20 -to vme_data[23]
+set_location_assignment PIN_C25 -to 0_TXD[9]
+set_location_assignment PIN_AM9 -to 2_TXD[13]
+set_location_assignment PIN_AG9 -to 2_RXD[7]
+set_location_assignment PIN_AB14 -to 2_RX_DV
+set_location_assignment PIN_AK24 -to address[16]
+set_location_assignment PIN_B20 -to vme_data[6]
+set_location_assignment PIN_D8 -to 1_TXD[8]
+set_location_assignment PIN_AM12 -to debug[6]
+set_location_assignment PIN_AC21 -to 3_RXD[6]
+set_location_assignment PIN_L15 -to am[3]
+set_location_assignment PIN_AM29 -to 3_TXD[11]
+set_location_assignment PIN_E26 -to 0_RXD[3]
+set_location_assignment PIN_D14 -to 1_RXD[5]
+set_location_assignment PIN_C29 -to 0_RX_DV
+set_location_assignment PIN_AC20 -to address[28]
+set_location_assignment PIN_AJ19 -to vme_data[18]
+set_location_assignment PIN_C26 -to 0_TXD[4]
+set_location_assignment PIN_AK8 -to 2_TXD[8]
+set_location_assignment PIN_AM26 -to debug[18]
+set_location_assignment PIN_AB11 -to 2_RXD[2]
+set_location_assignment PIN_AL23 -to dir_trans
+set_location_assignment PIN_AE23 -to 3_ENABLE
+set_location_assignment PIN_B23 -to address[11]
+set_location_assignment PIN_G19 -to vme_data[1]
+set_location_assignment PIN_F8 -to 1_TXD[3]
+set_location_assignment PIN_B29 -to 0_RXD[15]
+set_location_assignment PIN_AH25 -to 3_RXD[1]
+set_location_assignment PIN_AC17 -to vme_data[30]
+set_location_assignment PIN_AE21 -to 3_TXD[6]
+set_location_assignment PIN_AK6 -to 2_RXD[14]
+set_location_assignment PIN_C13 -to 1_RXD[0]
+set_location_assignment PIN_A7 -to 1_ENABLE
+set_location_assignment PIN_AM21 -to address[23]
+set_location_assignment PIN_L19 -to vme_data[13]
+set_location_assignment PIN_B10 -to 1_TXD[15]
+set_location_assignment PIN_AG11 -to 2_TXD[3]
+set_location_assignment PIN_AK12 -to debug[13]
+set_location_assignment PIN_AF20 -to 3_RXD[13]
+set_location_assignment PIN_AG22 -to 3_LCKREFN
+set_location_assignment PIN_F22 -to address[6]
+set_location_assignment PIN_J22 -to 0_RXD[10]
+set_location_assignment PIN_E11 -to 1_RXD[12]
+set_location_assignment PIN_AK16 -to 1_XCLK
+set_location_assignment PIN_L17 -to _ga[3]
+set_location_assignment PIN_AK20 -to vme_data[25]
+set_location_assignment PIN_A24 -to 0_TXD[11]
+set_location_assignment PIN_AG10 -to 2_TXD[15]
+set_location_assignment PIN_AM28 -to 3_TXD[1]
+set_location_assignment PIN_AM6 -to 2_RXD[9]
+set_location_assignment PIN_C8 -to _iack
+set_location_assignment PIN_K16 -to 1_LCKREFN
+set_location_assignment PIN_AJ20 -to address[18]
+set_location_assignment PIN_D19 -to vme_data[8]
+set_location_assignment PIN_L13 -to 1_TXD[10]
+set_location_assignment PIN_D6 -to debug[8]
+set_location_assignment PIN_AD23 -to 3_RXD[8]
+set_location_assignment PIN_E13 -to am[5]
+set_location_assignment PIN_AL28 -to 3_TXD[13]
+set_location_assignment PIN_G25 -to 0_RXD[5]
+set_location_assignment PIN_E5 -to 1_RXD[7]
+set_location_assignment PIN_AJ23 -to address[30]
+set_location_assignment PIN_AD19 -to vme_data[20]
+set_location_assignment PIN_E25 -to 0_TXD[6]
+set_location_assignment PIN_AF10 -to 2_TXD[10]
+set_location_assignment PIN_AM5 -to 2_RXD[4]
+set_location_assignment PIN_AB16 -to 2_TX_EN
+set_location_assignment PIN_C22 -to address[13]
+set_location_assignment PIN_E20 -to vme_data[3]
+set_location_assignment PIN_K13 -to 1_TXD[5]
+set_location_assignment PIN_AJ26 -to debug[3]
+set_location_assignment PIN_AB21 -to 3_RXD[3]
+set_location_assignment PIN_B12 -to am[0]
+set_location_assignment PIN_AL29 -to 3_TXD[8]
+set_location_assignment PIN_G21 -to 0_RXD[0]
+set_location_assignment PIN_G12 -to 1_RXD[2]
+set_location_assignment PIN_D22 -to 0_TX_EN
+set_location_assignment PIN_AC19 -to address[25]
+set_location_assignment PIN_B21 -to vme_data[15]
+set_location_assignment PIN_B25 -to 0_TXD[1]
+set_location_assignment PIN_AK9 -to 2_TXD[5]
+set_location_assignment PIN_AL11 -to debug[15]
+set_location_assignment PIN_AE22 -to 3_RXD[15]
+set_location_assignment PIN_AL21 -to 3_TX_ER
+set_location_assignment PIN_G23 -to address[8]
+set_location_assignment PIN_C11 -to 1_TXD[0]
+set_location_assignment PIN_A28 -to 0_RXD[12]
+set_location_assignment PIN_F19 -to _ds[0]
+set_location_assignment PIN_D25 -to 0_TXD[13]
+set_location_assignment PIN_AK26 -to 3_TXD[3]
+set_location_assignment PIN_AK23 -to _vme_write
+set_location_assignment PIN_A21 -to vme_data[10]
+set_location_assignment PIN_AL9 -to 2_TXD[0]
+set_location_assignment PIN_AJ25 -to 3_RXD[10]
+set_location_assignment PIN_AF22 -to 3_RX_CLK
+set_location_assignment PIN_E22 -to address[3]
+set_location_assignment PIN_B27 -to 0_RXD[7]
+set_location_assignment PIN_D13 -to _ga[0]
+set_location_assignment PIN_E24 -to 0_TXD[8]
+set_location_assignment PIN_D20 -to vme_data[5]
+set_location_assignment PIN_AG24 -to 3_RXD[5]
+set_location_assignment PIN_F11 -to am[2]
+set_location_assignment PIN_K22 -to 0_RXD[2]
+set_location_assignment PIN_H24 -to 0_RX_ER
+set_location_assignment PIN_AH22 -to address[27]
+set_location_assignment PIN_H21 -to 0_TXD[3]
+set_location_assignment PIN_AB15 -to debug[17]
+set_location_assignment PIN_F20 -to vme_data[0]
+set_location_assignment PIN_AM24 -to 3_RXD[0]
+set_location_assignment PIN_AF19 -to vme_data[29]
+set_location_assignment PIN_AM8 -to 2_RXD[13]
+set_location_assignment PIN_E7 -to 1_RX_DV
+set_location_assignment PIN_AK21 -to address[22]
+set_location_assignment PIN_A10 -to 1_TXD[14]
+set_location_assignment PIN_G22 -to debug[12]
+set_location_assignment PIN_A5 -to 1_RXD[11]
+set_location_assignment PIN_AM22 -to vme_data[24]
+set_location_assignment PIN_AG12 -to 2_TXD[14]
+set_location_assignment PIN_AM7 -to 2_RXD[8]
+set_location_assignment PIN_AK13 -to 2_ENABLE
+set_location_assignment PIN_AL22 -to address[17]
+set_location_assignment PIN_E8 -to 1_TXD[9]
+set_location_assignment PIN_AK11 -to debug[7]
+set_location_assignment PIN_AK27 -to 3_TXD[12]
+set_location_assignment PIN_A6 -to 1_RXD[6]
+set_location_assignment PIN_AB17 -to vme_data[19]
+set_location_assignment PIN_AC13 -to 2_TXD[9]
+set_location_assignment PIN_AC14 -to 2_RXD[3]
+set_location_assignment PIN_AC16 -to 2_LCKREFN
+set_location_assignment PIN_J19 -to address[12]
+set_location_assignment PIN_F10 -to 1_TXD[4]
+set_location_assignment PIN_B7 -to debug[2]
+set_location_assignment PIN_AL27 -to 3_TXD[7]
+set_location_assignment PIN_C5 -to 1_RXD[1]
+set_location_assignment PIN_K19 -to vme_data[14]
+set_location_assignment PIN_AE12 -to 2_TXD[4]
+set_location_assignment PIN_AL24 -to 3_RXD[14]
+set_location_assignment PIN_AJ22 -to 3_TX_EN
+set_location_assignment PIN_K20 -to address[7]
+set_location_assignment PIN_A27 -to 0_RXD[11]
+set_location_assignment PIN_AJ15 -to 0_XCLK
+set_location_assignment PIN_B13 -to _ga[4]
+set_location_assignment PIN_J21 -to 0_TXD[12]
+set_location_assignment PIN_AK28 -to 3_TXD[2]
+set_location_assignment PIN_A29 -to _as
+set_location_assignment PIN_A22 -to vme_data[9]
+set_location_assignment PIN_AL25 -to 3_RXD[9]
+set_location_assignment PIN_C6 -to 1_RX_CLK
+set_location_assignment PIN_A23 -to address[2]
+set_location_assignment PIN_C28 -to 0_RXD[6]
+set_location_assignment PIN_AB20 -to address[31]
+set_location_assignment PIN_A25 -to 0_TXD[7]
+set_location_assignment PIN_D7 -to _berr
+set_location_assignment PIN_K18 -to vme_data[4]
+set_location_assignment PIN_AK25 -to 3_RXD[4]
+set_location_assignment PIN_A8 -to am[1]
+set_location_assignment PIN_D28 -to 0_RXD[1]
+set_location_assignment PIN_D23 -to 0_TX_ER
+set_location_assignment PIN_AB18 -to address[26]
+set_location_assignment PIN_L20 -to 0_TXD[2]
+set_location_assignment PIN_AH7 -to debug[16]
+set_location_assignment PIN_AG23 -to transceivers_OE
+set_location_assignment PIN_L14 -to 1_RXD[15]
+set_location_assignment PIN_AG19 -to vme_data[28]
+set_location_assignment PIN_AE10 -to 2_RXD[12]
+set_location_assignment PIN_E6 -to 1_RX_ER
+set_location_assignment PIN_AB19 -to address[21]
+set_global_assignment -name MISC_FILE "D:/CL/CL_7/sigma_delta.dpf"
+set_instance_assignment -name IO_STANDARD LVDS -to master_clock3
+set_instance_assignment -name IO_STANDARD LVDS -to master_clock4
+set_location_assignment PIN_T1 -to master_clock3
+set_location_assignment PIN_K27 -to Debug_LVDS_OUT_0
+set_location_assignment PIN_U31 -to "master_clock4(n)"
+set_location_assignment PIN_AA32 -to Debug_LVDS_IN_0
+set_location_assignment PIN_U32 -to master_clock4
+set_location_assignment PIN_T2 -to "master_clock3(n)"
+set_location_assignment PIN_Y31 -to Debug_LVDS_IN_1
+set_location_assignment PIN_Y30 -to "Debug_LVDS_IN_1(n)"
+set_location_assignment PIN_K26 -to "Debug_LVDS_OUT_0(n)"
+set_location_assignment PIN_AA31 -to "Debug_LVDS_IN_0(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to Debug_LVDS_IN_0
+set_instance_assignment -name IO_STANDARD LVDS -to Debug_LVDS_IN_1
+set_instance_assignment -name IO_STANDARD LVDS -to Debug_LVDS_OUT_0
+set_global_assignment -name VHDL_FILE alt_lvds_tx.vhd
+set_global_assignment -name VHDL_FILE altpll00.vhd
+set_global_assignment -name VHDL_FILE and32.vhd
+set_global_assignment -name BDF_FILE Basic_DAQ_Block_trigg.bdf
+set_global_assignment -name VHDL_FILE CL_ACCUM_1.vhd
+set_global_assignment -name VHDL_FILE CL_ACCUM_2.vhd
+set_global_assignment -name VHDL_FILE CL_ADD_3x3.vhd
+set_global_assignment -name VHDL_FILE CL_ADDER_4x1.vhd
+set_global_assignment -name VHDL_FILE CL_ALTLVDS_Tx_1.vhd
+set_global_assignment -name BDF_FILE CL_Basic_DAQ_Block_trigg.bdf
+set_global_assignment -name BDF_FILE CL_Block.bdf
+set_global_assignment -name BDF_FILE CL_ClusterCounter_128.bdf
+set_global_assignment -name BDF_FILE CL_ClusterCounter_16.bdf
+set_global_assignment -name BDF_FILE CL_ClusterCounter_64.bdf
+set_global_assignment -name BDF_FILE CL_ClusterCounter_65.bdf
+set_global_assignment -name VHDL_FILE CL_comp16.vhd
+set_global_assignment -name VHDL_FILE CL_Comp_16.vhd
+set_global_assignment -name VHDL_FILE CL_Compare_8.vhd
+set_global_assignment -name VHDL_FILE CL_CONST_4672.vhd
+set_global_assignment -name VHDL_FILE CL_CONST_5124.vhd
+set_global_assignment -name VHDL_FILE CL_CONST_68.vhd
+set_global_assignment -name VHDL_FILE CL_CONST_72.vhd
+set_global_assignment -name VHDL_FILE CL_CONST_80.vhd
+set_global_assignment -name VHDL_FILE CL_Constant.vhd
+set_global_assignment -name VHDL_FILE CL_Counter_16.vhd
+set_global_assignment -name VHDL_FILE CL_Counter_16_W_Clear.vhd
+set_global_assignment -name VHDL_FILE CL_Counter_4.vhd
+set_global_assignment -name VHDL_FILE CL_Counter_5.vhd
+set_global_assignment -name AHDL_FILE CL_Counter_8.tdf
+set_global_assignment -name VHDL_FILE CL_DF7.vhd
+set_global_assignment -name VHDL_FILE CL_dff1.vhd
+set_global_assignment -name VHDL_FILE CL_dff2.vhd
+set_global_assignment -name VHDL_FILE CL_dff3.vhd
+set_global_assignment -name VHDL_FILE CL_dff4.vhd
+set_global_assignment -name VHDL_FILE CL_dff6.vhd
+set_global_assignment -name VHDL_FILE CL_DFF_16.vhd
+set_global_assignment -name VHDL_FILE CL_DFF_1_1.vhd
+set_global_assignment -name VHDL_FILE CL_DFF_5.vhd
+set_global_assignment -name VHDL_FILE CL_DFF_65.vhd
+set_global_assignment -name AHDL_FILE CL_DFF_8.tdf
+set_global_assignment -name VHDL_FILE CL_FDD_1_2.vhd
+set_global_assignment -name VHDL_FILE CL_fifo_16.vhd
+set_global_assignment -name VHDL_FILE CL_fifo_8.vhd
+set_global_assignment -name VHDL_FILE CL_lvds_rx1.vhd
+set_global_assignment -name VHDL_FILE CL_lvds_rx_1.vhd
+set_global_assignment -name VHDL_FILE CL_MUX_16.vhd
+set_global_assignment -name VHDL_FILE CL_MUX_65.vhd
+set_global_assignment -name AHDL_FILE CL_MUX_8.tdf
+set_global_assignment -name VHDL_FILE CL_PLL.vhd
+set_global_assignment -name BDF_FILE CL_Rx.bdf
+set_global_assignment -name BDF_FILE CL_Rx_1.bdf
+set_global_assignment -name VHDL_FILE CL_SUB_16.vhd
+set_global_assignment -name VHDL_FILE CL_SUB_5x2.vhd
+set_global_assignment -name BDF_FILE CL_SUM2_BL.bdf
+set_global_assignment -name VHDL_FILE CL_SUM3.vhd
+set_global_assignment -name BDF_FILE CL_SUM3_BL.bdf
+set_global_assignment -name VHDL_FILE CL_SUM4.vhd
+set_global_assignment -name BDF_FILE CL_SUM4_BL.bdf
+set_global_assignment -name VHDL_FILE CL_SUM5.vhd
+set_global_assignment -name BDF_FILE CL_SUM5_BL.bdf
+set_global_assignment -name VHDL_FILE CL_SUM6.vhd
+set_global_assignment -name BDF_FILE CL_SUM6_BL.bdf
+set_global_assignment -name VHDL_FILE CL_SUM7.vhd
+set_global_assignment -name BDF_FILE CL_SUM7_BL.bdf
+set_global_assignment -name VHDL_FILE CL_SUM_2.vhd
+set_global_assignment -name BDF_FILE CLUSTER_Module.bdf
+set_global_assignment -name BDF_FILE CLUSTER_Module_Decoded.bdf
+set_global_assignment -name VHDL_FILE comp15.vhd
+set_global_assignment -name VHDL_FILE comp8.vhd
+set_global_assignment -name VHDL_FILE comparator1.vhd
+set_global_assignment -name VHDL_FILE comparator2.vhd
+set_global_assignment -name VHDL_FILE counter16.vhd
+set_global_assignment -name SOURCE_FILE counter7.cmp
+set_global_assignment -name VHDL_FILE counter7.vhd
+set_global_assignment -name VHDL_FILE counter8_aclr.vhd
+set_global_assignment -name VHDL_FILE counter_addr.vhd
+set_global_assignment -name VHDL_FILE counter_show.vhd
+set_global_assignment -name VHDL_FILE counter_small.vhd
+set_global_assignment -name VHDL_FILE dff13.vhd
+set_global_assignment -name VHDL_FILE dff15.vhd
+set_global_assignment -name VHDL_FILE dff16.vhd
+set_global_assignment -name VHDL_FILE dff32.vhd
+set_global_assignment -name AHDL_FILE dff4.tdf
+set_global_assignment -name VHDL_FILE dff7.vhd
+set_global_assignment -name VHDL_FILE dff9.vhd
+set_global_assignment -name VHDL_FILE dff_one.vhd
+set_global_assignment -name VHDL_FILE dff_trigger.vhd
+set_global_assignment -name VHDL_FILE GLINK_fifo.vhd
+set_global_assignment -name BDF_FILE glink_interface.bdf
+set_global_assignment -name VHDL_FILE incount.vhd
+set_global_assignment -name VHDL_FILE mem.vhd
+set_global_assignment -name VHDL_FILE mux13.vhd
+set_global_assignment -name VHDL_FILE mux2.vhd
+set_global_assignment -name VHDL_FILE pll_smal.vhd
+set_global_assignment -name VHDL_FILE PLL_VME.vhd
+set_global_assignment -name VHDL_FILE PLL_XCLK.vhd
+set_global_assignment -name SOURCE_FILE show_counter.cmp
+set_global_assignment -name VHDL_FILE show_counter.vhd
+set_global_assignment -name BDF_FILE sigma_delta.bdf
+set_global_assignment -name SDC_FILE sigma_delta.sdc
+set_global_assignment -name BDF_FILE sigma_delta_old.bdf
+set_global_assignment -name VHDL_FILE status_constant.vhd
+set_global_assignment -name AHDL_FILE tapdel10.tdf
+set_global_assignment -name AHDL_FILE tdc_vme.tdf
+set_global_assignment -name BDF_FILE test_mem_block.bdf
+set_global_assignment -name BDF_FILE trigger_control.bdf
+set_global_assignment -name VHDL_FILE tx_test_counter.vhd
+set_global_assignment -name VHDL_FILE vme_buffer.vhd
+set_global_assignment -name AHDL_FILE vme_interface.tdf
+set_global_assignment -name BDF_FILE VME_thing.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sigma_delta1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sigma_delta2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE sigma_delta2_test.vwf
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_instance_assignment -name STRATIXII_TERMINATION DIFFERENTIAL -to Debug_LVDS_IN_0
+set_instance_assignment -name STRATIXII_TERMINATION DIFFERENTIAL -to Debug_LVDS_IN_1
+set_global_assignment -name MISC_FILE "D:/CL/CT_2/sigma_delta.dpf"
+set_location_assignment PIN_L16 -to ClockSwitchControl[2]
+set_location_assignment PIN_C16 -to ClockSwitchControl[1]
+set_location_assignment PIN_AJ16 -to ClockSwitchControl[3]
+set_location_assignment PIN_E15 -to ClockSwitchControl[0]
+set_location_assignment PIN_M23 -to Debug_LVDS_OUT_1
+set_instance_assignment -name IO_STANDARD LVDS -to Debug_LVDS_OUT_1
+set_location_assignment PIN_M22 -to "Debug_LVDS_OUT_1(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to DigOutput_AUX3
+set_location_assignment PIN_J27 -to DigOutput_AUX3
+set_location_assignment PIN_J26 -to "DigOutput_AUX3(n)"
+set_global_assignment -name MISC_FILE "C:/Users/bogdan/Desktop/JPARC_Altera/CL/CT_4/sigma_delta.dpf"
+set_global_assignment -name QIP_FILE PLL_TEST.qip
+set_location_assignment PIN_F15 -to JC_GOE
+set_location_assignment PIN_B15 -to JC_uW_LE
+set_location_assignment PIN_D15 -to JC_uW_DATA
+set_location_assignment PIN_D16 -to JC_uW_CLK
+set_location_assignment PIN_E16 -to JC_LD
+set_location_assignment PIN_C15 -to JC_SYNCn
+set_instance_assignment -name STRATIXII_TERMINATION "SERIES 25 OHMS WITHOUT CALIBRATION" -to 0_TXD
+set_instance_assignment -name STRATIXII_TERMINATION "SERIES 25 OHMS WITHOUT CALIBRATION" -to 2_TXD
+set_instance_assignment -name STRATIXII_TERMINATION "SERIES 25 OHMS WITHOUT CALIBRATION" -to 3_TXD
+set_instance_assignment -name STRATIXII_TERMINATION "SERIES 25 OHMS WITHOUT CALIBRATION" -to 1_TXD
+set_global_assignment -name VECTOR_WAVEFORM_FILE sigma_delta3t.vwf
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to 2nd_outputbus
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to DigOutput
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to DigOutput_AUX1
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to DigOutput_AUX2
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to DigOutput_AUX3
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to DigIn[0]
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to DigIn[1]
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE sigma_delta3t.vwf
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to 0_TXD
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to 1_TXD
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to 2_TXD
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to 3_TXD
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name QIP_FILE lpm_add_sub0.qip
+set_global_assignment -name QIP_FILE lpm_compare0.qip
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name QIP_FILE lpm_counter1.qip
+set_global_assignment -name QIP_FILE altsyncram0.qip
+set_global_assignment -name QIP_FILE lpm_counter2.qip
+set_global_assignment -name QIP_FILE altsyncram1.qip
+set_global_assignment -name QIP_FILE lpm_counter3.qip
+set_global_assignment -name QIP_FILE lpm_compare1.qip
+set_global_assignment -name QIP_FILE lpm_compare2.qip
+set_global_assignment -name QIP_FILE lpm_counter4.qip
+set_global_assignment -name MISC_FILE "C:/Users/yctung/Desktop/CDT_clustering_v0/sigma_delta.dpf"
+set_global_assignment -name QIP_FILE lpm_compare3.qip
+set_global_assignment -name QIP_FILE lpm_ff0.qip
+set_global_assignment -name QIP_FILE lpm_counter5.qip
+set_global_assignment -name QIP_FILE lpm_ff1.qip
+set_global_assignment -name QIP_FILE lpm_counter6.qip
+set_global_assignment -name QIP_FILE lpm_compare4.qip
+set_global_assignment -name QIP_FILE lpm_ff2.qip
+set_global_assignment -name QIP_FILE altsyncram2.qip
+set_global_assignment -name QIP_FILE lpm_compare5.qip
+set_global_assignment -name SEARCH_PATH clusterblockadcmodule_3
+set_global_assignment -name SEARCH_PATH "D:\\altera\\megacore\\61"
+set_global_assignment -name QIP_FILE lpm_mult0.qip
+set_global_assignment -name QIP_FILE lpm_add_sub1.qip
+set_global_assignment -name QIP_FILE lpm_ff3.qip
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name QIP_FILE lpm_constant1.qip
+set_global_assignment -name QIP_FILE lpm_constant2.qip
+set_global_assignment -name QIP_FILE lpm_counter7.qip
+set_global_assignment -name QIP_FILE lpm_compare6.qip
+set_global_assignment -name VERILOG_FILE ../AddHeader/clustering_db/GenHeader.v
+set_global_assignment -name VERILOG_FILE clustering_db/GenHeader.v
+set_global_assignment -name QIP_FILE lpm_constant3.qip
+set_global_assignment -name QIP_FILE lpm_compare7.qip
+set_global_assignment -name QIP_FILE lpm_compare8.qip
+set_global_assignment -name QIP_FILE lpm_compare9.qip
+set_global_assignment -name QIP_FILE lpm_constant4.qip
+set_global_assignment -name QIP_FILE lpm_constant5.qip
+set_global_assignment -name VERILOG_FILE clustering_db/csi_addr.v
+set_global_assignment -name QIP_FILE clustering_db/lpm_dff0.qip
+set_global_assignment -name VERILOG_FILE clustering_db/csi_mapping.v
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name QIP_FILE altsyncram3.qip
+set_global_assignment -name QIP_FILE lpm_or0.qip
+set_global_assignment -name QIP_FILE lpm_or1.qip
+set_global_assignment -name QIP_FILE lpm_counter8.qip
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name QIP_FILE lpm_counter9.qip
+set_global_assignment -name QIP_FILE lpm_dff0.qip
+set_global_assignment -name QIP_FILE lpm_dff1.qip
+set_global_assignment -name QIP_FILE lpm_dff2.qip
+set_global_assignment -name QIP_FILE altsyncram4.qip
+set_global_assignment -name QIP_FILE lpm_counter10.qip
+set_global_assignment -name QIP_FILE lpm_counter11.qip
+set_global_assignment -name QIP_FILE lpm_dff3.qip
+set_global_assignment -name QIP_FILE lpm_counter12.qip
+set_global_assignment -name QIP_FILE altsyncram5.qip
+set_global_assignment -name QIP_FILE lpm_or2.qip
+set_global_assignment -name BDF_FILE mapping_block2.bdf
+set_global_assignment -name VERILOG_FILE DeCoder.v
+set_global_assignment -name QIP_FILE lpm_counter13.qip
+set_global_assignment -name QIP_FILE lpm_dff4.qip
+set_global_assignment -name QIP_FILE lpm_or3.qip
+set_global_assignment -name VERILOG_FILE my_or.v
+set_global_assignment -name QIP_FILE lpm_dff5.qip
+set_global_assignment -name QIP_FILE lpm_compare10.qip
+set_global_assignment -name QIP_FILE lpm_counter14.qip
+set_global_assignment -name QIP_FILE lpm_or4.qip
+set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name QIP_FILE lpm_or5.qip
+set_global_assignment -name VERILOG_FILE ClusterCounter.v
+set_global_assignment -name VERILOG_FILE Alignment.v
+set_global_assignment -name VERILOG_FILE Packing_CDT2.v
+set_global_assignment -name VERILOG_FILE GenTrigger.v
+set_global_assignment -name VERILOG_FILE GenEventAddr.v
+set_global_assignment -name VERILOG_FILE Mem_Controller.v
+set_global_assignment -name QIP_FILE altsyncram6.qip
+set_global_assignment -name QIP_FILE lpm_counter15.qip
+set_global_assignment -name QIP_FILE lpm_mux3.qip
+set_global_assignment -name QIP_FILE lpm_mux4.qip
+set_global_assignment -name QIP_FILE lpm_mux5.qip
+set_global_assignment -name QIP_FILE lpm_dff6.qip
+set_global_assignment -name QIP_FILE lpm_mux6.qip
+set_global_assignment -name QIP_FILE lpm_mux7.qip
+set_global_assignment -name QIP_FILE lpm_dff7.qip
+set_global_assignment -name QIP_FILE lpm_add_sub2.qip
+set_global_assignment -name QIP_FILE lpm_compare11.qip
+set_global_assignment -name VERILOG_FILE fiber_debug.v
+set_global_assignment -name VERILOG_FILE trigger.v
+set_global_assignment -name VERILOG_FILE Simu_PL1R.v
+set_global_assignment -name VERILOG_FILE PL1R_Catcher.v
+set_global_assignment -name VERILOG_FILE Simu_Trigger.v
+set_global_assignment -name QIP_FILE lpm_mux8.qip
+set_global_assignment -name QIP_FILE lpm_counter16.qip
+set_global_assignment -name QIP_FILE lpm_dff8.qip
+set_global_assignment -name CDF_FILE Chain1.cdf
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "altpll00:inst233|altpll:altpll_component|_clk0"
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "altpll00:inst233|altpll:altpll_component|_clk3"
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "altpll00:inst233|altpll:altpll_component|_clk5"
+set_global_assignment -name QIP_FILE lpm_dff9.qip
+set_global_assignment -name QIP_FILE lpm_mux9.qip
+set_global_assignment -name QIP_FILE lpm_mux10.qip
+set_global_assignment -name VERILOG_FILE debug_cabling.v
+set_global_assignment -name BDF_FILE Alignment2.bdf
+set_global_assignment -name QIP_FILE altsyncram7.qip
+set_global_assignment -name QIP_FILE lpm_dff10.qip
+set_global_assignment -name VERILOG_FILE AlignControl.v
+set_global_assignment -name VERILOG_FILE AlignReadControl.v
+set_global_assignment -name QIP_FILE lpm_mux11.qip
+set_global_assignment -name QIP_FILE lpm_constant6.qip
+set_global_assignment -name QIP_FILE lpm_constant7.qip
+set_global_assignment -name QIP_FILE lpm_constant8.qip
+set_global_assignment -name QIP_FILE lpm_counter17.qip
+set_global_assignment -name QIP_FILE lpm_compare12.qip
+set_global_assignment -name QIP_FILE lpm_counter18.qip
+set_global_assignment -name QIP_FILE lpm_mux12.qip
+set_global_assignment -name VERILOG_FILE trigger_delay.v
+set_global_assignment -name QIP_FILE lpm_counter19.qip
+set_global_assignment -name VERILOG_FILE abandon.v
+set_global_assignment -name VERILOG_FILE Abandon.v
+set_global_assignment -name VERILOG_FILE TLK_RST.v
+set_global_assignment -name QIP_FILE lpm_mux13.qip
+set_global_assignment -name VERILOG_FILE Input_Counter.v
+set_global_assignment -name VERILOG_FILE LiveRatio.v
+set_global_assignment -name QIP_FILE lpm_compare13.qip
+set_global_assignment -name VERILOG_FILE SLVDS_R.v
+set_global_assignment -name VERILOG_FILE Alignment_CDT1.v
+set_global_assignment -name VERILOG_FILE GenPreTrigger.v
+set_global_assignment -name QIP_FILE lpm_compare14.qip
+set_global_assignment -name QIP_FILE veto_compare1.qip
+set_global_assignment -name QIP_FILE veto_compare2.qip
+set_global_assignment -name QIP_FILE veto_compare3.qip
+set_global_assignment -name QIP_FILE veto_compare4.qip
+set_global_assignment -name QIP_FILE veto_compare5.qip
+set_global_assignment -name QIP_FILE veto_compare6.qip
+set_global_assignment -name QIP_FILE veto_compare7.qip
+set_global_assignment -name QIP_FILE veto_compare8.qip
+set_global_assignment -name QIP_FILE veto_compare9.qip
+set_global_assignment -name QIP_FILE veto_compare10.qip
+set_global_assignment -name QIP_FILE veto_compare11.qip
+set_global_assignment -name QIP_FILE veto_compare12.qip
+set_global_assignment -name QIP_FILE veto_compare13.qip
+set_global_assignment -name QIP_FILE veto_compare14.qip
+set_global_assignment -name QIP_FILE veto_compare15.qip
+set_global_assignment -name VERILOG_FILE Attach_VB.v
+set_global_assignment -name QIP_FILE veto_taps0.qip
+set_global_assignment -name VERILOG_FILE Live_Signal.v
+set_global_assignment -name SIGNALTAP_FILE trigger.stp
+set_global_assignment -name VERILOG_FILE VME_REG_GATE.v
+set_global_assignment -name SIGNALTAP_FILE stp_01.stp
+set_global_assignment -name QIP_FILE raw_sim_mem.qip
+set_global_assignment -name QIP_FILE sim_mem_switch.qip
+set_global_assignment -name VERILOG_FILE sim_trig.v
+set_global_assignment -name QIP_FILE lpm_mux14.qip
+set_global_assignment -name QIP_FILE ../../CDT_CDT1_v26/lpm_counter20.qip
+set_global_assignment -name QIP_FILE lpm_counter20.qip
+set_global_assignment -name QIP_FILE lpm_counter100.qip
+set_global_assignment -name QIP_FILE ../../CDT_CDT1_v26/sim_mem_switch1.qip
+set_global_assignment -name QIP_FILE sim_mem_switch2.qip
+set_global_assignment -name QIP_FILE sim_mem_switch1.qip
+set_global_assignment -name QIP_FILE lvds_sim_mem.qip
+set_global_assignment -name QIP_FILE lpm_mux15.qip
+set_global_assignment -name QIP_FILE sim_mem_switch3.qip
+set_global_assignment -name QIP_FILE sim_mem_switch4.qip
+set_global_assignment -name QIP_FILE lvds_in_sim_mem.qip
+set_global_assignment -name QIP_FILE lpm_mux16.qip
+set_global_assignment -name QIP_FILE lpm_dff11.qip
+set_global_assignment -name VERILOG_FILE trig_type_lv1a.v
+set_global_assignment -name QIP_FILE lpm_dff13.qip
+set_global_assignment -name VERILOG_FILE lv1a_pipeline.v
+set_global_assignment -name QIP_FILE lpm_mux17.qip
+set_global_assignment -name VERILOG_FILE trig_type_lv1b.v
+set_global_assignment -name VERILOG_FILE pipeline_lv1b.v
+set_global_assignment -name VERILOG_FILE lv1b_pipeline.v
+set_global_assignment -name QIP_FILE lpm_dff14.qip
+set_global_assignment -name QIP_FILE ../../CDT_CDT1_v26/live_dff.qip
+set_global_assignment -name QIP_FILE live_dff.qip
+set_global_assignment -name QIP_FILE live_dff2.qip
+set_global_assignment -name QIP_FILE adc_trg_dff.qip
+set_global_assignment -name QIP_FILE ../../CDT_CDT1_v26/adc_trg_dff0.qip
+set_global_assignment -name QIP_FILE adc_trg_dff0.qip
+set_global_assignment -name VERILOG_FILE live_simulator.v
+set_global_assignment -name QIP_FILE live_fanout_switch.qip
+set_global_assignment -name SIGNALTAP_FILE stp_02.stp
+set_global_assignment -name QIP_FILE lvds16_input0_dff.qip
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name VERILOG_FILE lv1a_generator.v
+set_global_assignment -name QIP_FILE lv1a_input_switch.qip
+set_global_assignment -name SIGNALTAP_FILE stp_03.stp
+set_global_assignment -name SIGNALTAP_FILE stp_04.stp
+set_global_assignment -name QIP_FILE fiber_input_switch.qip
+set_global_assignment -name VERILOG_FILE live_fanout.v
+set_global_assignment -name QIP_FILE live_input_dff.qip
+set_global_assignment -name QIP_FILE live_input_switch.qip
+set_global_assignment -name VERILOG_FILE spill_cnt.v
+set_global_assignment -name SIGNALTAP_FILE stp_spill_cnt.stp
+set_global_assignment -name SIGNALTAP_FILE stp_spillcnt.stp
+set_global_assignment -name SIGNALTAP_FILE stp_et_daisy_input.stp
+set_global_assignment -name VERILOG_FILE et_rx_err_decoder.v
+set_global_assignment -name QIP_FILE et_rx_err_mem.qip
+set_global_assignment -name QIP_FILE et_rx_tlk_err_mem.qip
+set_global_assignment -name QIP_FILE et_lvds_rx_dff0.qip
+set_global_assignment -name QIP_FILE et_rx_err_mem_switch.qip
+set_global_assignment -name QIP_FILE et_rx_err_mem_switch0.qip
+set_global_assignment -name QIP_FILE et_rx_err_mem_switch1.qip
+set_global_assignment -name QIP_FILE bypass_err.qip
+set_global_assignment -name SIGNALTAP_FILE stp_8dc_test.stp
+set_global_assignment -name SIGNALTAP_FILE stp_rx_err.stp
+set_global_assignment -name QIP_FILE bypass_tlk_err.qip
+set_global_assignment -name QIP_FILE bypass_dc_err.qip
+set_global_assignment -name QIP_FILE lvds_in_switch.qip
+set_global_assignment -name QIP_FILE lvds_mem_switch.qip
+set_global_assignment -name VERILOG_FILE et_err_sim_trig.v
+set_global_assignment -name QIP_FILE et_err_input_switch.qip
+set_global_assignment -name QIP_FILE rmem_switch.qip
+set_global_assignment -name QIP_FILE rmem_switch1.qip
+set_global_assignment -name QIP_FILE rdata_switch.qip
+set_global_assignment -name VERILOG_FILE raw_generator.v
+set_global_assignment -name QIP_FILE sim_input_switch.qip
+set_global_assignment -name SIGNALTAP_FILE stp_pins.stp
+set_global_assignment -name QIP_FILE live_dff1.qip
+set_global_assignment -name QIP_FILE align_trig_dff0.qip
+set_global_assignment -name VERILOG_FILE lvds_cnt_debugger.v
+set_global_assignment -name QIP_FILE lvds_debug_switch.qip
+set_global_assignment -name QIP_FILE ../../../Local_CDT/Local_CDT_v6/Local_CDT_v6.08/lvds_in_dff00.qip
+set_global_assignment -name QIP_FILE ../../../Local_CDT/Local_CDT_v6/Local_CDT_v6.08/lvds_debug_switch1.qip
+set_global_assignment -name QIP_FILE ../../../Local_CDT/Local_CDT_v6/Local_CDT_v6.08/lvds_in_dff01.qip
+set_global_assignment -name QIP_FILE lvds_dff00.qip
+set_global_assignment -name QIP_FILE lvds_dff01.qip
+set_global_assignment -name QIP_FILE lvds_debug_switch01.qip
+set_global_assignment -name QIP_FILE out_veto_dff.qip
+set_global_assignment -name QIP_FILE out_et_dff.qip
+set_global_assignment -name QIP_FILE timestamp_dff.qip
+set_global_assignment -name VERILOG_FILE pipe_input.v
+set_global_assignment -name QIP_FILE ext_dff00.qip
+set_global_assignment -name QIP_FILE ext_trig_in_switch.qip
+set_global_assignment -name QIP_FILE ext_dff01.qip
+set_global_assignment -name VERILOG_FILE trig_type_lv1a_ext.v
+set_global_assignment -name VERILOG_FILE trig_type_lv1a_delta.v
+set_global_assignment -name QIP_FILE delta_dff00.qip
+set_global_assignment -name QIP_FILE ext_dff02.qip
+set_global_assignment -name SIGNALTAP_FILE stp_ext_et_veto.stp
+set_global_assignment -name VERILOG_FILE clock_trig.v
+set_global_assignment -name QIP_FILE lv1a_dff.qip
+set_global_assignment -name QIP_FILE raw_mem_pipe.qip
+set_global_assignment -name QIP_FILE time_mem.qip
+set_global_assignment -name QIP_FILE nclus_mem_tag.qip
+set_global_assignment -name QIP_FILE timestamp_dff01.qip
+set_global_assignment -name QIP_FILE et_dff.qip
+set_global_assignment -name QIP_FILE veto_dff.qip
+set_global_assignment -name QIP_FILE nclus_in_switch.qip
+set_global_assignment -name QIP_FILE nclus_dff.qip
+set_global_assignment -name QIP_FILE in_ext_dff02.qip
+set_global_assignment -name VERILOG_FILE nclus_simulator.v
+set_global_assignment -name QIP_FILE int_dff02.qip
+set_global_assignment -name QIP_FILE lv1b_dff.qip
+set_global_assignment -name QIP_FILE nclus_dff02.qip
+set_global_assignment -name QIP_FILE ext_dff03.qip
+set_global_assignment -name QIP_FILE delta_dff02.qip
+set_global_assignment -name QIP_FILE time_dff02.qip
+set_global_assignment -name QIP_FILE raw_dff02.qip
+set_global_assignment -name QIP_FILE lv1b_dff00.qip
+set_global_assignment -name QIP_FILE ext_dff04.qip
+set_global_assignment -name QIP_FILE raw_dff04.qip
+set_global_assignment -name QIP_FILE delta_dff04.qip
+set_global_assignment -name QIP_FILE nclus_dff04.qip
+set_global_assignment -name QIP_FILE time_dff04.qip
+set_global_assignment -name SIGNALTAP_FILE stp_overall.stp
+set_global_assignment -name QIP_FILE lv1b_req_dff.qip
+set_global_assignment -name QIP_FILE trig_dff.qip
+set_global_assignment -name QIP_FILE trig_tag_dff.qip
+set_global_assignment -name VERILOG_FILE trig_factory.v
+set_global_assignment -name QIP_FILE fiber3_oswitch.qip
+set_global_assignment -name QIP_FILE bus16_dff.qip
+set_global_assignment -name QIP_FILE line_dff.qip
+set_global_assignment -name VERILOG_FILE et_ofc_err.v
+set_global_assignment -name VERILOG_FILE clus_ofc_err.v
+set_global_assignment -name VERILOG_FILE veto_err.v
+set_global_assignment -name VERILOG_FILE et_err.v
+set_global_assignment -name VERILOG_FILE et_err_decoder.v
+set_global_assignment -name QIP_FILE raw_err_dff.qip
+set_global_assignment -name VERILOG_FILE et_ofc_err_decoder.v
+set_global_assignment -name QIP_FILE ofc_err_dff.qip
+set_global_assignment -name VERILOG_FILE veto_err_decoder.v
+set_global_assignment -name VERILOG_FILE clus_ofc_err_decoder.v
+set_global_assignment -name VERILOG_FILE tlk_err_center.v
+set_global_assignment -name QIP_FILE bus4_dff.qip
+set_global_assignment -name VERILOG_FILE dc_err_center.v
+set_global_assignment -name VERILOG_FILE stat_veto.v
+set_global_assignment -name VERILOG_FILE stat_nclus.v
+set_global_assignment -name VERILOG_FILE LVDS_RX_Debug.v
+set_global_assignment -name QIP_FILE st232_mux.qip
+set_global_assignment -name VERILOG_FILE DAQ_Pulse.v
+set_global_assignment -name QIP_FILE bus20_dff.qip
+set_global_assignment -name VERILOG_FILE delta_factory.v
+set_global_assignment -name VERILOG_FILE stat_lv1a_raw.v
+set_global_assignment -name VERILOG_FILE stat_delta.v
+set_global_assignment -name QIP_FILE is_lv1.qip
+set_global_assignment -name QIP_FILE lpm_or_13.qip
+set_global_assignment -name VERILOG_FILE peek_raw_pulse.v
+set_global_assignment -name QIP_FILE raw_data.qip
+set_global_assignment -name QIP_FILE rraw.qip
+set_global_assignment -name QIP_FILE rraw1.qip
+set_global_assignment -name VERILOG_FILE wraw.v
+set_global_assignment -name QIP_FILE rraw_sw.qip
+set_global_assignment -name QIP_FILE rawmem.qip
+set_global_assignment -name VERILOG_FILE redge_filter.v
+set_global_assignment -name VERILOG_FILE exdata_cnt.v
+set_global_assignment -name VERILOG_FILE lv1_delay.v
+set_global_assignment -name VERILOG_FILE tag.v
+set_global_assignment -name VERILOG_FILE tag_wrem.v
+set_global_assignment -name QIP_FILE vetocnt_mux.qip
+set_global_assignment -name VERILOG_FILE restrict_ntrig.v
+set_global_assignment -name VERILOG_FILE lv2_rej.v
+set_global_assignment -name VERILOG_FILE live_cleaner.v
+set_global_assignment -name QIP_FILE live_mux.qip
+set_global_assignment -name QIP_FILE veto32_mem.qip
+set_global_assignment -name QIP_FILE delta_dff.qip
+set_global_assignment -name SIGNALTAP_FILE multiTest.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to The_clock -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to 0_RXD_Buffered[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to 0_RXD_Buffered[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to 0_RXD_Buffered[11] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to 0_RXD_Buffered[12] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to 0_RXD_Buffered[13] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to 0_RXD_Buffered[14] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to 0_RXD_Buffered[15] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to 0_RXD_Buffered[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to 0_RXD_Buffered[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to 0_RXD_Buffered[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to 0_RXD_Buffered[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to 0_RXD_Buffered[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to 0_RXD_Buffered[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to 0_RXD_Buffered[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to 0_RXD_Buffered[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to 0_RXD_Buffered[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to 1_RXD_Buffered[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to 1_RXD_Buffered[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to 1_RXD_Buffered[11] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to 1_RXD_Buffered[12] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to 1_RXD_Buffered[13] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to 1_RXD_Buffered[14] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to 1_RXD_Buffered[15] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to 1_RXD_Buffered[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to 1_RXD_Buffered[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to 1_RXD_Buffered[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to 1_RXD_Buffered[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to 1_RXD_Buffered[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to 1_RXD_Buffered[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to 1_RXD_Buffered[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to 1_RXD_Buffered[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to 1_RXD_Buffered[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to 3_RXD_Buffered[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to 3_RXD_Buffered[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to 3_RXD_Buffered[11] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to 3_RXD_Buffered[12] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to 3_RXD_Buffered[13] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to 3_RXD_Buffered[14] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to 3_RXD_Buffered[15] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to 3_RXD_Buffered[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to 3_RXD_Buffered[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to 3_RXD_Buffered[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to 3_RXD_Buffered[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to 3_RXD_Buffered[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to 3_RXD_Buffered[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to 3_RXD_Buffered[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to 3_RXD_Buffered[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to 3_RXD_Buffered[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to 0_RXD_Buffered[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to 0_RXD_Buffered[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to 0_RXD_Buffered[11] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to 0_RXD_Buffered[12] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to 0_RXD_Buffered[13] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to 0_RXD_Buffered[14] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to 0_RXD_Buffered[15] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to 0_RXD_Buffered[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to 0_RXD_Buffered[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to 0_RXD_Buffered[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to 0_RXD_Buffered[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to 0_RXD_Buffered[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to 0_RXD_Buffered[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to 0_RXD_Buffered[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to 0_RXD_Buffered[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to 0_RXD_Buffered[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to 1_RXD_Buffered[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to 1_RXD_Buffered[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to 1_RXD_Buffered[11] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to 1_RXD_Buffered[12] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to 1_RXD_Buffered[13] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to 1_RXD_Buffered[14] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to 1_RXD_Buffered[15] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to 1_RXD_Buffered[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to 1_RXD_Buffered[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to 1_RXD_Buffered[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to 1_RXD_Buffered[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to 1_RXD_Buffered[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to 1_RXD_Buffered[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to 1_RXD_Buffered[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to 1_RXD_Buffered[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to 1_RXD_Buffered[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to 3_RXD_Buffered[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to 3_RXD_Buffered[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to 3_RXD_Buffered[11] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to 3_RXD_Buffered[12] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to 3_RXD_Buffered[13] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to 3_RXD_Buffered[14] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to 3_RXD_Buffered[15] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to 3_RXD_Buffered[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to 3_RXD_Buffered[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to 3_RXD_Buffered[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to 3_RXD_Buffered[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to 3_RXD_Buffered[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to 3_RXD_Buffered[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to 3_RXD_Buffered[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to 3_RXD_Buffered[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to 3_RXD_Buffered[9] -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=M4K" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=1024" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=1024" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name VERILOG_FILE L1A_Discriminator.v
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "L1A_Discriminator:inst488|ALIGN" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "L1A_Discriminator:inst488|DELTA" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "L1A_Discriminator:inst488|L1A" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "L1A_Discriminator:inst488|in" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to got_et_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to got_et_ofc_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to got_et_ofc_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to got_et_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to got_veto_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to got_veto_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to inputbus[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to inputbus[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to inputbus[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to int_lv1a02[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to int_lv1a02[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to is_et_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to is_et_ofc_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to is_et_ofc_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to is_et_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to is_veto_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to is_veto_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "time_controller:inst36|is_et_align" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "time_controller:inst36|is_get_et_0xfefe" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "time_controller:inst36|is_get_veto0_0xfefe" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "time_controller:inst36|is_get_veto1_0xfefe" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "time_controller:inst36|is_veto0_align" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "time_controller:inst36|is_veto1_align" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "time_controller:inst36|out_ena_delta" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "time_controller:inst36|out_ena_trig" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "time_controller:inst36|out_et[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "time_controller:inst36|out_et[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "time_controller:inst36|out_et[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "time_controller:inst36|out_et[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "time_controller:inst36|out_et[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "time_controller:inst36|out_et[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "time_controller:inst36|out_et[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "time_controller:inst36|out_et[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "time_controller:inst36|out_et[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "time_controller:inst36|out_et[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "time_controller:inst36|out_et[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "time_controller:inst36|out_et[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "time_controller:inst36|out_et[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "time_controller:inst36|out_et[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "time_controller:inst36|out_et[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "time_controller:inst36|out_et[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "time_controller:inst36|out_et[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "time_controller:inst36|out_veto[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "time_controller:inst36|out_veto[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "time_controller:inst36|out_veto[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "time_controller:inst36|out_veto[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "time_controller:inst36|out_veto[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "time_controller:inst36|out_veto[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "time_controller:inst36|out_veto[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "time_controller:inst36|out_veto[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "time_controller:inst36|out_veto[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "time_controller:inst36|out_veto[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "time_controller:inst36|out_veto[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "time_controller:inst36|out_veto[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "time_controller:inst36|out_veto[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "time_controller:inst36|out_veto[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "time_controller:inst36|out_veto[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "time_controller:inst36|out_veto[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "time_controller:inst36|out_veto[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "time_controller:inst36|out_veto[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "time_controller:inst36|out_veto[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "time_controller:inst36|out_veto[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "time_controller:inst36|out_veto[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "time_controller:inst36|out_veto[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "time_controller:inst36|out_veto[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "time_controller:inst36|out_veto[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "time_controller:inst36|out_veto[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "time_controller:inst36|out_veto[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "time_controller:inst36|out_veto[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "time_controller:inst36|out_veto[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "time_controller:inst36|out_veto[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "time_controller:inst36|out_veto[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "time_controller:inst36|out_veto[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "time_controller:inst36|out_veto[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "time_controller:inst36|timestamp[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "time_controller:inst36|timestamp[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "time_controller:inst36|timestamp[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "time_controller:inst36|timestamp[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "time_controller:inst36|timestamp[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to "time_controller:inst36|timestamp[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[132] -to "time_controller:inst36|timestamp[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[133] -to "time_controller:inst36|timestamp[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[134] -to "time_controller:inst36|timestamp[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[135] -to "time_controller:inst36|timestamp[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[136] -to "time_controller:inst36|timestamp[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[137] -to "time_controller:inst36|timestamp[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[138] -to "time_controller:inst36|timestamp[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[139] -to "time_controller:inst36|timestamp[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[140] -to "time_controller:inst36|timestamp[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[141] -to "time_controller:inst36|timestamp[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[142] -to "time_controller:inst36|timestamp[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[143] -to "time_controller:inst36|timestamp[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[144] -to "time_controller:inst36|timestamp[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[145] -to "time_controller:inst36|timestamp[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[146] -to "time_controller:inst36|timestamp[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[147] -to "time_controller:inst36|timestamp[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[148] -to "time_controller:inst36|timestamp[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[149] -to "time_controller:inst36|timestamp[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[150] -to "time_controller:inst36|timestamp[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[151] -to "time_controller:inst36|timestamp[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[152] -to "time_controller:inst36|timestamp[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[153] -to "time_controller:inst36|timestamp[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[154] -to "time_controller:inst36|timestamp[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[155] -to "time_controller:inst36|timestamp[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[156] -to "time_controller:inst36|timestamp[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[157] -to "time_controller:inst36|timestamp[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "L1A_Discriminator:inst488|ALIGN" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "L1A_Discriminator:inst488|DELTA" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "L1A_Discriminator:inst488|L1A" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "L1A_Discriminator:inst488|in" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to got_et_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to got_et_ofc_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to got_et_ofc_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to got_et_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to got_veto_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to got_veto_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to inputbus[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to inputbus[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to inputbus[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to int_lv1a02[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to int_lv1a02[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to is_et_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to is_et_ofc_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to is_et_ofc_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to is_et_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to is_veto_dc_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to is_veto_tlk_err -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "time_controller:inst36|is_et_align" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "time_controller:inst36|is_get_et_0xfefe" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "time_controller:inst36|is_get_veto0_0xfefe" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "time_controller:inst36|is_get_veto1_0xfefe" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "time_controller:inst36|is_veto0_align" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "time_controller:inst36|is_veto1_align" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "time_controller:inst36|out_ena_delta" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "time_controller:inst36|out_ena_trig" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "time_controller:inst36|out_et[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "time_controller:inst36|out_et[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "time_controller:inst36|out_et[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "time_controller:inst36|out_et[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "time_controller:inst36|out_et[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "time_controller:inst36|out_et[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "time_controller:inst36|out_et[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "time_controller:inst36|out_et[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "time_controller:inst36|out_et[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "time_controller:inst36|out_et[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "time_controller:inst36|out_et[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "time_controller:inst36|out_et[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "time_controller:inst36|out_et[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "time_controller:inst36|out_et[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "time_controller:inst36|out_et[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "time_controller:inst36|out_et[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "time_controller:inst36|out_et[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "time_controller:inst36|out_veto[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "time_controller:inst36|out_veto[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "time_controller:inst36|out_veto[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "time_controller:inst36|out_veto[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "time_controller:inst36|out_veto[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "time_controller:inst36|out_veto[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "time_controller:inst36|out_veto[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "time_controller:inst36|out_veto[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "time_controller:inst36|out_veto[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "time_controller:inst36|out_veto[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "time_controller:inst36|out_veto[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "time_controller:inst36|out_veto[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "time_controller:inst36|out_veto[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "time_controller:inst36|out_veto[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "time_controller:inst36|out_veto[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "time_controller:inst36|out_veto[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "time_controller:inst36|out_veto[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "time_controller:inst36|out_veto[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "time_controller:inst36|out_veto[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "time_controller:inst36|out_veto[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "time_controller:inst36|out_veto[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "time_controller:inst36|out_veto[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "time_controller:inst36|out_veto[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "time_controller:inst36|out_veto[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "time_controller:inst36|out_veto[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "time_controller:inst36|out_veto[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "time_controller:inst36|out_veto[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "time_controller:inst36|out_veto[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "time_controller:inst36|out_veto[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "time_controller:inst36|out_veto[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "time_controller:inst36|out_veto[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "time_controller:inst36|out_veto[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "time_controller:inst36|timestamp[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "time_controller:inst36|timestamp[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "time_controller:inst36|timestamp[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "time_controller:inst36|timestamp[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "time_controller:inst36|timestamp[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "time_controller:inst36|timestamp[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "time_controller:inst36|timestamp[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "time_controller:inst36|timestamp[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "time_controller:inst36|timestamp[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "time_controller:inst36|timestamp[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "time_controller:inst36|timestamp[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "time_controller:inst36|timestamp[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "time_controller:inst36|timestamp[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "time_controller:inst36|timestamp[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "time_controller:inst36|timestamp[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "time_controller:inst36|timestamp[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "time_controller:inst36|timestamp[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "time_controller:inst36|timestamp[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "time_controller:inst36|timestamp[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[145] -to "time_controller:inst36|timestamp[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[146] -to "time_controller:inst36|timestamp[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[147] -to "time_controller:inst36|timestamp[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[148] -to "time_controller:inst36|timestamp[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[149] -to "time_controller:inst36|timestamp[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[150] -to "time_controller:inst36|timestamp[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[151] -to "time_controller:inst36|timestamp[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[152] -to "time_controller:inst36|timestamp[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[153] -to "time_controller:inst36|timestamp[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[154] -to "time_controller:inst36|timestamp[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[155] -to "time_controller:inst36|timestamp[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[156] -to "time_controller:inst36|timestamp[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[157] -to "time_controller:inst36|timestamp[9]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=158" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=158" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=498" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=2337" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=47216" -section_id auto_signaltap_0
+set_global_assignment -name QIP_FILE rraw2.qip
+set_global_assignment -name MISC_FILE "C:/workspace/e14daq/TopCDT/sigma_delta.dpf"
+set_global_assignment -name VERILOG_FILE live_delay.v
+set_global_assignment -name VERILOG_FILE live_generator.v
+set_global_assignment -name VERILOG_FILE start_generator.v
+set_global_assignment -name VERILOG_FILE cycle_measurer.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,94 @@
+Quartus II Archive log --	C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/Rev4_Ref.qarlog
+
+Archive:	C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/Rev4_Ref.qar
+Date:		Sat Apr 10 19:55:19 2010
+Quartus II		9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+
+	=========== Files Selected: ===========
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/db/sigma_delta.sim.cvwf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/Basic_DAQ_Block_trigg.bdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/GLINK_fifo.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/VME_thing.bdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/alt_lvds_tx.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/altpll00.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/and32.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/and32.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/and32.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/and32.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/comp15.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/comp8.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/comp8.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/comp8.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/comp8.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/comparator1.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/comparator2.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter16.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter16.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter16.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter16.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter7.cmp
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter7.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter8_aclr.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter8_aclr.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter8_aclr.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter8_aclr.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter_addr.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter_show.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter_show.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter_show.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter_show.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/counter_small.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff13.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff15.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff16.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff32.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff4.tdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff7.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff7.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff7.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff7.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/dff_one.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/glink_interface.bdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/incount.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/mem.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/mux13.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/mux2.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/pll_smal.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/pll_smal.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/pll_smal.ppf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/pll_smal.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/pll_smal.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/show_counter.cmp
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/show_counter.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/sigma_delta.bdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/sigma_delta_old.bdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/status_constant.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/status_constant.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/status_constant.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/status_constant.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/tapdel10.tdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/tdc_vme.tdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/test_mem.mif
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/test_mem1.mif
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/test_mem_block.bdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/trigger_control.bdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/tx_test_counter.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/vme_buffer.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/design_files/vme_interface.tdf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/dff9.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/dff_trigger.bsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/dff_trigger.inc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/dff_trigger.qip
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/dff_trigger.vhd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/sigma_delta.qpf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/sigma_delta.qsf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/sigma_delta.sdc
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/sigma_delta.vcd
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/sigma_delta1.vwf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/sigma_delta2.vwf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/sigma_delta2_test.vwf
+C:/Documents and Settings/bogdan/Desktop/MT_Board/MT_Rev4/sigma_delta_assignment_defaults.qdf
+	======= Total: 83 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

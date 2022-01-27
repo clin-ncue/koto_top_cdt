@@ -1,0 +1,162 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 272 336)
+	(text "trig_type_lv1a" (rect 5 0 75 12)(font "Arial" ))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "in_et[16..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "in_et[16..0]" (rect 21 43 76 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "in_veto[31..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "in_veto[31..0]" (rect 21 59 89 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "in_live" (rect 0 0 31 12)(font "Arial" ))
+		(text "in_live" (rect 21 75 52 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "in_ena" (rect 0 0 31 12)(font "Arial" ))
+		(text "in_ena" (rect 21 91 52 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "in_spill" (rect 0 0 33 12)(font "Arial" ))
+		(text "in_spill" (rect 21 107 54 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "user_et" (rect 0 0 36 12)(font "Arial" ))
+		(text "user_et" (rect 21 123 57 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "user_veto[31..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "user_veto[31..0]" (rect 21 139 102 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "user_veto_as_trig[31..0]" (rect 0 0 120 12)(font "Arial" ))
+		(text "user_veto_as_trig[31..0]" (rect 21 155 141 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "user_and_or" (rect 0 0 60 12)(font "Arial" ))
+		(text "user_and_or" (rect 21 171 81 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "user_ena" (rect 0 0 44 12)(font "Arial" ))
+		(text "user_ena" (rect 21 187 65 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "user_spill_on" (rect 0 0 63 12)(font "Arial" ))
+		(text "user_spill_on" (rect 21 203 84 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "user_spill_off" (rect 0 0 67 12)(font "Arial" ))
+		(text "user_spill_off" (rect 21 219 88 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "user_prescale_p[15..0]" (rect 0 0 112 12)(font "Arial" ))
+		(text "user_prescale_p[15..0]" (rect 21 235 133 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "user_prescale_q[15..0]" (rect 0 0 112 12)(font "Arial" ))
+		(text "user_prescale_q[15..0]" (rect 21 251 133 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "user_et_thre[15..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "user_et_thre[15..0]" (rect 21 267 114 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "out_lv1a_raw" (rect 0 0 64 12)(font "Arial" ))
+		(text "out_lv1a_raw" (rect 171 27 235 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 1))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "out_lv1a_scaled" (rect 0 0 80 12)(font "Arial" ))
+		(text "out_lv1a_scaled" (rect 155 43 235 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48)(line_width 1))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "scaled_cnt[31..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "scaled_cnt[31..0]" (rect 151 59 235 71)(font "Arial" ))
+		(line (pt 256 64)(pt 240 64)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 304)(line_width 1))
+	)
+)

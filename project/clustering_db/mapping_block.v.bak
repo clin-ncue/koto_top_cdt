@@ -1,0 +1,197 @@
+module csi_mapping2 (clk,reset,fiber,
+fch00,fch01,fch02,fch03,fch04,fch05,fch06,fch07,fch08,fch09,fch10,fch11,fch12,fch13,fch14,fch15,
+array_out1, array_out2
+);
+
+parameter mapsize = 38;
+//parameter mapsize = 5;
+
+input wire clk;
+input wire reset;
+
+input wire [24:0] fiber;
+
+input wire [15:0] fch00;
+input wire [15:0] fch01;
+input wire [15:0] fch02;
+input wire [15:0] fch03;
+input wire [15:0] fch04;
+input wire [15:0] fch05;
+input wire [15:0] fch06;
+input wire [15:0] fch07;
+input wire [15:0] fch08;
+input wire [15:0] fch09;
+input wire [15:0] fch10;
+input wire [15:0] fch11;
+input wire [15:0] fch12;
+input wire [15:0] fch13;
+input wire [15:0] fch14;
+input wire [15:0] fch15;
+
+
+
+reg [mapsize:0] array [mapsize:0];
+output reg [mapsize:0] array_out1;
+output reg [mapsize:0] array_out2;
+
+reg done = 0;
+
+reg [5:0] irow = 0;
+
+wire [5:0] 	x [15:0];
+wire [5:0] 	y [15:0];
+wire [15:0] c;
+wire [1:0] 	dv [15:0];
+
+wire [5:0] 	x1 [15:0];
+wire [5:0] 	y1 [15:0];
+wire [15:0] c1;
+wire [1:0] 	dv1 [15:0];
+
+wire [5:0] 	x2 [15:0];
+wire [5:0] 	y2 [15:0];
+wire [15:0] c2;
+wire [1:0] 	dv2 [15:0];
+
+wire [5:0] 	x3 [15:0];
+wire [5:0] 	y3 [15:0];
+wire [15:0] c3;
+wire [1:0] 	dv3 [15:0];
+
+
+assign x[0] 	= fch00[5:0];
+assign y[0] 	= fch00[11:6];
+assign c[0] 	= fch00[12];
+assign dv[0] 	= fch00[14:13];
+assign x[1] 	= fch01[5:0];
+assign y[1] 	= fch01[11:6];
+assign c[1] 	= fch01[12];
+assign dv[1] 	= fch01[14:13];
+assign x[2] 	= fch02[5:0];
+assign y[2] 	= fch02[11:6];
+assign c[2] 	= fch02[12];
+assign dv[2] 	= fch02[14:13];
+assign x[3] 	= fch03[5:0];
+assign y[3] 	= fch03[11:6];
+assign c[3] 	= fch03[12];
+assign dv[3] 	= fch03[14:13];
+assign x[4] 	= fch04[5:0];
+assign y[4] 	= fch04[11:6];
+assign c[4] 	= fch04[12];
+assign dv[4] 	= fch04[14:13];
+assign x[5] 	= fch05[5:0];
+assign y[5] 	= fch05[11:6];
+assign c[5] 	= fch05[12];
+assign dv[5] 	= fch05[14:13];
+assign x[6] 	= fch06[5:0];
+assign y[6] 	= fch06[11:6];
+assign c[6] 	= fch06[12];
+assign dv[6] 	= fch06[14:13];
+assign x[7] 	= fch07[5:0];
+assign y[7] 	= fch07[11:6];
+assign c[7] 	= fch07[12];
+assign dv[7] 	= fch07[14:13];
+assign x[8] 	= fch08[5:0];
+assign y[8] 	= fch08[11:6];
+assign c[8] 	= fch08[12];
+assign dv[8] 	= fch08[14:13];
+assign x[9] 	= fch09[5:0];
+assign y[9] 	= fch09[11:6];
+assign c[9] 	= fch09[12];
+assign dv[9] 	= fch09[14:13];
+assign x[10] 	= fch10[5:0];
+assign y[10] 	= fch10[11:6];
+assign c[10] 	= fch10[12];
+assign dv[10] 	= fch10[14:13];
+assign x[11] 	= fch11[5:0];
+assign y[11] 	= fch11[11:6];
+assign c[11] 	= fch11[12];
+assign dv[11] 	= fch11[14:13];
+assign x[12] 	= fch12[5:0];
+assign y[12] 	= fch12[11:6];
+assign c[12] 	= fch12[12];
+assign dv[12] 	= fch12[14:13];
+assign x[13] 	= fch13[5:0];
+assign y[13] 	= fch13[11:6];
+assign c[13] 	= fch13[12];
+assign dv[13] 	= fch13[14:13];
+assign x[14] 	= fch14[5:0];
+assign y[14] 	= fch14[11:6];
+assign c[14] 	= fch14[12];
+assign dv[14] 	= fch14[14:13];
+assign x[15] 	= fch15[5:0];
+assign y[15] 	= fch15[11:6];
+assign c[15] 	= fch15[12];
+assign dv[15] 	= fch15[14:13];
+
+
+always @(posedge clk)
+begin
+
+	// initilization
+	integer i, j, ich;
+
+	if(reset==1)
+		begin
+			done = 0;
+			irow = 62;
+			for(i=0;i<=mapsize;i=i+1)
+				for(j=0;j<=mapsize;j=j+1)
+					array[i][j] = 0;
+		end
+
+	// end tag
+	if(fiber[15:0]==16'b0101010101010101)
+		begin
+			done = 1'b1;
+		end
+
+	// fill the table
+	if(done==1'b1)
+	begin
+		if(irow>=0&&irow<=37)
+		begin
+			array_out1 = array[irow];
+			array_out2 = array[irow+1];
+		end
+		else if(irow==63)
+		begin
+			array_out1 = 39'b101010101010101010101010101010101010101;
+			array_out2 = 39'b101010101010101010101010101010101010101;
+		end
+		else if(irow==38)
+		begin
+			done = 0;
+			array_out1 = 39'b010101010101010101010101010101010101010;
+			array_out2 = 39'b010101010101010101010101010101010101010;
+		end
+		irow = irow + 1'b1;
+	end
+	else if(done==0)
+	begin
+		array_out1 = 0;
+		array_out2 = 0;
+		for(ich=0;ich<16;ich=ich+1)
+		begin
+			if(dv[ich]==2'b01)
+			begin
+				array[x[ich]][y[ich]] = array[x[ich]][y[ich]] || c[ich];
+			end
+			if(dv1[ich]==2'b01)
+			begin
+				array[x1[ich]][y1[ich]] = array[x1[ich]][y1[ich]] || c1[ich];
+			end
+			if(dv2[ich]==2'b01)
+			begin
+				array[x2[ich]][y2[ich]] = array[x2[ich]][y2[ich]] || c2[ich];
+			end
+			if(dv3[ich]==2'b01)
+			begin
+				array[x3[ich]][y3[ich]] = array[x3[ich]][y3[ich]] || c3[ich];
+			end
+		end // end of ich
+	end	// end of else if
+
+end // of always
+
+endmodule

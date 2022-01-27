@@ -1,0 +1,1728 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@2: EP2S90 (0x020940DD)" sof_file="" top_level_entity="sigma_delta">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+      <single attribute="data horizontal scroll position" value="115"/>
+      <single attribute="data vertical scroll position" value="8"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="10"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="16"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="8128"/>
+      <multi attribute="timebars" size="1" value="128"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2018/04/26 11:43:09  #0">
+      <clock name="The_clock" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="3_TXD[0]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[10]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[11]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[12]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[13]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[14]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[15]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[1]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[2]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[3]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[4]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[5]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[6]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[7]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[8]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[9]" tap_mode="classic" type="output pin"/>
+          <wire name="lv1a_pipeline:inst116|clus_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_delta_lv1a" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_live" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_lv1_inhibit" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_lv1b_req" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="raw_generator:inst80|in_adc_trig" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="trig_type_lv1a_ext:inst238|out_lv1a" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="3_TXD[0]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[10]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[11]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[12]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[13]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[14]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[15]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[1]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[2]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[3]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[4]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[5]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[6]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[7]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[8]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[9]" tap_mode="classic" type="output pin"/>
+          <wire name="lv1a_pipeline:inst116|clus_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_delta_lv1a" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_live" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_lv1_inhibit" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_lv1b_req" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="raw_generator:inst80|in_adc_trig" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="trig_type_lv1a_ext:inst238|out_lv1a" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="3_TXD[0]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[10]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[11]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[12]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[13]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[14]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[15]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[1]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[2]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[3]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[4]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[5]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[6]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[7]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[8]" tap_mode="classic" type="output pin"/>
+          <wire name="3_TXD[9]" tap_mode="classic" type="output pin"/>
+          <wire name="lv1a_pipeline:inst116|clus_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_delta_lv1a" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_et_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_ext_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_int_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_live" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_lv1_inhibit" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_nclus[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_plv1_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_timestamp[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|in_veto_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_et_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_ext_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_int_lv1a[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_lv1b_req" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_nclus[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_plv1_cnt[9]" tap_mode="classic" type="register"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_timestamp[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="lv1a_pipeline:inst116|out_veto_raw[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="raw_generator:inst80|in_adc_trig" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|in_veto[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst36|out_veto[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp_dff:inst92|q[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="trig_type_lv1a_ext:inst238|out_lv1a" tap_mode="classic" type="combinatorial"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst36|in_et" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[15]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[16]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst36|in_veto" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="raw_generator:inst80|in_adc_trig"/>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst36|out_et" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[15]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[16]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst36|out_veto" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="timestamp_dff:inst92|q" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[0]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[1]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[2]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[3]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[4]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[5]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[6]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[7]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[8]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[9]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[10]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[11]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[12]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[13]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[14]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[15]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[16]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[17]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[18]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[19]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[20]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[21]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[22]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[23]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[24]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[25]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[26]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[27]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[28]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[29]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[30]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="trig_type_lv1a_ext:inst238|out_lv1a"/>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|clus_err"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_et_raw" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_veto_raw" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_ext_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_ext_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_ext_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_ext_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_ext_lv1a[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_int_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_delta_lv1a"/>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_live"/>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_lv1_inhibit"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_nclus" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_plv1_cnt" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[9]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_timestamp" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[15]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[16]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[17]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[18]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[19]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[20]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[21]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[22]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[23]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[24]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[25]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[26]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[27]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[28]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[29]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[30]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[31]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_et_raw" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_veto_raw" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_ext_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_ext_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_ext_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_ext_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_ext_lv1a[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_int_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_lv1b_req"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_nclus" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_nclus[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_nclus[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_nclus[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_nclus[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_plv1_cnt" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[9]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_timestamp" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[15]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[16]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[17]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[18]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[19]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[20]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[21]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[22]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[23]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[24]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[25]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[26]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[27]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[28]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[29]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[30]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[31]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="3_TXD" order="lsb_to_msb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="3_TXD[0]"/>
+            <net is_signal_inverted="no" name="3_TXD[1]"/>
+            <net is_signal_inverted="no" name="3_TXD[2]"/>
+            <net is_signal_inverted="no" name="3_TXD[3]"/>
+            <net is_signal_inverted="no" name="3_TXD[4]"/>
+            <net is_signal_inverted="no" name="3_TXD[5]"/>
+            <net is_signal_inverted="no" name="3_TXD[6]"/>
+            <net is_signal_inverted="no" name="3_TXD[7]"/>
+            <net is_signal_inverted="no" name="3_TXD[8]"/>
+            <net is_signal_inverted="no" name="3_TXD[9]"/>
+            <net is_signal_inverted="no" name="3_TXD[10]"/>
+            <net is_signal_inverted="no" name="3_TXD[11]"/>
+            <net is_signal_inverted="no" name="3_TXD[12]"/>
+            <net is_signal_inverted="no" name="3_TXD[13]"/>
+            <net is_signal_inverted="no" name="3_TXD[14]"/>
+            <net is_signal_inverted="no" name="3_TXD[15]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst36|in_et" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[15]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_et[16]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst36|in_veto" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|in_veto[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="trig_type_lv1a_ext:inst238|out_lv1a"/>
+          <net is_signal_inverted="no" name="raw_generator:inst80|in_adc_trig"/>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst36|out_et" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[15]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_et[16]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst36|out_veto" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst36|out_veto[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="timestamp_dff:inst92|q" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[0]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[1]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[2]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[3]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[4]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[5]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[6]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[7]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[8]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[9]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[10]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[11]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[12]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[13]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[14]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[15]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[16]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[17]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[18]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[19]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[20]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[21]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[22]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[23]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[24]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[25]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[26]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[27]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[28]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[29]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[30]"/>
+            <net is_signal_inverted="no" name="timestamp_dff:inst92|q[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|clus_err"/>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_delta_lv1a"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_et_raw" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_et_raw[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_ext_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_ext_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_ext_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_ext_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_ext_lv1a[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_int_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_int_lv1a[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_live"/>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_lv1_inhibit"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_nclus" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_nclus[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_plv1_cnt" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_plv1_cnt[9]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_timestamp" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[15]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[16]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[17]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[18]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[19]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[20]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[21]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[22]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[23]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[24]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[25]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[26]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[27]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[28]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[29]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[30]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_timestamp[31]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|in_veto_raw" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|in_veto_raw[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_et_raw" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_et_raw[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_ext_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_ext_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_ext_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_ext_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_ext_lv1a[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_int_lv1a" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_int_lv1a[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_lv1b_req"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_nclus" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_nclus[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_nclus[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_nclus[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_nclus[3]"/>
+          </bus>
+          <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1"/>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_plv1_cnt" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_plv1_cnt[9]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_timestamp" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[15]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[16]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[17]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[18]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[19]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[20]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[21]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[22]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[23]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[24]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[25]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[26]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[27]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[28]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[29]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[30]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_timestamp[31]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="lv1a_pipeline:inst116|out_veto_raw" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[0]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[1]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[2]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[3]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[4]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[5]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[6]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[7]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[8]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[9]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[10]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[11]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[12]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[13]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[14]"/>
+            <net is_signal_inverted="no" name="lv1a_pipeline:inst116|out_veto_raw[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="3_TXD" order="lsb_to_msb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="3_TXD[0]"/>
+            <net is_signal_inverted="no" name="3_TXD[1]"/>
+            <net is_signal_inverted="no" name="3_TXD[2]"/>
+            <net is_signal_inverted="no" name="3_TXD[3]"/>
+            <net is_signal_inverted="no" name="3_TXD[4]"/>
+            <net is_signal_inverted="no" name="3_TXD[5]"/>
+            <net is_signal_inverted="no" name="3_TXD[6]"/>
+            <net is_signal_inverted="no" name="3_TXD[7]"/>
+            <net is_signal_inverted="no" name="3_TXD[8]"/>
+            <net is_signal_inverted="no" name="3_TXD[9]"/>
+            <net is_signal_inverted="no" name="3_TXD[10]"/>
+            <net is_signal_inverted="no" name="3_TXD[11]"/>
+            <net is_signal_inverted="no" name="3_TXD[12]"/>
+            <net is_signal_inverted="no" name="3_TXD[13]"/>
+            <net is_signal_inverted="no" name="3_TXD[14]"/>
+            <net is_signal_inverted="no" name="3_TXD[15]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2018/04/26 11:43:09  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'lv1a_pipeline:inst116|in_timestamp[0]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[10]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[11]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[12]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[13]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[14]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[15]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[16]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[17]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[18]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[19]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[1]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[20]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[21]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[22]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[23]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[24]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[25]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[26]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[27]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[28]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[29]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[2]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[30]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[31]' == low &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[3]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[4]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[5]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[6]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[7]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[8]' == high &amp;&amp; 'lv1a_pipeline:inst116|in_timestamp[9]' == low
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="column width" size="23" value="34,34,241,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
+    <multi attribute="window position" size="9" value="1436,799,398,124,356,50,124,0,0"/>
+  </global_info>
+</session>

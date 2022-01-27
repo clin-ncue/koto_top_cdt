@@ -1,0 +1,152 @@
+Restore Archived Project report for sigma_delta
+Mon Jan 18 11:04:29 2010
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Mon Jan 18 11:04:29 2010 ;
+; Revision Name                   ; sigma_delta                           ;
+; Top-level Entity Name           ; sigma_delta                           ;
+; Family                          ; Stratix II                            ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'D:/firmware/MT_Rev2.qar' into the 'D:/firmware/MT_Rev2_restored/' directory
+Info: Generated report 'sigma_delta.restore.rpt'
+Info: Evaluation of Tcl script d:/altera/90/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 102 megabytes
+    Info: Processing ended: Mon Jan 18 11:04:29 2010
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+
++----------------------------------------+
+; Files Restored                         ;
++----------------------------------------+
+; File Name                              ;
++----------------------------------------+
+; design_files/Basic_DAQ_Block_trigg.bdf ;
+; design_files/GLINK_fifo.vhd            ;
+; design_files/VME_thing.bdf             ;
+; design_files/alt_lvds_tx.vhd           ;
+; design_files/altpll00.vhd              ;
+; design_files/and32.bsf                 ;
+; design_files/and32.inc                 ;
+; design_files/and32.qip                 ;
+; design_files/and32.vhd                 ;
+; design_files/comp15.vhd                ;
+; design_files/comp8.bsf                 ;
+; design_files/comp8.inc                 ;
+; design_files/comp8.qip                 ;
+; design_files/comp8.vhd                 ;
+; design_files/comparator1.vhd           ;
+; design_files/comparator2.vhd           ;
+; design_files/counter16.bsf             ;
+; design_files/counter16.inc             ;
+; design_files/counter16.qip             ;
+; design_files/counter16.vhd             ;
+; design_files/counter7.cmp              ;
+; design_files/counter7.vhd              ;
+; design_files/counter8_aclr.bsf         ;
+; design_files/counter8_aclr.inc         ;
+; design_files/counter8_aclr.qip         ;
+; design_files/counter8_aclr.vhd         ;
+; design_files/counter_addr.vhd          ;
+; design_files/counter_show.bsf          ;
+; design_files/counter_show.inc          ;
+; design_files/counter_show.qip          ;
+; design_files/counter_show.vhd          ;
+; design_files/counter_small.vhd         ;
+; design_files/dff13.vhd                 ;
+; design_files/dff15.vhd                 ;
+; design_files/dff16.vhd                 ;
+; design_files/dff32.vhd                 ;
+; design_files/dff4.tdf                  ;
+; design_files/dff7.bsf                  ;
+; design_files/dff7.inc                  ;
+; design_files/dff7.qip                  ;
+; design_files/dff7.vhd                  ;
+; design_files/dff_one.vhd               ;
+; design_files/glink_interface.bdf       ;
+; design_files/incount.vhd               ;
+; design_files/mem.vhd                   ;
+; design_files/mux13.vhd                 ;
+; design_files/mux2.vhd                  ;
+; design_files/pll_smal.bsf              ;
+; design_files/pll_smal.inc              ;
+; design_files/pll_smal.ppf              ;
+; design_files/pll_smal.qip              ;
+; design_files/pll_smal.vhd              ;
+; design_files/show_counter.cmp          ;
+; design_files/show_counter.vhd          ;
+; design_files/sigma_delta.bdf           ;
+; design_files/sigma_delta_old.bdf       ;
+; design_files/status_constant.bsf       ;
+; design_files/status_constant.inc       ;
+; design_files/status_constant.qip       ;
+; design_files/status_constant.vhd       ;
+; design_files/tapdel10.tdf              ;
+; design_files/tdc_vme.tdf               ;
+; design_files/test_mem.mif              ;
+; design_files/test_mem1.mif             ;
+; design_files/test_mem_block.bdf        ;
+; design_files/trigger_control.bdf       ;
+; design_files/tx_test_counter.vhd       ;
+; design_files/vme_buffer.vhd            ;
+; design_files/vme_interface.tdf         ;
+; db/sigma_delta.sim.cvwf                ;
+; dff9.vhd                               ;
+; sigma_delta.qpf                        ;
+; sigma_delta.qsf                        ;
+; sigma_delta.sdc                        ;
+; sigma_delta.vcd                        ;
+; sigma_delta1.vwf                       ;
+; sigma_delta2.vwf                       ;
+; sigma_delta2_test.vwf                  ;
+; sigma_delta_assignment_defaults.qdf    ;
++----------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

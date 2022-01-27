@@ -1,0 +1,1613 @@
+--lpm_counter CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Stratix II" lpm_direction="UP" lpm_port_updown="PORT_UNUSED" lpm_width=256 clock q CARRY_CHAIN="IGNORE" CARRY_CHAIN_LENGTH=48
+--VERSION_BEGIN 9.1SP2 cbx_cycloneii 2010:03:24:20:38:24:SJ cbx_lpm_add_sub 2010:03:24:20:38:24:SJ cbx_lpm_compare 2010:03:24:20:38:24:SJ cbx_lpm_counter 2010:03:24:20:38:24:SJ cbx_lpm_decode 2010:03:24:20:38:24:SJ cbx_mgl 2010:03:24:21:00:10:SJ cbx_stratix 2010:03:24:20:38:24:SJ cbx_stratixii 2010:03:24:20:38:24:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2010 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION stratixii_lcell_comb (cin, dataa, datab, datac, datad, datae, dataf, datag, sharein)
+WITH ( EXTENDED_LUT, LUT_MASK, SHARED_ARITH)
+RETURNS ( combout, cout, shareout, sumout);
+FUNCTION stratixii_lcell_ff (aclr, adatasdata, aload, clk, datain, ena, sclr, sload)
+WITH ( x_on_violation)
+RETURNS ( regout);
+
+--synthesis_resources = lut 256 reg 256 
+SUBDESIGN cntr_9ph
+( 
+	clock	:	input;
+	q[255..0]	:	output;
+) 
+VARIABLE 
+	counter_comb_bita0 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "000000000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita1 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita2 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita3 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita4 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita5 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita6 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita7 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita8 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita9 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita10 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita11 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita12 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita13 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita14 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita15 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita16 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita17 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita18 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita19 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita20 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita21 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita22 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita23 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita24 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita25 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita26 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita27 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita28 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita29 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita30 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita31 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita32 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita33 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita34 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita35 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita36 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita37 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita38 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita39 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita40 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita41 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita42 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita43 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita44 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita45 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita46 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita47 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita48 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita49 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita50 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita51 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita52 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita53 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita54 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita55 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita56 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita57 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita58 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita59 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita60 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita61 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita62 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita63 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita64 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita65 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita66 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita67 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita68 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita69 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita70 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita71 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita72 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita73 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita74 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita75 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita76 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita77 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita78 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita79 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita80 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita81 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita82 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita83 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita84 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita85 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita86 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita87 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita88 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita89 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita90 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita91 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita92 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita93 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita94 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita95 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita96 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita97 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita98 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita99 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita100 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita101 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita102 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita103 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita104 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita105 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita106 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita107 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita108 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita109 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita110 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita111 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita112 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita113 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita114 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita115 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita116 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita117 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita118 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita119 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita120 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita121 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita122 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita123 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita124 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita125 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita126 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita127 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita128 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita129 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita130 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita131 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita132 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita133 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita134 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita135 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita136 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita137 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita138 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita139 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita140 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita141 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita142 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita143 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita144 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita145 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita146 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita147 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita148 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita149 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita150 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita151 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita152 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita153 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita154 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita155 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita156 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita157 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita158 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita159 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita160 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita161 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita162 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita163 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita164 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita165 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita166 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita167 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita168 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita169 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita170 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita171 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita172 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita173 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita174 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita175 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita176 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita177 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita178 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita179 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita180 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita181 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita182 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita183 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita184 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita185 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita186 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita187 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita188 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita189 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita190 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita191 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita192 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita193 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita194 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita195 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita196 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita197 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita198 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita199 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita200 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita201 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita202 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita203 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita204 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita205 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita206 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita207 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita208 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita209 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita210 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita211 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita212 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita213 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita214 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita215 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita216 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita217 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita218 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita219 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita220 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita221 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita222 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita223 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita224 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita225 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita226 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita227 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita228 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita229 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita230 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita231 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita232 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita233 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita234 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita235 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita236 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita237 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita238 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita239 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita240 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita241 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita242 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita243 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita244 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita245 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita246 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita247 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita248 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita249 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita250 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita251 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita252 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita253 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita254 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_comb_bita255 : stratixii_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000FF000000FF00",
+			SHARED_ARITH = "off"
+		);
+	counter_reg_bit1a[255..0] : stratixii_lcell_ff;
+	aclr_actual	: WIRE;
+	clk_en	: NODE;
+	cnt_en	: NODE;
+	data[255..0]	: NODE;
+	external_cin	: WIRE;
+	lsb_cin	: WIRE;
+	s_val[255..0]	: WIRE;
+	safe_q[255..0]	: WIRE;
+	sclr	: NODE;
+	sload	: NODE;
+	sset	: NODE;
+	updown_dir	: WIRE;
+	updown_lsb	: WIRE;
+	updown_other_bits	: WIRE;
+
+BEGIN 
+	counter_comb_bita[255..0].cin = ( counter_comb_bita[254..0].cout, lsb_cin);
+	counter_comb_bita[255..0].datad = ( counter_reg_bit1a[255..0].regout);
+	counter_comb_bita[255..0].dataf = ( updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_other_bits, updown_lsb);
+	counter_reg_bit1a[].aclr = aclr_actual;
+	counter_reg_bit1a[].adatasdata = ((sset & s_val[]) # ((! sset) & data[]));
+	counter_reg_bit1a[].clk = clock;
+	counter_reg_bit1a[].datain = ( counter_comb_bita[255..0].sumout);
+	counter_reg_bit1a[].ena = (clk_en & (((cnt_en # sclr) # sset) # sload));
+	counter_reg_bit1a[].sclr = sclr;
+	counter_reg_bit1a[].sload = (sset # sload);
+	aclr_actual = B"0";
+	clk_en = VCC;
+	cnt_en = VCC;
+	data[] = GND;
+	external_cin = B"1";
+	lsb_cin = B"0";
+	q[] = safe_q[];
+	s_val[] = B"1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111";
+	safe_q[] = counter_reg_bit1a[].regout;
+	sclr = GND;
+	sload = GND;
+	sset = GND;
+	updown_dir = B"1";
+	updown_lsb = updown_dir;
+	updown_other_bits = ((! external_cin) # updown_dir);
+END;
+--VALID FILE

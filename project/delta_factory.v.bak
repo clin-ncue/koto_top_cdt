@@ -1,0 +1,81 @@
+/* 
+   Top CDT Design
+   C. Lin
+*/
+
+module delta_factory
+(
+// input 
+   clk               , // system clock
+   in_live           ,
+   in_delta_ena      ,
+   user_gap          ,
+   user_ntrig        ,
+     
+// output
+   trig              
+);   
+
+input  wire         clk;
+input  wire         in_live;
+
+input  wire         in_ena;
+input  wire [31 :0] user_gap;
+input  wire [15 :0] user_ntrig;
+
+output reg          trig;
+
+reg         [15 :0] trig_cnt;
+reg         [31 :0] gap_cnt;
+reg         [1  :0] iheader;
+
+always @(posedge clk)
+begin
+
+   if( in_live == 1'b0 )
+      begin
+         trig_cnt = 0;
+         gap_cnt = 0;
+         iheader = 0;
+      end
+      
+   if( in_ena == 1'b1 && (trig_cnt < user_ntrig || user_ntrig==16'b1111_1111_1111_1111) )
+      begin
+         
+      trig = 1'b0;
+         
+         if( gap_cnt < user_gap )
+            begin
+               gap_cnt = gap_cnt + 1;
+               iheader = 0;
+            end
+         else 
+            begin
+               case( iheader )
+                  0 : trig = 1'b1;
+                  1 : trig = 1'b0;
+                  2 : trig = 1'b0;
+                  3 : trig = 1'b1;
+                  default : trig = 1'b0;
+               endcase 
+               
+               //// skip first trigger ////
+               if( trig_cnt == 0 )
+                  trig = 1'b0;
+               
+               if( iheader == 3 )
+                  begin
+                     gap_cnt = 0;
+                     trig_cnt = trig_cnt + 1;
+                  end
+               else
+                  iheader = iheader + 1;
+               
+            end
+         
+      end
+   else
+      trig = 1'b0;
+end
+
+endmodule

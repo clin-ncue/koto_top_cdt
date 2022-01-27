@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 320 200)
+	(text "CL_lvds_rx1" (rect 125 1 207 17)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 184 25 196)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "rx_in[0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "rx_in[0]" (rect 4 19 39 32)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 104 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rx_inclock" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "rx_inclock" (rect 4 35 50 48)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 104 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pll_areset" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "pll_areset" (rect 4 51 50 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 104 64)(line_width 1))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "rx_channel_data_align[0]" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "rx_channel_data_align[0]" (rect 4 171 125 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 144 184)(line_width 1))
+	)
+	(port
+		(pt 320 32)
+		(output)
+		(text "rx_out[7..0]" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "rx_out[7..0]" (rect 262 19 315 32)(font "Arial" (font_size 8)))
+		(line (pt 320 32)(pt 232 32)(line_width 3))
+	)
+	(port
+		(pt 320 48)
+		(output)
+		(text "rx_outclock" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "rx_outclock" (rect 261 35 313 48)(font "Arial" (font_size 8)))
+		(line (pt 320 48)(pt 208 48)(line_width 1))
+	)
+	(drawing
+		(text "LVDS Receiver" (rect 124 58 189 70)(font "Arial" ))
+		(text "single channel, x8" (rect 119 74 194 86)(font "Arial" ))
+		(text "32.000 ns" (rect 136 90 177 102)(font "Arial" ))
+		(text "I/P data rate=250.00" (rect 114 106 199 118)(font "Arial" ))
+		(text "Outclk Freq = 31.25" (rect 115 122 198 134)(font "Arial" ))
+		(text "Stratix II" (rect 276 186 312 198)(font "Arial" ))
+		(line (pt 104 24)(pt 208 24)(line_width 1))
+		(line (pt 208 24)(pt 208 168)(line_width 1))
+		(line (pt 208 168)(pt 104 168)(line_width 1))
+		(line (pt 104 168)(pt 104 24)(line_width 1))
+		(line (pt 104 44)(pt 109 49)(line_width 1))
+		(line (pt 104 52)(pt 109 47)(line_width 1))
+		(line (pt 224 27)(pt 232 27)(line_width 1))
+		(line (pt 232 27)(pt 232 39)(line_width 1))
+		(line (pt 232 39)(pt 224 39)(line_width 1))
+		(line (pt 224 39)(pt 224 27)(line_width 1))
+		(line (pt 224 34)(pt 226 36)(line_width 1))
+		(line (pt 226 36)(pt 224 38)(line_width 1))
+		(line (pt 216 36)(pt 224 36)(line_width 1))
+		(line (pt 208 32)(pt 224 32)(line_width 3))
+		(line (pt 216 48)(pt 216 36)(line_width 1))
+		(line (pt 144 184)(pt 144 168)(line_width 1))
+	)
+)

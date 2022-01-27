@@ -1,0 +1,74 @@
+Quartus II Archive log --	Z:/14BIT_Altera_RevC2/sigma_delta/REvC_Reference.qarlog
+
+Archive:	Z:/14BIT_Altera_RevC2/sigma_delta/REvC_Reference.qar
+Date:		Mon Dec 21 10:49:01 2009
+Quartus II		9.0 Build 132 02/25/2009 SJ Full Version
+
+	=========== Files Selected: ===========
+Z:/14BIT_Altera_RevC2/design_files/Basic_DAQ_Block_trigg.bdf
+Z:/14BIT_Altera_RevC2/design_files/GLINK_fifo.vhd
+Z:/14BIT_Altera_RevC2/design_files/VME_thing.bdf
+Z:/14BIT_Altera_RevC2/design_files/alt_lvds_tx.vhd
+Z:/14BIT_Altera_RevC2/design_files/altpll00.vhd
+Z:/14BIT_Altera_RevC2/design_files/and32.bsf
+Z:/14BIT_Altera_RevC2/design_files/and32.inc
+Z:/14BIT_Altera_RevC2/design_files/and32.qip
+Z:/14BIT_Altera_RevC2/design_files/and32.vhd
+Z:/14BIT_Altera_RevC2/design_files/comp15.vhd
+Z:/14BIT_Altera_RevC2/design_files/comparator1.vhd
+Z:/14BIT_Altera_RevC2/design_files/comparator2.vhd
+Z:/14BIT_Altera_RevC2/design_files/counter16.bsf
+Z:/14BIT_Altera_RevC2/design_files/counter16.inc
+Z:/14BIT_Altera_RevC2/design_files/counter16.qip
+Z:/14BIT_Altera_RevC2/design_files/counter16.vhd
+Z:/14BIT_Altera_RevC2/design_files/counter7.cmp
+Z:/14BIT_Altera_RevC2/design_files/counter7.vhd
+Z:/14BIT_Altera_RevC2/design_files/counter8.vhd
+Z:/14BIT_Altera_RevC2/design_files/counter_addr.vhd
+Z:/14BIT_Altera_RevC2/design_files/counter_show.bsf
+Z:/14BIT_Altera_RevC2/design_files/counter_show.inc
+Z:/14BIT_Altera_RevC2/design_files/counter_show.qip
+Z:/14BIT_Altera_RevC2/design_files/counter_show.vhd
+Z:/14BIT_Altera_RevC2/design_files/counter_small.vhd
+Z:/14BIT_Altera_RevC2/design_files/dff13.vhd
+Z:/14BIT_Altera_RevC2/design_files/dff15.vhd
+Z:/14BIT_Altera_RevC2/design_files/dff16.vhd
+Z:/14BIT_Altera_RevC2/design_files/dff32.vhd
+Z:/14BIT_Altera_RevC2/design_files/dff4.tdf
+Z:/14BIT_Altera_RevC2/design_files/dff_one.vhd
+Z:/14BIT_Altera_RevC2/design_files/glink_interface.bdf
+Z:/14BIT_Altera_RevC2/design_files/incount.vhd
+Z:/14BIT_Altera_RevC2/design_files/mem.vhd
+Z:/14BIT_Altera_RevC2/design_files/mux13.vhd
+Z:/14BIT_Altera_RevC2/design_files/mux16.vhd
+Z:/14BIT_Altera_RevC2/design_files/pll_smal.bsf
+Z:/14BIT_Altera_RevC2/design_files/pll_smal.inc
+Z:/14BIT_Altera_RevC2/design_files/pll_smal.ppf
+Z:/14BIT_Altera_RevC2/design_files/pll_smal.qip
+Z:/14BIT_Altera_RevC2/design_files/pll_smal.vhd
+Z:/14BIT_Altera_RevC2/design_files/show_counter.cmp
+Z:/14BIT_Altera_RevC2/design_files/show_counter.vhd
+Z:/14BIT_Altera_RevC2/design_files/sigma_delta.bdf
+Z:/14BIT_Altera_RevC2/design_files/sigma_delta_old.bdf
+Z:/14BIT_Altera_RevC2/design_files/tapdel10.tdf
+Z:/14BIT_Altera_RevC2/design_files/tdc_vme.tdf
+Z:/14BIT_Altera_RevC2/design_files/test_mem.mif
+Z:/14BIT_Altera_RevC2/design_files/test_mem1.mif
+Z:/14BIT_Altera_RevC2/design_files/test_mem_block.bdf
+Z:/14BIT_Altera_RevC2/design_files/trigger_control.bdf
+Z:/14BIT_Altera_RevC2/design_files/tx_test_counter.vhd
+Z:/14BIT_Altera_RevC2/design_files/vme_buffer.vhd
+Z:/14BIT_Altera_RevC2/design_files/vme_interface.tdf
+Z:/14BIT_Altera_RevC2/sigma_delta/dff9.vhd
+Z:/14BIT_Altera_RevC2/sigma_delta/sigma_delta.qpf
+Z:/14BIT_Altera_RevC2/sigma_delta/sigma_delta.qsf
+Z:/14BIT_Altera_RevC2/sigma_delta/sigma_delta.sdc
+Z:/14BIT_Altera_RevC2/sigma_delta/sigma_delta.vcd
+Z:/14BIT_Altera_RevC2/sigma_delta/sigma_delta1.vwf
+Z:/14BIT_Altera_RevC2/sigma_delta/sigma_delta2.vwf
+Z:/14BIT_Altera_RevC2/sigma_delta/sigma_delta2_test.vwf
+Z:/14BIT_Altera_RevC2/sigma_delta/sigma_delta_assignment_defaults.qdf
+	======= Total: 63 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

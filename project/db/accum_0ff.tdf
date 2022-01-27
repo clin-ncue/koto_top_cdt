@@ -1,0 +1,50 @@
+--altaccumulate CARRY_CHAIN="IGNORE" CARRY_CHAIN_LENGTH=48 DEVICE_FAMILY="Stratix II" LPM_REPRESENTATION="UNSIGNED" WIDTH_IN=8 WIDTH_OUT=16 aclr clken clock data result
+--VERSION_BEGIN 9.1SP2 cbx_altaccumulate 2010:03:24:20:38:24:SJ cbx_cycloneii 2010:03:24:20:38:24:SJ cbx_lpm_add_sub 2010:03:24:20:38:24:SJ cbx_mgl 2010:03:24:21:00:10:SJ cbx_stratix 2010:03:24:20:38:24:SJ cbx_stratixii 2010:03:24:20:38:24:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2010 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION stratixii_lcell_comb (cin, dataa, datab, datac, datad, datae, dataf, datag, sharein)
+WITH ( EXTENDED_LUT, LUT_MASK, SHARED_ARITH)
+RETURNS ( combout, cout, shareout, sumout);
+
+--synthesis_resources = lut 16 reg 16 
+SUBDESIGN accum_0ff
+( 
+	aclr	:	input;
+	clken	:	input;
+	clock	:	input;
+	data[7..0]	:	input;
+	result[15..0]	:	output;
+) 
+VARIABLE 
+	acc_ffa[15..0] : dffe;
+	acc_cella[15..0] : stratixii_lcell_comb
+		WITH (
+			LUT_MASK = "000033330000AAAA"
+		);
+
+BEGIN 
+	acc_ffa[].clk = clock;
+	acc_ffa[].clrn = (! aclr);
+	acc_ffa[].d = acc_cella[].sumout;
+	acc_ffa[].ena = clken;
+	acc_cella[].cin = ( acc_cella[14..0].cout, B"0");
+	acc_cella[].dataa = acc_ffa[].q;
+	acc_cella[].datab = ( B"00000000", data[]);
+	result[] = acc_ffa[].q;
+END;
+--VALID FILE

@@ -1,0 +1,8 @@
+(
+	result_sig[]
+) = const6	(
+
+)
+RETURNS (
+	.result[]
+);

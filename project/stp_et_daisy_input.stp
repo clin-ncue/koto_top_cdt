@@ -1,0 +1,249 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@2: EP2S90 (0x020940DD)" sof_file="" top_level_entity="sigma_delta">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1436,799,398,124,0,50,124,0,0"/>
+    <multi attribute="column width" size="23" value="34,34,244,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="setup vertical scroll position" value="7"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="data horizontal scroll position" value="14"/>
+      <single attribute="zoom level numerator" value="8"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="16368"/>
+      <single attribute="zoom offset denominator" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2018/04/09 18:01:38  #0">
+      <clock name="The_clock" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="time_controller:inst42|align_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_ena" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|in_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_live" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_adc" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_rst" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_spill" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="time_controller:inst42|align_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_ena" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|in_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_live" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_adc" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_rst" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_spill" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="time_controller:inst42|align_cnt[0]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[1]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[2]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[3]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[4]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[5]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[6]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[7]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_cnt[8]" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|align_ena" tap_mode="classic" type="register"/>
+          <wire name="time_controller:inst42|in_err" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_et[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|in_live" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_adc" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_rst" tap_mode="classic" type="combinatorial"/>
+          <wire name="time_controller:inst42|out_spill" tap_mode="classic" type="combinatorial"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst42|align_cnt" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[8]"/>
+          </bus>
+          <net is_signal_inverted="no" name="time_controller:inst42|align_ena"/>
+          <net is_signal_inverted="no" name="time_controller:inst42|in_err"/>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst42|in_et" order="lsb_to_msb" radix="unsigned_dec" state="expand" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[15]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[16]"/>
+          </bus>
+          <net is_signal_inverted="no" name="time_controller:inst42|in_live"/>
+          <net is_signal_inverted="no" name="time_controller:inst42|out_adc"/>
+          <net is_signal_inverted="no" name="time_controller:inst42|out_rst"/>
+          <net is_signal_inverted="no" name="time_controller:inst42|out_spill"/>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst42|align_cnt" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|align_cnt[8]"/>
+          </bus>
+          <net is_signal_inverted="no" name="time_controller:inst42|align_ena"/>
+          <net is_signal_inverted="no" name="time_controller:inst42|in_err"/>
+          <bus is_signal_inverted="no" link="all" name="time_controller:inst42|in_et" order="lsb_to_msb" radix="unsigned_dec" state="expand" type="combinatorial">
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[0]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[1]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[2]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[3]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[4]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[5]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[6]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[7]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[8]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[9]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[10]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[11]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[12]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[13]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[14]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[15]"/>
+            <net is_signal_inverted="no" name="time_controller:inst42|in_et[16]"/>
+          </bus>
+          <net is_signal_inverted="no" name="time_controller:inst42|in_live"/>
+          <net is_signal_inverted="no" name="time_controller:inst42|out_adc"/>
+          <net is_signal_inverted="no" name="time_controller:inst42|out_rst"/>
+          <net is_signal_inverted="no" name="time_controller:inst42|out_spill"/>
+        </setup_view>
+      </presentation>
+      <trigger CRC="9AD527A" attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2018/04/09 18:15:01  #0" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'time_controller:inst42|out_spill' == rising edge
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>00000000000000000000000000000000
+            <pwr_up_transitional>00000000000000000000000000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2018/04/09 18:15:01  #1" power_up_mode="false" sample_depth="128" trigger_position="16">0000111101000000000000000000110010001111010000000000000000001100010011110100000000000000000011001100111101000000000000000000110000101111010000000000000000001100101011110100000000000000000011000110111101000000000000000000110011101111010000000000000000001100000111110100000000000000000011001001111101000000000000000000110001011111010000000000000000001100110111110100000000000000000011000011111101000000000000000000110010111111010000000000000000001100011111110100000000000000000011001111111101000000000000000000110000000000110000000000000000001101100000001100000000000000000011000100000011000000000000000000110011000000110000000000000000001100001000001100000000000000000011001010000011000000000000000000110001100000110000000000000000001100111000001100000000000000000011000001000011000000000000000000110010010000110000000000000000001100010100001100000000000000000011001101000011000000000000000000110000110000110000000000000000001100101100001100000000000000000011000111000011000000000000000000110011110000110000000000000000001100000010001100000000000000000011001000100011000000000000000000110001001000110000000000000000001100110010001100000000000000000011000010100011000000000000000000110010101000110000000000000000001100011010001100000000000000000011001110100011000000000000000000110000011000110000000000000000001100100110001100000000000000000011000101100011000000000000000000110011011000110000000000000000001100001110001100000000000000000011001011100011000000000000000000110001111000110000000000000000001100111110001100000000000000000011000000010011000000000000000000110010000100110000000000000000001100010001001100000000000000000011001100010011000000000000000000110000100100110000000000000000001100101001001100000000000000000011000110010011000000000000000000110011100100110000000000000000001100000101001100000000000000000011001001010011000000000000000000110001010100110000000000000000001100110101001100000000000000000011000011010011000000000000000000110010110100110000000000000000001100011101001100000000000000000011001111010011000000000000000000110000001100110000000000000000001100100011001100000000000000000011000100110011000000000000000000110011001100110000000000000000001100001011001100000000000000000011001010110011000000000000000000110001101100110000000000000000001100111011001100000000000000000011000001110011000000000000000000110010011100110000000000000000001100010111001100000000000000000011001101110011000000000000000000110000111100110000000000000000001100101111001100000000000000000011000111110011000000000000000000110011111100110000000000000000001100000000101100000000000000000011001000001011000000000000000000110001000010110000000000000000001100110000101100000000000000000011000010001011000000000000000000110010100010110000000000000000001100011000101100000000000000000011001110001011000000000000000000110000010010110000000000000000001100100100101100000000000000000011000101001011000000000000000000110011010010110000000000000000001100001100101100000000000000000011001011001011000000000000000000110001110010110000000000000000001100111100101100000000000000000011000000101011000000000000000000110010001010110000000000000000001100010010101100000000000000000011001100101011000000000000000000110000101010110000000000000000001100101010101100000000000000000011000110101011000000000000000000110011101010110000000000000000001100000110101100000000000000000011001001101011000000000000000000110001011010110000000000000000001100110110101100000000000000000011000011101011000000000000000000110010111010110000000000000000001100011110101100000000000000000011001111101011000000000000000000110000000110110000000000000000001100100001101100000000000000000011000100011011000000000000000000110011000110110000000000000000001100001001101100000000000000000011001010011011000000000000000000110001100110110000000000000000001100111001101100000000000000000011000001011011000000000000000000110010010110110000000000000000001100010101101100000000000000000011001101011011000000000000000000110000110110110000000000000000001100101101101100000000000000000011000111011011000000000000000000110011110110110000000000000000001100</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+</session>

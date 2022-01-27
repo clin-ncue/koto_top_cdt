@@ -1,0 +1,940 @@
+<session jtag_chain="" jtag_device="" sof_file="" top_level_entity="sigma_delta">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="11"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="126976"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2016/07/08 14:26:02  #0">
+      <clock name="altpll00:inst82|altpll:altpll_component|_clk0" polarity="posedge" tap_mode="probeonly"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="512" trigger_in_enable="yes" trigger_in_node="_as" trigger_in_tap_mode="classic" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="_as" tap_mode="classic" type="input pin"/>
+          <wire alias="align_clock" name="debug[10]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_4" name="debug[11]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_5" name="debug[13]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_6" name="debug[15]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="reset_CL_PLL" name="debug[16]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_7" name="debug[17]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="in6_t1" name="debug[18]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="in7_t1" name="debug[19]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_0" name="debug[3]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_1" name="debug[5]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="32ns_clock" name="debug[6]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_2" name="debug[7]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="align_active" name="debug[8]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_3" name="debug[9]" tap_mode="classic" type="bidir pin"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_7" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_1" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_0" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_2" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_3" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_4" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_5" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_6" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="_as" tap_mode="classic" type="input pin"/>
+          <wire alias="align_clock" name="debug[10]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_4" name="debug[11]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_5" name="debug[13]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_6" name="debug[15]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="reset_CL_PLL" name="debug[16]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_7" name="debug[17]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="in6_t1" name="debug[18]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="in7_t1" name="debug[19]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_0" name="debug[3]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_1" name="debug[5]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="32ns_clock" name="debug[6]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_2" name="debug[7]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="align_active" name="debug[8]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_3" name="debug[9]" tap_mode="classic" type="bidir pin"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_7" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_1" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_0" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_2" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_3" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_4" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_5" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_6" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="_as" tap_mode="classic" type="input pin"/>
+          <wire alias="align_clock" name="debug[10]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_4" name="debug[11]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_5" name="debug[13]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_6" name="debug[15]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="reset_CL_PLL" name="debug[16]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_7" name="debug[17]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="in6_t1" name="debug[18]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="in7_t1" name="debug[19]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_0" name="debug[3]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_1" name="debug[5]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="32ns_clock" name="debug[6]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_2" name="debug[7]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="align_active" name="debug[8]" tap_mode="classic" type="bidir pin"/>
+          <wire alias="pulse_3" name="debug[9]" tap_mode="classic" type="bidir pin"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[0]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[1]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[2]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[3]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[4]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[5]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[6]" tap_mode="probeonly" type="register"/>
+          <wire name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_7" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_1" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_0" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_2" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_3" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_4" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_5" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+          <wire alias="bit_6" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip" tap_mode="probeonly" type="combinatorial"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]" tap_mode="probeonly" type="register"/>
+          <wire name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]" tap_mode="probeonly" type="register"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="_as"/>
+          <net is_signal_inverted="no" name="debug[3]"/>
+          <bus alias="input_0" is_signal_inverted="no" link="all" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="debug[5]"/>
+          <bus alias="input_1" is_signal_inverted="no" link="all" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="debug[7]"/>
+          <bus alias="input_2" is_signal_inverted="no" link="all" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="debug[9]"/>
+          <bus alias="input_3" is_signal_inverted="no" link="all" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="debug[11]"/>
+          <bus alias="input_4" is_signal_inverted="no" link="all" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="debug[13]"/>
+          <bus alias="input_5" is_signal_inverted="no" link="all" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="debug[15]"/>
+          <bus alias="input_6" is_signal_inverted="no" link="all" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="debug[17]"/>
+          <bus alias="input_7" is_signal_inverted="no" link="all" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="debug[6]"/>
+          <net is_signal_inverted="no" name="debug[8]"/>
+          <net is_signal_inverted="no" name="debug[10]"/>
+          <net is_signal_inverted="no" name="debug[16]"/>
+          <bus alias="MT_Internal" is_signal_inverted="no" link="all" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="in_1" is_signal_inverted="no" link="all" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_0" is_signal_inverted="no" link="all" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_2" is_signal_inverted="no" link="all" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_3" is_signal_inverted="no" link="all" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_4" is_signal_inverted="no" link="all" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_5" is_signal_inverted="no" link="all" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_6" is_signal_inverted="no" link="all" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_7" is_signal_inverted="no" link="all" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="debug[18]"/>
+          <net is_signal_inverted="no" name="debug[19]"/>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="_as"/>
+          <net is_signal_inverted="no" name="debug[3]"/>
+          <net is_signal_inverted="no" name="debug[5]"/>
+          <net is_signal_inverted="no" name="debug[7]"/>
+          <net is_signal_inverted="no" name="debug[9]"/>
+          <net is_signal_inverted="no" name="debug[11]"/>
+          <net is_signal_inverted="no" name="debug[13]"/>
+          <net is_signal_inverted="no" name="debug[15]"/>
+          <net is_signal_inverted="no" name="debug[17]"/>
+          <net is_signal_inverted="no" name="debug[6]"/>
+          <net is_signal_inverted="no" name="debug[8]"/>
+          <net is_signal_inverted="no" name="debug[10]"/>
+          <net is_signal_inverted="no" name="debug[16]"/>
+          <bus alias="MT_Internal" is_signal_inverted="no" link="all" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst78|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="input_7" is_signal_inverted="no" link="all" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst138|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="input_6" is_signal_inverted="no" link="all" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst141|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="input_5" is_signal_inverted="no" link="all" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst147|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="input_4" is_signal_inverted="no" link="all" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst155|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="input_3" is_signal_inverted="no" link="all" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst156|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="input_2" is_signal_inverted="no" link="all" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst179|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="input_1" is_signal_inverted="no" link="all" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst160|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="input_0" is_signal_inverted="no" link="all" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[0]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[1]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[2]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[3]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[4]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[5]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[6]"/>
+            <net is_signal_inverted="no" name="CL_DFF_8:inst162|lpm_ff:lpm_ff_component|dffs[7]"/>
+          </bus>
+          <bus alias="in_0" is_signal_inverted="no" link="all" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_1" is_signal_inverted="no" link="all" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_2" is_signal_inverted="no" link="all" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_3" is_signal_inverted="no" link="all" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_4" is_signal_inverted="no" link="all" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_5" is_signal_inverted="no" link="all" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_6" is_signal_inverted="no" link="all" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <bus alias="in_7" is_signal_inverted="no" link="all" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[0]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[1]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[2]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[3]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[4]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[5]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[6]"/>
+            <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|rx_reg[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="cl_rx:inst52|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst44|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst63|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst66|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst69|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst72|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst76|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="cl_rx:inst101|CL_lvds_rx1:inst55|altlvds_rx:altlvds_rx_component|CL_lvds_rx1_lvds_rx1:auto_generated|bitslip"/>
+          <net is_signal_inverted="no" name="debug[18]"/>
+          <net is_signal_inverted="no" name="debug[19]"/>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2016/07/08 14:26:02  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="falling edge" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="column width" size="23" value="34,119,331,74,158,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,67"/>
+    <multi attribute="window position" size="9" value="1424,683,398,124,356,50,43,0,0"/>
+  </global_info>
+</session>

@@ -1,0 +1,57 @@
+/* 
+   Top CDT Design
+   C. Lin, 2018.04.22
+*/
+
+module clock_trig
+(
+// input 
+  clk               , // system clock
+  
+  in_live           , // reset
+  user_gap          ,
+  user_ena          ,
+  
+// output 
+  out               ,
+       
+);
+
+input wire         clk;
+
+// inputs
+input wire         in_live;
+input wire [23 :0] user_gap;
+input wire         user_ena;
+
+// output
+output reg         out;
+
+reg        [23 :0] cnt;
+
+always @(posedge clk)
+begin
+ 
+   if( in_live == 1'b0 || user_ena == 1'b0 )
+      begin
+         cnt = 0;
+         out = 1'b0;
+      end
+   else
+      begin
+
+      out= 1'b0;
+
+      if( cnt == 0 )
+         out = 1'b1;
+      
+      if( cnt < user_gap )
+         cnt = cnt + 1;
+      else if( cnt == user_gap )
+         cnt = 0;
+
+      end  
+      
+end
+
+endmodule

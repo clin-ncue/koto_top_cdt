@@ -1,0 +1,8 @@
+(
+	result_sig[]
+) = const5	(
+
+)
+RETURNS (
+	.result[]
+);

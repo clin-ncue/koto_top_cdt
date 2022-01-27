@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE pinplan>
+<pinplan intended_family="Stratix II" variation_name="CL_ALTLVDS_Tx_1" megafunction_name="ALTLVDS" specifies="all_ports">
+<global>
+<pin name="pll_areset" direction="input" scope="external"  />
+<pin name="tx_in[7..0]" direction="input" scope="external"  />
+<pin name="tx_inclock" direction="input" scope="external" source="clock"  />
+<pin name="tx_out[0..0]" direction="output" scope="external"  />
+
+</global>
+</pinplan>
