@@ -1,6 +1,9 @@
 /* 
    Top CDT Design
    C. Lin
+   
+   2019.11.15
+   - veto bit extension
 */
 
 module trig_type_lv1a_delta
@@ -10,7 +13,7 @@ module trig_type_lv1a_delta
   
   // inputs
   in_et             , // et input     ( 17 bits )
-  in_veto           , // veto input   ( 16 bits )
+  in_veto           , // veto input   ( 32 bits )
   in_live           , // reset signal ( 1  bit  )
   in_ena            , // enable       ( 1  bit  )
   
@@ -34,18 +37,18 @@ input wire         clk;
 // inputs
 input wire [16 :0] in_et;
 input wire         in_live;
-input wire [15 :0] in_veto;
+input wire [31 :0] in_veto;
 input wire         in_ena;
 
 // reg
 input wire         user_ena;
 input wire [15 :0] delta_et_thre;
-input wire [15 :0] delta_veto_ptn;
+input wire [31 :0] delta_veto_ptn;
 
 // output
 output reg         out_lv1a;
 output reg [15 :0] et_raw;
-output reg [15 :0] veto_raw;
+output reg [31 :0] veto_raw;
 output reg [15 :0] ndelta;
 output reg [8  :0] delay_et;
 output reg [8  :0] delay_veto;
@@ -60,9 +63,9 @@ reg        [16 :0] et_raw_tmp0;
 reg        [16 :0] et_raw_tmp1;
 reg        [16 :0] et_raw_tmp2;
 
-reg        [15 :0] veto_raw_tmp0;
-reg        [15 :0] veto_raw_tmp1;
-reg        [15 :0] veto_raw_tmp2;
+reg        [31 :0] veto_raw_tmp0;
+reg        [31 :0] veto_raw_tmp1;
+reg        [31 :0] veto_raw_tmp2;
 
 reg                got_et;
 reg                got_veto;
@@ -83,13 +86,13 @@ begin
       begin
          ena = 1'b0;
          
-         et_raw_tmp0 = 0;
-         et_raw_tmp1 = 0;
-         et_raw_tmp2 = 0;
+         et_raw_tmp0 = 17'b0;
+         et_raw_tmp1 = 17'b0;
+         et_raw_tmp2 = 17'b0;
          
-         veto_raw_tmp0 = 0;
-         veto_raw_tmp1 = 0;
-         veto_raw_tmp2 = 0;
+         veto_raw_tmp0 = 32'b0;
+         veto_raw_tmp1 = 32'b0;
+         veto_raw_tmp2 = 32'b0;
          
          is_send = 1'b0;
          cnt = 0;
@@ -117,7 +120,7 @@ begin
    got_et = 1'b0;
    got_veto = 1'b0;
    
-   if(  user_ena == 1 && in_ena == 1 )
+   if( in_ena == 1'b1 )
       begin
    
       //// ET delta pattern
@@ -133,20 +136,24 @@ begin
          end
       
       //// VETO delta pattern
-      if ( veto_raw_tmp2 == 16'b0000_0000_0000_0000
-          && veto_raw_tmp1 == delta_veto_ptn
-          && veto_raw_tmp0 == 16'b0000_0000_0000_0000
+      if ( veto_raw_tmp2 == 32'b0000_0000_0000_0000_0000_0000_0000_0000
+          && (veto_raw_tmp1 & delta_veto_ptn) == delta_veto_ptn
+          && veto_raw_tmp0 == 32'b0000_0000_0000_0000_0000_0000_0000_0000
         )
          begin
             got_veto = 1'b1;
             tmp_delay_veto = cnt;
-            veto_raw = veto_raw_tmp1[15:0];
+            veto_raw = veto_raw_tmp1[31:0];
          end
          
       if( got_et == 1'b1 && got_veto == 1'b1 )
          begin
             ndelta = ndelta + 1;
-            is_trig = 1'b1;  
+            
+            if( user_ena == 1'b1 )
+               begin
+                  is_trig = 1'b1;
+               end  
          end
       
       if( cnt < 510 )

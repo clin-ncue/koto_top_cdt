@@ -124,10 +124,11 @@ begin
       begin
    
       //// ET delta pattern
-      if(    et_raw_tmp2 == 17'b0_0000_0000_0000_0000
-          && et_raw_tmp1[16] == 1'b1
-          && et_raw_tmp1[15:0] > delta_et_thre
-          && et_raw_tmp0 == 17'b0_0000_0000_0000
+      if( delta_et_thre==0 
+          || ( et_raw_tmp2 == 17'b0_0000_0000_0000_0000
+            && et_raw_tmp1[16] == 1'b1
+            && et_raw_tmp1[15:0] > delta_et_thre
+            && et_raw_tmp0 == 17'b0_0000_0000_0000 )
         )
          begin
             got_et = 1'b1;
