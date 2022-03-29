@@ -1,15 +1,15 @@
-Analysis & Synthesis Status : Successful - Tue Feb 08 15:31:55 2022
+Analysis & Synthesis Status : Successful - Wed Mar 23 21:05:53 2022
 Quartus II 64-Bit Version : 9.1 Build 222 10/21/2009 SJ Full Version
 Revision Name : sigma_delta
 Top-level Entity Name : sigma_delta
 Family : Stratix II
-Logic utilization : N/A
-    Combinational ALUTs : 19,389
-    Dedicated logic registers : 18,623
-Total registers : 18623
-Total pins : 341
-Total virtual pins : 0
-Total block memory bits : 1,135,104
-DSP block 9-bit elements : 0
-Total PLLs : 2
-Total DLLs : 0
+Logic utilization : N/A until Partition Merge
+    Combinational ALUTs : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+DSP block 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge

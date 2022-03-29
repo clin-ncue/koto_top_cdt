@@ -1,8 +1,8 @@
 --lpm_counter CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Stratix II" lpm_modulus=256 lpm_port_updown="PORT_CONNECTIVITY" lpm_width=8 clk_en clock q sclr CARRY_CHAIN="IGNORE" CARRY_CHAIN_LENGTH=48
---VERSION_BEGIN 9.1SP2 cbx_cycloneii 2010:03:24:20:38:24:SJ cbx_lpm_add_sub 2010:03:24:20:38:24:SJ cbx_lpm_compare 2010:03:24:20:38:24:SJ cbx_lpm_counter 2010:03:24:20:38:24:SJ cbx_lpm_decode 2010:03:24:20:38:24:SJ cbx_mgl 2010:03:24:21:00:10:SJ cbx_stratix 2010:03:24:20:38:24:SJ cbx_stratixii 2010:03:24:20:38:24:SJ  VERSION_END
+--VERSION_BEGIN 9.1 cbx_cycloneii 2009:10:21:21:17:40:SJ cbx_lpm_add_sub 2009:10:21:21:17:40:SJ cbx_lpm_compare 2009:10:21:21:17:40:SJ cbx_lpm_counter 2009:10:21:21:17:40:SJ cbx_lpm_decode 2009:10:21:21:17:40:SJ cbx_mgl 2009:10:21:21:32:45:SJ cbx_stratix 2009:10:21:21:17:40:SJ cbx_stratixii 2009:10:21:21:17:40:SJ  VERSION_END
 
 
--- Copyright (C) 1991-2010 Altera Corporation
+-- Copyright (C) 1991-2009 Altera Corporation
 --  Your use of Altera Corporation's design tools, logic functions 
 --  and other software and tools, and its AMPP partner logic 
 --  functions, and any output files from any of the foregoing 

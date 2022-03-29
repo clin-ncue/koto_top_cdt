@@ -1,0 +1,439 @@
+<session sof_file="" top_level_entity="sigma_delta">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1424,771,398,124,356,50,124,0,50"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2022/03/14 15:49:30  #0">
+      <clock name="The_clock" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="256" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="0_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="LIVE" tap_mode="classic" type="combinatorial"/>
+          <wire name="TRIGGER" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena_delta" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena_trig" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|ALIGN" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|DELTA" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|L1A" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|PL1A" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="0_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="LIVE" tap_mode="classic" type="combinatorial"/>
+          <wire name="TRIGGER" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena_delta" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena_trig" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|ALIGN" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|DELTA" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|L1A" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|PL1A" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="0_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="0_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="1_RXD_Buffered[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="LIVE" tap_mode="classic" type="combinatorial"/>
+          <wire name="TRIGGER" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena_delta" tap_mode="classic" type="combinatorial"/>
+          <wire name="out_ena_trig" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="timestamp00[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|ALIGN" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|DELTA" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|L1A" tap_mode="classic" type="combinatorial"/>
+          <wire name="trigger_discriminator:inst5|trigger_decoder:inst5|PL1A" tap_mode="classic" type="combinatorial"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="TRIGGER"/>
+          <net is_signal_inverted="no" name="trigger_discriminator:inst5|trigger_decoder:inst5|ALIGN"/>
+          <net is_signal_inverted="no" name="trigger_discriminator:inst5|trigger_decoder:inst5|DELTA"/>
+          <net is_signal_inverted="no" name="trigger_discriminator:inst5|trigger_decoder:inst5|L1A"/>
+          <net is_signal_inverted="no" name="trigger_discriminator:inst5|trigger_decoder:inst5|PL1A"/>
+          <bus is_signal_inverted="no" link="all" name="0_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="0_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="1_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="1_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="LIVE"/>
+          <bus is_signal_inverted="no" link="all" name="timestamp00" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="timestamp00[0]"/>
+            <net is_signal_inverted="no" name="timestamp00[1]"/>
+            <net is_signal_inverted="no" name="timestamp00[2]"/>
+            <net is_signal_inverted="no" name="timestamp00[3]"/>
+            <net is_signal_inverted="no" name="timestamp00[4]"/>
+            <net is_signal_inverted="no" name="timestamp00[5]"/>
+            <net is_signal_inverted="no" name="timestamp00[6]"/>
+            <net is_signal_inverted="no" name="timestamp00[7]"/>
+            <net is_signal_inverted="no" name="timestamp00[8]"/>
+            <net is_signal_inverted="no" name="timestamp00[9]"/>
+            <net is_signal_inverted="no" name="timestamp00[10]"/>
+            <net is_signal_inverted="no" name="timestamp00[11]"/>
+            <net is_signal_inverted="no" name="timestamp00[12]"/>
+            <net is_signal_inverted="no" name="timestamp00[13]"/>
+            <net is_signal_inverted="no" name="timestamp00[14]"/>
+            <net is_signal_inverted="no" name="timestamp00[15]"/>
+            <net is_signal_inverted="no" name="timestamp00[16]"/>
+            <net is_signal_inverted="no" name="timestamp00[17]"/>
+            <net is_signal_inverted="no" name="timestamp00[18]"/>
+            <net is_signal_inverted="no" name="timestamp00[19]"/>
+            <net is_signal_inverted="no" name="timestamp00[20]"/>
+            <net is_signal_inverted="no" name="timestamp00[21]"/>
+            <net is_signal_inverted="no" name="timestamp00[22]"/>
+            <net is_signal_inverted="no" name="timestamp00[23]"/>
+            <net is_signal_inverted="no" name="timestamp00[24]"/>
+            <net is_signal_inverted="no" name="timestamp00[25]"/>
+            <net is_signal_inverted="no" name="timestamp00[26]"/>
+            <net is_signal_inverted="no" name="timestamp00[27]"/>
+            <net is_signal_inverted="no" name="timestamp00[28]"/>
+            <net is_signal_inverted="no" name="timestamp00[29]"/>
+            <net is_signal_inverted="no" name="timestamp00[30]"/>
+            <net is_signal_inverted="no" name="timestamp00[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="out_ena_delta"/>
+          <net is_signal_inverted="no" name="out_ena_trig"/>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="TRIGGER"/>
+          <net is_signal_inverted="no" name="trigger_discriminator:inst5|trigger_decoder:inst5|ALIGN"/>
+          <net is_signal_inverted="no" name="trigger_discriminator:inst5|trigger_decoder:inst5|DELTA"/>
+          <net is_signal_inverted="no" name="trigger_discriminator:inst5|trigger_decoder:inst5|L1A"/>
+          <net is_signal_inverted="no" name="trigger_discriminator:inst5|trigger_decoder:inst5|PL1A"/>
+          <bus is_signal_inverted="no" link="all" name="0_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="0_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="0_RXD_Buffered[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="1_RXD_Buffered" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="1_RXD_Buffered[0]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[1]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[2]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[3]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[4]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[5]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[6]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[7]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[8]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[9]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[10]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[11]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[12]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[13]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[14]"/>
+            <net is_signal_inverted="no" name="1_RXD_Buffered[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="LIVE"/>
+          <bus is_signal_inverted="no" link="all" name="timestamp00" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="timestamp00[0]"/>
+            <net is_signal_inverted="no" name="timestamp00[1]"/>
+            <net is_signal_inverted="no" name="timestamp00[2]"/>
+            <net is_signal_inverted="no" name="timestamp00[3]"/>
+            <net is_signal_inverted="no" name="timestamp00[4]"/>
+            <net is_signal_inverted="no" name="timestamp00[5]"/>
+            <net is_signal_inverted="no" name="timestamp00[6]"/>
+            <net is_signal_inverted="no" name="timestamp00[7]"/>
+            <net is_signal_inverted="no" name="timestamp00[8]"/>
+            <net is_signal_inverted="no" name="timestamp00[9]"/>
+            <net is_signal_inverted="no" name="timestamp00[10]"/>
+            <net is_signal_inverted="no" name="timestamp00[11]"/>
+            <net is_signal_inverted="no" name="timestamp00[12]"/>
+            <net is_signal_inverted="no" name="timestamp00[13]"/>
+            <net is_signal_inverted="no" name="timestamp00[14]"/>
+            <net is_signal_inverted="no" name="timestamp00[15]"/>
+            <net is_signal_inverted="no" name="timestamp00[16]"/>
+            <net is_signal_inverted="no" name="timestamp00[17]"/>
+            <net is_signal_inverted="no" name="timestamp00[18]"/>
+            <net is_signal_inverted="no" name="timestamp00[19]"/>
+            <net is_signal_inverted="no" name="timestamp00[20]"/>
+            <net is_signal_inverted="no" name="timestamp00[21]"/>
+            <net is_signal_inverted="no" name="timestamp00[22]"/>
+            <net is_signal_inverted="no" name="timestamp00[23]"/>
+            <net is_signal_inverted="no" name="timestamp00[24]"/>
+            <net is_signal_inverted="no" name="timestamp00[25]"/>
+            <net is_signal_inverted="no" name="timestamp00[26]"/>
+            <net is_signal_inverted="no" name="timestamp00[27]"/>
+            <net is_signal_inverted="no" name="timestamp00[28]"/>
+            <net is_signal_inverted="no" name="timestamp00[29]"/>
+            <net is_signal_inverted="no" name="timestamp00[30]"/>
+            <net is_signal_inverted="no" name="timestamp00[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="out_ena_delta"/>
+          <net is_signal_inverted="no" name="out_ena_trig"/>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2022/03/14 15:49:30  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>000000000000000000000000000000000000000000000000000000000000000000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+</session>

@@ -937,8 +937,8 @@ GND*                         : R29       :        :                   :         
 GND*                         : R30       :        :                   :         : 2         :                
 GND*                         : R31       :        :                   :         : 2         :                
 VCCIO2                       : R32       : power  :                   : 2.5V    : 2         :                
-master_clock3                : T1        : input  : LVDS              :         : 5         : Y              
-master_clock3(n)             : T2        : input  : LVDS              :         : 5         : Y              
+GND*                         : T1        :        :                   :         : 5         :                
+GND*                         : T2        :        :                   :         : 5         :                
 GND+                         : T3        :        :                   :         : 5         :                
 GND+                         : T4        :        :                   :         : 5         :                
 2nd_outputbus[13]            : T5        : output : LVDS              :         : 5         : Y              
@@ -999,8 +999,8 @@ GND*                         : U27       :        :                   :         
 GND*                         : U28       :        :                   :         : 1         :                
 GND+                         : U29       :        :                   :         : 1         :                
 GND+                         : U30       :        :                   :         : 1         :                
-master_clock4(n)             : U31       : input  : LVDS              :         : 1         : Y              
-master_clock4                : U32       : input  : LVDS              :         : 1         : Y              
+GND*                         : U31       :        :                   :         : 1         :                
+GND*                         : U32       :        :                   :         : 1         :                
 VCCIO6                       : V1        : power  :                   : 2.5V    : 6         :                
 GND*                         : V2        :        :                   :         : 6         :                
 GND*                         : V3        :        :                   :         : 6         :                

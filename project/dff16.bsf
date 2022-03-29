@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2010 Altera Corporation
+Copyright (C) 1991-2009 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.1"))
 (symbol
 	(rect 0 0 144 80)
-	(text "adc_trg_dff" (rect 41 1 115 17)(font "Arial" (font_size 10)))
+	(text "dff16" (rect 59 1 90 17)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 64 25 76)(font "Arial" ))
 	(port
 		(pt 0 32)

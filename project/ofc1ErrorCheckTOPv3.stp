@@ -1,0 +1,207 @@
+<session sof_file="" top_level_entity="sigma_delta">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2022/03/23 21:04:20  #0">
+      <clock name="The_clock" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="ofc1_err_manager:inst1|error" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|enable" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|err" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|warning" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|get" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|q" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|get" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|q" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|live_rising" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|lvds_rx[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|lvds_rx[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="spill_cnt:inst508|spill_cnt[0]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[10]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[11]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[1]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[2]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[3]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[4]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[5]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[6]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[7]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[8]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[9]" tap_mode="probeonly" type="register"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="ofc1_err_manager:inst1|error" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|enable" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|err" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|warning" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|get" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|q" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|get" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|q" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|live_rising" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|lvds_rx[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|lvds_rx[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="spill_cnt:inst508|spill_cnt[0]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[10]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[11]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[1]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[2]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[3]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[4]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[5]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[6]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[7]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[8]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[9]" tap_mode="probeonly" type="register"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="ofc1_err_manager:inst1|error" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|enable" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|err" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst1|warning" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|get" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|q" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|get" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|q" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|live_rising" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|lvds_rx[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|lvds_rx[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="ofc1_err_manager:inst1|stop" tap_mode="classic" type="combinatorial"/>
+          <wire name="spill_cnt:inst508|spill_cnt[0]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[10]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[11]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[1]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[2]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[3]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[4]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[5]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[6]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[7]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[8]" tap_mode="probeonly" type="register"/>
+          <wire name="spill_cnt:inst508|spill_cnt[9]" tap_mode="probeonly" type="register"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|live_rising"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|lvds_rx[0]"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|lvds_rx[1]"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|stop"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|enable"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|error"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|stop"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|warning"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|err"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|stop"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|get"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|q"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|get"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|q"/>
+          <bus is_signal_inverted="no" link="all" name="spill_cnt:inst508|spill_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[0]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[1]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[2]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[3]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[4]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[5]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[6]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[7]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[8]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[9]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[10]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[11]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|live_rising"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|lvds_rx[0]"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|lvds_rx[1]"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|stop"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|enable"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|error"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|stop"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|warning"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|err"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|stop"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|get"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst2|signal_capture:inst11|q"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|get"/>
+          <net is_signal_inverted="no" name="ofc1_err_manager:inst1|error_judgement:inst2|stop_status:inst12|q"/>
+          <bus is_signal_inverted="no" link="all" name="spill_cnt:inst508|spill_cnt" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[0]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[1]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[2]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[3]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[4]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[5]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[6]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[7]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[8]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[9]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[10]"/>
+            <net is_signal_inverted="no" name="spill_cnt:inst508|spill_cnt[11]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2022/03/23 21:04:31  #0" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="16" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="segmented">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000
+            <pwr_up_transitional>000000000000000000000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1424,771,398,124,356,50,124,0,50"/>
+    <multi attribute="column width" size="23" value="34,34,381,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
+  </global_info>
+</session>
