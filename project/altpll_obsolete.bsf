@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 264 184)
+	(text "altpll_obsolete" (rect 91 0 188 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 168 25 180)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 51 31 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 56 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "inclk1" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "inclk1" (rect 4 67 31 80)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 56 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clkswitch" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "clkswitch" (rect 4 83 44 96)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 56 96)(line_width 1))
+	)
+	(port
+		(pt 264 64)
+		(output)
+		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c0" (rect 249 51 260 64)(font "Arial" (font_size 8)))
+		(line (pt 264 64)(pt 232 64)(line_width 1))
+	)
+	(drawing
+		(text "Stratix II" (rect 219 169 255 181)(font "Arial" ))
+		(text "inclk0 frequency: 125.000 MHz" (rect 66 59 196 71)(font "Arial" ))
+		(text "inclk1 frequency: 125.000 MHz" (rect 66 73 196 85)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 66 87 167 99)(font "Arial" ))
+		(text "PLL Type: Enhanced PLL" (rect 66 101 172 113)(font "Arial" ))
+		(text "Clk " (rect 67 124 84 136)(font "Arial" ))
+		(text "Ratio" (rect 89 124 111 136)(font "Arial" ))
+		(text "Ph (dg)" (rect 116 124 146 136)(font "Arial" ))
+		(text "DC (%)" (rect 151 124 182 136)(font "Arial" ))
+		(text "c0" (rect 70 139 80 151)(font "Arial" ))
+		(text "1/1" (rect 94 139 107 151)(font "Arial" ))
+		(text "0.00" (rect 122 139 140 151)(font "Arial" ))
+		(text "50.00" (rect 155 139 178 151)(font "Arial" ))
+		(line (pt 0 0)(pt 265 0)(line_width 1))
+		(line (pt 265 0)(pt 265 185)(line_width 1))
+		(line (pt 0 185)(pt 265 185)(line_width 1))
+		(line (pt 0 0)(pt 0 185)(line_width 1))
+		(line (pt 64 122)(pt 184 122)(line_width 1))
+		(line (pt 64 136)(pt 184 136)(line_width 1))
+		(line (pt 64 151)(pt 184 151)(line_width 1))
+		(line (pt 64 122)(pt 64 151)(line_width 1))
+		(line (pt 86 122)(pt 86 151)(line_width 3))
+		(line (pt 113 122)(pt 113 151)(line_width 3))
+		(line (pt 148 122)(pt 148 151)(line_width 3))
+		(line (pt 183 122)(pt 183 151)(line_width 1))
+		(line (pt 56 48)(pt 232 48)(line_width 1))
+		(line (pt 232 48)(pt 232 168)(line_width 1))
+		(line (pt 56 168)(pt 232 168)(line_width 1))
+		(line (pt 56 48)(pt 56 168)(line_width 1))
+	)
+)

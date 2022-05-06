@@ -314,7 +314,7 @@ GND*                         : AG8       :        :                   :         
 GND*                         : AG13      :        :                   :         : 7         :                
 GND*                         : AG14      :        :                   :         : 7         :                
 GND*                         : AG15      :        :                   :         : 7         :                
-GND*                         : AG16      :        :                   :         : 7         :                
+clkswitch                    : AG16      : input  : 3.3-V LVTTL       :         : 7         : Y              
 vme_data[21]                 : AG17      : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 vme_data[27]                 : AG18      : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 vme_data[28]                 : AG19      : bidir  : 3.3-V LVTTL       :         : 8         : Y              
@@ -379,7 +379,7 @@ GND*                         : AJ12      :        :                   :         
 GND*                         : AJ14      :        :                   :         : 7         :                
 0_XCLK                       : AJ15      : output : 3.3-V LVTTL       :         : 10        : Y              
 ClockSwitchControl[3]        : AJ16      : output : 3.3-V LVTTL       :         : 10        : Y              
-GND*                         : AJ17      :        :                   :         : 8         :                
+master_clock1(n)             : AJ17      : input  : LVDS              :         : 8         : Y              
 GND*                         : AJ18      :        :                   :         : 12        :                
 vme_data[18]                 : AJ19      : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 address[18]                  : AJ20      : input  : 3.3-V LVTTL       :         : 8         : Y              
@@ -411,7 +411,7 @@ debug[13]                    : AK12      : bidir  : 3.3-V LVTTL       :         
 VREFB7                       : AK14      : power  :                   :         : 7         :                
 GND*                         : AK15      :        :                   :         : 10        :                
 1_XCLK                       : AK16      : output : 3.3-V LVTTL       :         : 10        : Y              
-GND*                         : AK17      :        :                   :         : 8         :                
+master_clock1                : AK17      : input  : LVDS              :         : 8         : Y              
 GND*                         : AK18      :        :                   :         : 12        :                
 VREFB8                       : AK19      : power  :                   :         : 8         :                
 vme_data[25]                 : AK20      : bidir  : 3.3-V LVTTL       :         : 8         : Y              
@@ -937,8 +937,8 @@ GND*                         : R29       :        :                   :         
 GND*                         : R30       :        :                   :         : 2         :                
 GND*                         : R31       :        :                   :         : 2         :                
 VCCIO2                       : R32       : power  :                   : 2.5V    : 2         :                
-GND*                         : T1        :        :                   :         : 5         :                
-GND*                         : T2        :        :                   :         : 5         :                
+master_clock3                : T1        : input  : LVDS              :         : 5         : Y              
+master_clock3(n)             : T2        : input  : LVDS              :         : 5         : Y              
 GND+                         : T3        :        :                   :         : 5         :                
 GND+                         : T4        :        :                   :         : 5         :                
 2nd_outputbus[13]            : T5        : output : LVDS              :         : 5         : Y              
@@ -999,8 +999,8 @@ GND*                         : U27       :        :                   :         
 GND*                         : U28       :        :                   :         : 1         :                
 GND+                         : U29       :        :                   :         : 1         :                
 GND+                         : U30       :        :                   :         : 1         :                
-GND*                         : U31       :        :                   :         : 1         :                
-GND*                         : U32       :        :                   :         : 1         :                
+master_clock4(n)             : U31       : input  : LVDS              :         : 1         : Y              
+master_clock4                : U32       : input  : LVDS              :         : 1         : Y              
 VCCIO6                       : V1        : power  :                   : 2.5V    : 6         :                
 GND*                         : V2        :        :                   :         : 6         :                
 GND*                         : V3        :        :                   :         : 6         :                
