@@ -23090,6 +23090,78 @@ applicable agreement for further details.
 		(line (pt 56 48)(pt 56 168)(line_width 1))
 	)
 )
+(symbol
+	(rect 8784 -536 8920 -440)
+	(text "LVDS_RX_Debug" (rect 5 0 91 12)(font "Arial" ))
+	(text "inst189" (rect 8 80 43 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst" (rect 0 0 12 12)(font "Arial" ))
+		(text "rst" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "in" (rect 0 0 8 12)(font "Arial" ))
+		(text "in" (rect 21 59 29 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "err_cnt[15..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "err_cnt[15..0]" (rect 49 27 115 39)(font "Arial" ))
+		(line (pt 136 32)(pt 120 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80)(line_width 1))
+	)
+)
+(symbol
+	(rect 8784 -432 8920 -336)
+	(text "LVDS_RX_Debug" (rect 5 0 91 12)(font "Arial" ))
+	(text "inst244" (rect 8 80 43 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst" (rect 0 0 12 12)(font "Arial" ))
+		(text "rst" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "in" (rect 0 0 8 12)(font "Arial" ))
+		(text "in" (rect 21 59 29 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "err_cnt[15..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "err_cnt[15..0]" (rect 49 27 115 39)(font "Arial" ))
+		(line (pt 136 32)(pt 120 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80)(line_width 1))
+	)
+)
 (connector
 	(pt 792 -864)
 	(pt 728 -864)
@@ -34953,10 +35025,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 8720 -712)
-	(pt 8720 -608)
-)
-(connector
 	(pt 8720 -608)
 	(pt 8784 -608)
 )
@@ -35482,10 +35550,6 @@ applicable agreement for further details.
 	(pt 216 2624)
 )
 (connector
-	(pt 8704 -696)
-	(pt 8704 -592)
-)
-(connector
 	(pt 8704 -592)
 	(pt 8784 -592)
 )
@@ -35539,16 +35603,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 9048 -608)
-	(pt 9136 -608)
-	(bus)
-)
-(connector
-	(pt 9048 -624)
-	(pt 9136 -624)
-	(bus)
-)
-(connector
 	(pt 9048 -672)
 	(pt 9136 -672)
 	(bus)
@@ -35592,21 +35646,6 @@ applicable agreement for further details.
 (connector
 	(pt 9048 -688)
 	(pt 9048 -672)
-	(bus)
-)
-(connector
-	(pt 9048 -672)
-	(pt 9048 -624)
-	(bus)
-)
-(connector
-	(pt 9048 -624)
-	(pt 9048 -608)
-	(bus)
-)
-(connector
-	(pt 9048 -608)
-	(pt 9048 -560)
 	(bus)
 )
 (connector
@@ -36058,6 +36097,91 @@ applicable agreement for further details.
 	(pt -304 -96)
 	(pt -304 200)
 )
+(connector
+	(pt 8720 -504)
+	(pt 8784 -504)
+)
+(connector
+	(pt 8720 -712)
+	(pt 8720 -608)
+)
+(connector
+	(pt 8720 -400)
+	(pt 8784 -400)
+)
+(connector
+	(pt 8720 -608)
+	(pt 8720 -504)
+)
+(connector
+	(pt 8720 -504)
+	(pt 8720 -400)
+)
+(connector
+	(pt 8704 -488)
+	(pt 8784 -488)
+)
+(connector
+	(pt 8704 -696)
+	(pt 8704 -592)
+)
+(connector
+	(pt 8704 -384)
+	(pt 8784 -384)
+)
+(connector
+	(pt 8704 -592)
+	(pt 8704 -488)
+)
+(connector
+	(pt 8704 -488)
+	(pt 8704 -384)
+)
+(connector
+	(text "inputbus[6]" (rect 8602 -488 8656 -476)(font "Arial" ))
+	(pt 8784 -472)
+	(pt 8592 -472)
+)
+(connector
+	(text "inputbus[7]" (rect 8602 -384 8656 -372)(font "Arial" ))
+	(pt 8784 -368)
+	(pt 8592 -368)
+)
+(connector
+	(pt 9048 -672)
+	(pt 9048 -560)
+	(bus)
+)
+(connector
+	(pt 9136 -624)
+	(pt 9000 -624)
+	(bus)
+)
+(connector
+	(pt 9000 -624)
+	(pt 9000 -504)
+	(bus)
+)
+(connector
+	(pt 9000 -504)
+	(pt 8920 -504)
+	(bus)
+)
+(connector
+	(pt 9136 -608)
+	(pt 9016 -608)
+	(bus)
+)
+(connector
+	(pt 9016 -608)
+	(pt 9016 -400)
+	(bus)
+)
+(connector
+	(pt 8920 -400)
+	(pt 9016 -400)
+	(bus)
+)
 (junction (pt 1048 -896))
 (junction (pt 1480 -968))
 (junction (pt 1480 -912))
@@ -36397,8 +36521,6 @@ applicable agreement for further details.
 (junction (pt 9048 -704))
 (junction (pt 9048 -688))
 (junction (pt 9048 -672))
-(junction (pt 9048 -624))
-(junction (pt 9048 -608))
 (junction (pt 1328 960))
 (junction (pt 12072 2224))
 (junction (pt 11696 2224))
@@ -36408,6 +36530,10 @@ applicable agreement for further details.
 (junction (pt -80 6456))
 (junction (pt -80 6512))
 (junction (pt -304 -96))
+(junction (pt 8720 -608))
+(junction (pt 8720 -504))
+(junction (pt 8704 -592))
+(junction (pt 8704 -488))
 (text "Clock/PLL Block" (rect -504 -1232 -103 -1178)(font "Times New Roman" (font_size 36)(bold_italic)))
 (text "LED1-3" (rect 2664 -1096 2725 -1079)(font "Times New Roman" (font_size 11)(bold)))
 (text "LED1-2" (rect 2664 -1048 2725 -1031)(font "Times New Roman" (font_size 11)(bold)))
@@ -36530,6 +36656,6 @@ applicable agreement for further details.
 (rectangle (rect 3360 4184 5728 5528)(color 160 160 164)(line_width 5))
 (rectangle (rect 7224 1120 9320 1680)(color 160 160 164)(line_width 5))
 (rectangle (rect 7224 1728 9320 2544)(color 160 160 164)(line_width 5))
-(rectangle (rect 8008 -1128 9704 -448)(color 160 160 164)(line_width 5))
+(rectangle (rect 8008 -1128 9704 -432)(color 160 160 164)(line_width 5))
 (rectangle (rect 12176 5656 12576 5872)(color 0 0 255)(line_width 5))
 (rectangle (rect 11552 5656 12576 5872)(color 0 0 255)(line_width 5))
