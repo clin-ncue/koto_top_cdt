@@ -1,5 +1,5 @@
 Flow report for sigma_delta
-Mon Sep 05 15:59:14 2022
+Sun May 28 21:38:59 2023
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +-------------------------------+------------------------------------------+
-; Flow Status                   ; Analyzed - Mon Sep 05 15:58:34 2022      ;
+; Flow Status                   ; Analyzed - Sun May 28 21:38:20 2023      ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                 ; sigma_delta                              ;
 ; Top-level Entity Name         ; sigma_delta                              ;
@@ -46,13 +46,13 @@ applicable agreement for further details.
 ; Device                        ; EP2S90F1020C3                            ;
 ; Timing Models                 ; Final                                    ;
 ; Met timing requirements       ; No                                       ;
-; Logic utilization             ; 42 %                                     ;
-;     Combinational ALUTs       ; 20,003 / 72,768 ( 27 % )                 ;
-;     Dedicated logic registers ; 17,713 / 72,768 ( 24 % )                 ;
-; Total registers               ; 17778                                    ;
+; Logic utilization             ; 38 %                                     ;
+;     Combinational ALUTs       ; 18,967 / 72,768 ( 26 % )                 ;
+;     Dedicated logic registers ; 15,276 / 72,768 ( 21 % )                 ;
+; Total registers               ; 15341                                    ;
 ; Total pins                    ; 409 / 759 ( 54 % )                       ;
 ; Total virtual pins            ; 0                                        ;
-; Total block memory bits       ; 1,073,664 / 4,520,448 ( 24 % )           ;
+; Total block memory bits       ; 911,872 / 4,520,448 ( 20 % )             ;
 ; DSP block 9-bit elements      ; 0 / 384 ( 0 % )                          ;
 ; Total PLLs                    ; 3 / 12 ( 25 % )                          ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                            ;
@@ -1154,7 +1154,20 @@ applicable agreement for further details.
 ; Assembler               ; 00:00:08     ; 1.0                     ; 4751 MB             ; 00:00:07                           ;
 ; Classic Timing Analyzer ; 00:00:18     ; 1.0                     ; 4845 MB             ; 00:00:19                           ;
 ; Design Assistant        ; 00:00:27     ; 1.0                     ; 4694 MB             ; 00:00:28                           ;
-; Total                   ; 00:30:40     ; --                      ; --                  ; 00:39:22                           ;
+; Analysis & Synthesis    ; 00:02:25     ; 1.0                     ; 4812 MB             ; 00:02:26                           ;
+; Partition Merge         ; 00:00:05     ; 1.0                     ; 4569 MB             ; 00:00:06                           ;
+; Fitter                  ; 00:04:40     ; 3.0                     ; 5264 MB             ; 00:07:15                           ;
+; Assembler               ; 00:00:07     ; 1.0                     ; 4752 MB             ; 00:00:07                           ;
+; Classic Timing Analyzer ; 00:00:18     ; 1.0                     ; 4852 MB             ; 00:00:18                           ;
+; Design Assistant        ; 00:00:26     ; 1.0                     ; 4694 MB             ; 00:00:27                           ;
+; Analysis & Synthesis    ; 00:02:22     ; 1.0                     ; 4802 MB             ; 00:02:25                           ;
+; Analysis & Synthesis    ; 00:02:17     ; 1.0                     ; 4796 MB             ; 00:02:18                           ;
+; Partition Merge         ; 00:00:04     ; 1.0                     ; 4569 MB             ; 00:00:04                           ;
+; Fitter                  ; 00:04:09     ; 3.0                     ; 5187 MB             ; 00:06:26                           ;
+; Assembler               ; 00:00:07     ; 1.0                     ; 4742 MB             ; 00:00:07                           ;
+; Classic Timing Analyzer ; 00:00:15     ; 1.0                     ; 4799 MB             ; 00:00:16                           ;
+; Design Assistant        ; 00:00:16     ; 1.0                     ; 4638 MB             ; 00:00:16                           ;
+; Total                   ; 00:48:11     ; --                      ; --                  ; 01:01:53                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -1192,6 +1205,19 @@ applicable agreement for further details.
 ; Assembler               ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
 ; Classic Timing Analyzer ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
 ; Design Assistant        ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Partition Merge         ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Design Assistant        ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Partition Merge         ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Design Assistant        ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
@@ -1221,6 +1247,19 @@ quartus_fit --read_settings_files=off --write_settings_files=off sigma_delta -c 
 quartus_asm --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
 quartus_tan --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --timing_analysis_only
 quartus_drc --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
+quartus_cdb --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_asm --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_tan --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --timing_analysis_only
+quartus_drc --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
+quartus_cdb --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_asm --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_tan --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --timing_analysis_only
+quartus_drc --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
 quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
 quartus_cdb --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --merge=on
 quartus_fit --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
