@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "in_int_lv1a[7..0]" (rect 0 0 79 12)(font "Arial" ))
-		(text "in_int_lv1a[7..0]" (rect 21 59 100 71)(font "Arial" ))
+		(text "in_int_lv1a[15..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "in_int_lv1a[15..0]" (rect 21 59 105 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
@@ -110,8 +110,8 @@ applicable agreement for further details.
 	(port
 		(pt 264 32)
 		(output)
-		(text "out_int_lv1a[7..0]" (rect 0 0 86 12)(font "Arial" ))
-		(text "out_int_lv1a[7..0]" (rect 157 27 243 39)(font "Arial" ))
+		(text "out_int_lv1a[15..0]" (rect 0 0 92 12)(font "Arial" ))
+		(text "out_int_lv1a[15..0]" (rect 151 27 243 39)(font "Arial" ))
 		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(port

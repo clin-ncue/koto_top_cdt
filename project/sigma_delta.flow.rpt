@@ -1,5 +1,5 @@
 Flow report for sigma_delta
-Thu Mar 27 07:17:14 2025
+Thu Mar 27 09:48:36 2025
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +-------------------------------+------------------------------------------+
-; Flow Status                   ; Analyzed - Thu Mar 27 07:16:35 2025      ;
+; Flow Status                   ; Analyzed - Thu Mar 27 09:47:57 2025      ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                 ; sigma_delta                              ;
 ; Top-level Entity Name         ; sigma_delta                              ;
@@ -47,9 +47,9 @@ applicable agreement for further details.
 ; Timing Models                 ; Final                                    ;
 ; Met timing requirements       ; No                                       ;
 ; Logic utilization             ; 36 %                                     ;
-;     Combinational ALUTs       ; 18,098 / 72,768 ( 25 % )                 ;
-;     Dedicated logic registers ; 15,047 / 72,768 ( 21 % )                 ;
-; Total registers               ; 15112                                    ;
+;     Combinational ALUTs       ; 18,398 / 72,768 ( 25 % )                 ;
+;     Dedicated logic registers ; 15,177 / 72,768 ( 21 % )                 ;
+; Total registers               ; 15242                                    ;
 ; Total pins                    ; 409 / 759 ( 54 % )                       ;
 ; Total virtual pins            ; 0                                        ;
 ; Total block memory bits       ; 911,872 / 4,520,448 ( 20 % )             ;
@@ -1182,7 +1182,15 @@ applicable agreement for further details.
 ; Assembler               ; 00:00:07     ; 1.0                     ; 4739 MB             ; 00:00:07                           ;
 ; Classic Timing Analyzer ; 00:00:16     ; 1.0                     ; 4789 MB             ; 00:00:16                           ;
 ; Design Assistant        ; 00:00:16     ; 1.0                     ; 4632 MB             ; 00:00:16                           ;
-; Total                   ; 01:03:31     ; --                      ; --                  ; 01:21:45                           ;
+; Analysis & Synthesis    ; 00:00:15     ; 1.0                     ; 4796 MB             ; 00:00:15                           ;
+; Analysis & Synthesis    ; 00:00:13     ; 1.0                     ; 4790 MB             ; 00:00:13                           ;
+; Analysis & Synthesis    ; 00:02:22     ; 1.0                     ; 4791 MB             ; 00:02:22                           ;
+; Partition Merge         ; 00:00:03     ; 1.0                     ; 4560 MB             ; 00:00:04                           ;
+; Fitter                  ; 00:04:04     ; 3.1                     ; 5204 MB             ; 00:06:18                           ;
+; Assembler               ; 00:00:07     ; 1.0                     ; 4740 MB             ; 00:00:07                           ;
+; Classic Timing Analyzer ; 00:00:16     ; 1.0                     ; 4791 MB             ; 00:00:16                           ;
+; Design Assistant        ; 00:00:16     ; 1.0                     ; 4634 MB             ; 00:00:16                           ;
+; Total                   ; 01:11:07     ; --                      ; --                  ; 01:31:36                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -1248,6 +1256,14 @@ applicable agreement for further details.
 ; Assembler               ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
 ; Classic Timing Analyzer ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
 ; Design Assistant        ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Partition Merge         ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
+; Design Assistant        ; doewah8          ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
@@ -1296,6 +1312,14 @@ quartus_fit --read_settings_files=off --write_settings_files=off sigma_delta -c 
 quartus_asm --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
 quartus_tan --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --timing_analysis_only
 quartus_drc --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
+quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
+quartus_cdb --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_asm --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_tan --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --timing_analysis_only
+quartus_drc --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta
+quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
 quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
 quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
 quartus_cdb --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --merge=on

@@ -23,7 +23,7 @@ input wire         clk;
 
 // inputs
 input wire         in_live;
-input wire [7  :0] in_lv1a_raw;
+input wire [15 :0] in_lv1a_raw;
 input wire [3  :0] in_ext;
 input wire         in_delta;
 
@@ -38,10 +38,9 @@ always @(posedge clk)
 begin
  
 // keep resetting during live off
-   if( pre_live == 1'b0 && in_live == 1'b1 )
-      begin
-         nlv1a_raw = 0;
-      end
+   if( pre_live == 1'b0 && in_live == 1'b1 ) begin
+      nlv1a_raw = 0;
+   end
 
    if( in_lv1a_raw > 0 || in_ext > 0 || in_delta > 0 )
       nlv1a_raw = nlv1a_raw + 1;

@@ -32,7 +32,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|fiber_input_switch:inst323|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_dke.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|lpm_compare27:inst338|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_hbl.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|lpm_counter100:inst38|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_inh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|lv1a_pipeline:inst116|raw_mem_pipe:_trigmem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ggr1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|lv1a_pipeline:inst116|time_mem:_trigmem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_cgr1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|lv1a_pipeline:inst116|time_mem:_vetomem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_cgr1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|mux8_bus16:inst77|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_tmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|time_controller:inst36|et_raw_mem:_etmem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_8eo1.tdf"/>

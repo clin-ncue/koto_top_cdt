@@ -1,5 +1,5 @@
 Partition Merge report for sigma_delta
-Thu Mar 27 07:11:30 2025
+Thu Mar 27 09:42:59 2025
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,15 +38,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Partition Merge Summary                                                  ;
 +-------------------------------+------------------------------------------+
-; Partition Merge Status        ; Successful - Thu Mar 27 07:11:30 2025    ;
+; Partition Merge Status        ; Successful - Thu Mar 27 09:42:58 2025    ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                 ; sigma_delta                              ;
 ; Top-level Entity Name         ; sigma_delta                              ;
 ; Family                        ; Stratix II                               ;
 ; Logic utilization             ; N/A                                      ;
-;     Combinational ALUTs       ; 18,016                                   ;
-;     Dedicated logic registers ; 15,107                                   ;
-; Total registers               ; 15107                                    ;
+;     Combinational ALUTs       ; 18,343                                   ;
+;     Dedicated logic registers ; 15,240                                   ;
+; Total registers               ; 15240                                    ;
 ; Total pins                    ; 343                                      ;
 ; Total virtual pins            ; 0                                        ;
 ; Total block memory bits       ; 911,872                                  ;
@@ -70,32 +70,32 @@ applicable agreement for further details.
 +-----------------------------------------------+--------+
 ; Statistic                                     ; Top    ;
 +-----------------------------------------------+--------+
-; Estimated ALUTs Used                          ; 18016  ;
-; Dedicated logic registers                     ; 15107  ;
+; Estimated ALUTs Used                          ; 18343  ;
+; Dedicated logic registers                     ; 15240  ;
 ;                                               ;        ;
-; Estimated ALUTs Unavailable                   ; 862    ;
+; Estimated ALUTs Unavailable                   ; 944    ;
 ;                                               ;        ;
-; Total combinational functions                 ; 18016  ;
+; Total combinational functions                 ; 18343  ;
 ; Combinational ALUT usage by number of inputs  ;        ;
 ;     -- 7 input functions                      ; 3      ;
-;     -- 6 input functions                      ; 5893   ;
-;     -- 5 input functions                      ; 4251   ;
-;     -- 4 input functions                      ; 5490   ;
-;     -- <=3 input functions                    ; 2379   ;
+;     -- 6 input functions                      ; 5971   ;
+;     -- 5 input functions                      ; 4410   ;
+;     -- 4 input functions                      ; 5586   ;
+;     -- <=3 input functions                    ; 2373   ;
 ;                                               ;        ;
 ; Combinational ALUTs by mode                   ;        ;
-;     -- normal mode                            ; 17983  ;
+;     -- normal mode                            ; 18310  ;
 ;     -- extended LUT mode                      ; 3      ;
 ;     -- arithmetic mode                        ; 30     ;
 ;     -- shared arithmetic mode                 ; 0      ;
 ;                                               ;        ;
-; Estimated ALUT/register pairs used            ; 25567  ;
+; Estimated ALUT/register pairs used            ; 25889  ;
 ;                                               ;        ;
-; Total registers                               ; 15107  ;
-;     -- Dedicated logic registers              ; 15107  ;
+; Total registers                               ; 15240  ;
+;     -- Dedicated logic registers              ; 15240  ;
 ;     -- I/O registers                          ; 0      ;
 ;                                               ;        ;
-; Estimated ALMs:  partially or completely used ; 12794  ;
+; Estimated ALMs:  partially or completely used ; 12955  ;
 ;                                               ;        ;
 ; Virtual pins                                  ; 0      ;
 ; I/O pins                                      ; 343    ;
@@ -111,8 +111,8 @@ applicable agreement for further details.
 ;     -- Registered Output Connections          ; 0      ;
 ;                                               ;        ;
 ; Internal Connections                          ;        ;
-;     -- Total Connections                      ; 144362 ;
-;     -- Registered Connections                 ; 59961  ;
+;     -- Total Connections                      ; 146249 ;
+;     -- Registered Connections                 ; 60779  ;
 ;                                               ;        ;
 ; External Connections                          ;        ;
 ;     -- Top                                    ; 0      ;
@@ -144,64 +144,64 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 +-----------------------------------------------+------------------------------------------------+
 ; Resource                                      ; Usage                                          ;
 +-----------------------------------------------+------------------------------------------------+
-; Estimated ALUTs Used                          ; 18016                                          ;
-; Dedicated logic registers                     ; 15107                                          ;
+; Estimated ALUTs Used                          ; 18343                                          ;
+; Dedicated logic registers                     ; 15240                                          ;
 ;                                               ;                                                ;
-; Estimated ALUTs Unavailable                   ; 862                                            ;
+; Estimated ALUTs Unavailable                   ; 944                                            ;
 ;                                               ;                                                ;
-; Total combinational functions                 ; 18016                                          ;
+; Total combinational functions                 ; 18343                                          ;
 ; Combinational ALUT usage by number of inputs  ;                                                ;
 ;     -- 7 input functions                      ; 3                                              ;
-;     -- 6 input functions                      ; 5893                                           ;
-;     -- 5 input functions                      ; 4251                                           ;
-;     -- 4 input functions                      ; 5490                                           ;
-;     -- <=3 input functions                    ; 2379                                           ;
+;     -- 6 input functions                      ; 5971                                           ;
+;     -- 5 input functions                      ; 4410                                           ;
+;     -- 4 input functions                      ; 5586                                           ;
+;     -- <=3 input functions                    ; 2373                                           ;
 ;                                               ;                                                ;
 ; Combinational ALUTs by mode                   ;                                                ;
-;     -- normal mode                            ; 17983                                          ;
+;     -- normal mode                            ; 18310                                          ;
 ;     -- extended LUT mode                      ; 3                                              ;
 ;     -- arithmetic mode                        ; 30                                             ;
 ;     -- shared arithmetic mode                 ; 0                                              ;
 ;                                               ;                                                ;
-; Estimated ALUT/register pairs used            ; 24751                                          ;
+; Estimated ALUT/register pairs used            ; 25156                                          ;
 ;                                               ;                                                ;
-; Total registers                               ; 15107                                          ;
-;     -- Dedicated logic registers              ; 15107                                          ;
+; Total registers                               ; 15240                                          ;
+;     -- Dedicated logic registers              ; 15240                                          ;
 ;     -- I/O registers                          ; 0                                              ;
 ;                                               ;                                                ;
-; Estimated ALMs:  partially or completely used ; 12,376                                         ;
+; Estimated ALMs:  partially or completely used ; 12,578                                         ;
 ;                                               ;                                                ;
 ; I/O pins                                      ; 343                                            ;
 ; Total block memory bits                       ; 911872                                         ;
 ; Total PLLs                                    ; 3                                              ;
 ; Maximum fan-out node                          ; altpll00:inst233|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                               ; 10754                                          ;
-; Total fan-out                                 ; 135671                                         ;
+; Maximum fan-out                               ; 10887                                          ;
+; Total fan-out                                 ; 137558                                         ;
 ; Average fan-out                               ; 3.94                                           ;
 +-----------------------------------------------+------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Partition Merge RAM Summary                                                                                                                                                                                                 ;
-+-----------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
-; Name                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF  ;
-+-----------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
-; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM               ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
-; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM              ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
-; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM              ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
-; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM               ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
-; lv1a_pipeline:inst116|nclus_mem:_nclusmem|altsyncram:altsyncram_component|altsyncram_adr1:auto_generated|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; 1024         ; 4            ; 1024         ; 4            ; 4096   ; None ;
-; lv1a_pipeline:inst116|raw_mem_pipe:_etmem|altsyncram:altsyncram_component|altsyncram_ggr1:auto_generated|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384  ; None ;
-; lv1a_pipeline:inst116|raw_mem_pipe:_trigmem|altsyncram:altsyncram_component|altsyncram_ggr1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384  ; None ;
-; lv1a_pipeline:inst116|time_mem:_timemem|altsyncram:altsyncram_component|altsyncram_cgr1:auto_generated|ALTSYNCRAM     ; AUTO ; Simple Dual Port ; 1024         ; 32           ; 1024         ; 32           ; 32768  ; None ;
-; lv1a_pipeline:inst116|time_mem:_vetomem|altsyncram:altsyncram_component|altsyncram_cgr1:auto_generated|ALTSYNCRAM     ; AUTO ; Simple Dual Port ; 1024         ; 32           ; 1024         ; 32           ; 32768  ; None ;
-; rawmem:inst419|altsyncram:altsyncram_component|altsyncram_85p1:auto_generated|ALTSYNCRAM                              ; AUTO ; Simple Dual Port ; 1024         ; 256          ; 1024         ; 256          ; 262144 ; None ;
-; rawmem:inst420|altsyncram:altsyncram_component|altsyncram_85p1:auto_generated|ALTSYNCRAM                              ; AUTO ; Simple Dual Port ; 1024         ; 256          ; 1024         ; 256          ; 262144 ; None ;
-; rawmem:inst493|altsyncram:altsyncram_component|altsyncram_85p1:auto_generated|ALTSYNCRAM                              ; AUTO ; Simple Dual Port ; 1024         ; 256          ; 1024         ; 256          ; 262144 ; None ;
-; time_controller:inst36|et_raw_mem:_etmem|altsyncram:altsyncram_component|altsyncram_8eo1:auto_generated|ALTSYNCRAM    ; AUTO ; Simple Dual Port ; 512          ; 17           ; 512          ; 17           ; 8704   ; None ;
-; time_controller:inst36|raw_mem:_veto0mem|altsyncram:altsyncram_component|altsyncram_6eo1:auto_generated|ALTSYNCRAM    ; AUTO ; Simple Dual Port ; 512          ; 16           ; 512          ; 16           ; 8192   ; None ;
-; time_controller:inst36|raw_mem:_veto1mem|altsyncram:altsyncram_component|altsyncram_6eo1:auto_generated|ALTSYNCRAM    ; AUTO ; Simple Dual Port ; 512          ; 16           ; 512          ; 16           ; 8192   ; None ;
-+-----------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                               ;
++---------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+; Name                                                                                                                ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF  ;
++---------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
+; GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM             ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
+; GLINK_fifo:inst177|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM            ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
+; GLINK_fifo:inst178|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM            ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
+; GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ALTSYNCRAM             ; AUTO ; Simple Dual Port ; 16           ; 16           ; 16           ; 16           ; 256    ; None ;
+; lv1a_pipeline:inst116|nclus_mem:_nclusmem|altsyncram:altsyncram_component|altsyncram_adr1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 4            ; 1024         ; 4            ; 4096   ; None ;
+; lv1a_pipeline:inst116|raw_mem_pipe:_etmem|altsyncram:altsyncram_component|altsyncram_ggr1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384  ; None ;
+; lv1a_pipeline:inst116|time_mem:_timemem|altsyncram:altsyncram_component|altsyncram_cgr1:auto_generated|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; 1024         ; 32           ; 1024         ; 32           ; 32768  ; None ;
+; lv1a_pipeline:inst116|time_mem:_trigmem|altsyncram:altsyncram_component|altsyncram_cgr1:auto_generated|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; 1024         ; 32           ; 1024         ; 32           ; 32768  ; None ;
+; lv1a_pipeline:inst116|time_mem:_vetomem|altsyncram:altsyncram_component|altsyncram_cgr1:auto_generated|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; 1024         ; 32           ; 1024         ; 32           ; 32768  ; None ;
+; rawmem:inst419|altsyncram:altsyncram_component|altsyncram_85p1:auto_generated|ALTSYNCRAM                            ; AUTO ; Simple Dual Port ; 1024         ; 256          ; 1024         ; 256          ; 262144 ; None ;
+; rawmem:inst420|altsyncram:altsyncram_component|altsyncram_85p1:auto_generated|ALTSYNCRAM                            ; AUTO ; Simple Dual Port ; 1024         ; 256          ; 1024         ; 256          ; 262144 ; None ;
+; rawmem:inst493|altsyncram:altsyncram_component|altsyncram_85p1:auto_generated|ALTSYNCRAM                            ; AUTO ; Simple Dual Port ; 1024         ; 256          ; 1024         ; 256          ; 262144 ; None ;
+; time_controller:inst36|et_raw_mem:_etmem|altsyncram:altsyncram_component|altsyncram_8eo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 512          ; 17           ; 512          ; 17           ; 8704   ; None ;
+; time_controller:inst36|raw_mem:_veto0mem|altsyncram:altsyncram_component|altsyncram_6eo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 512          ; 16           ; 512          ; 16           ; 8192   ; None ;
+; time_controller:inst36|raw_mem:_veto1mem|altsyncram:altsyncram_component|altsyncram_6eo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 512          ; 16           ; 512          ; 16           ; 8192   ; None ;
++---------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
 
 
 +--------------------------+
@@ -210,7 +210,7 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Partition Merge
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Thu Mar 27 07:11:26 2025
+    Info: Processing started: Thu Mar 27 09:42:55 2025
 Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --merge=on
 Warning: Tcl Script File clustering_db/lpm_dff0.qip not found
     Info: set_global_assignment -name QIP_FILE clustering_db/lpm_dff0.qip
@@ -251,16 +251,16 @@ Warning: Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clkswitch"
     Warning (15610): No output dependent on input pin "master_clock3"
     Warning (15610): No output dependent on input pin "master_clock4"
-Info: Implemented 28825 device resources after synthesis - the final resource count might be different
+Info: Implemented 29149 device resources after synthesis - the final resource count might be different
     Info: Implemented 145 input pins
     Info: Implemented 118 output pins
     Info: Implemented 80 bidirectional pins
-    Info: Implemented 27501 logic cells
+    Info: Implemented 27825 logic cells
     Info: Implemented 978 RAM segments
     Info: Implemented 3 PLLs
 Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4563 megabytes
-    Info: Processing ended: Thu Mar 27 07:11:31 2025
+    Info: Peak virtual memory: 4560 megabytes
+    Info: Processing ended: Thu Mar 27 09:43:00 2025
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

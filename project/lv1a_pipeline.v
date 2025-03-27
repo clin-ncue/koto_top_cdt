@@ -18,6 +18,9 @@
      A "nclus_tag" memory block was used to check if the event was ever written in.
    - Add lv1b request signal ("out_lv1b_req") to lv1b type, which is the timing to read all the 
      output from lv1a pipeline block. 
+     
+   2025.03.27
+   - Extend # of internal trigger from 8 to 16. 
    
 */ //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -79,7 +82,7 @@ input wire           clk;
 input wire           in_live;
 
     //// trigger type inputs ////
-input wire  [7   :0] in_int_lv1a;
+input wire  [15  :0] in_int_lv1a;
 input wire  [3   :0] in_ext_lv1a;
 input wire           in_delta_lv1a;
 input wire           ena;
@@ -101,7 +104,7 @@ input wire  [7   :0] delay_lv1b_req;
    ////////////
  
     //// trigger type outputs ////
-output reg  [7   :0] out_int_lv1a;
+output reg  [15  :0] out_int_lv1a;
 output reg  [3   :0] out_ext_lv1a;
 output reg           out_delta_lv1a;
 
@@ -153,7 +156,7 @@ reg  [31:0] time_raw;
 wire [3 :0] q_nclus;
 wire [15:0] q_et;
 wire [31:0] q_veto;
-wire [15:0] q_trig;
+wire [31:0] q_trig;
 wire [31:0] q_time;
 
 reg  [9 :0] raddr;
@@ -165,7 +168,7 @@ reg         wena_raw;
 
 nclus_mem     _nclusmem ( clk ,nclus     ,raddr ,rden ,waddr_nclus ,wena_nclus ,q_nclus );
 raw_mem_pipe  _etmem    ( clk ,et_raw    ,raddr ,rden ,waddr_raw   ,wena_raw   ,q_et    );
-raw_mem_pipe  _trigmem  ( clk ,trig_raw  ,raddr ,rden ,waddr_raw   ,wena_raw   ,q_trig  );
+time_mem      _trigmem  ( clk ,trig_raw  ,raddr ,rden ,waddr_raw   ,wena_raw   ,q_trig  );
 time_mem      _timemem  ( clk ,time_raw  ,raddr ,rden ,waddr_raw   ,wena_raw   ,q_time  );
 time_mem      _vetomem  ( clk ,veto_raw  ,raddr ,rden ,waddr_raw   ,wena_raw   ,q_veto  );
 
@@ -312,7 +315,7 @@ begin
                wena_raw = 1'b1;
                et_raw = in_et_raw[15:0];
                veto_raw = in_veto_raw;
-               trig_raw = { 3'b000 , in_delta_lv1a , in_ext_lv1a , in_int_lv1a };
+               trig_raw = { 11'h000 , in_delta_lv1a , in_ext_lv1a , in_int_lv1a };
                time_raw = in_timestamp;
              
             end
@@ -352,9 +355,9 @@ begin
          out_et_raw     = q_et;
          out_veto_raw   = q_veto;
          out_timestamp  = q_time;
-         out_int_lv1a   = q_trig[7:0];
-         out_ext_lv1a   = q_trig[11:8];
-         out_delta_lv1a = q_trig[12];
+         out_int_lv1a   = q_trig[15:0];
+         out_ext_lv1a   = q_trig[20:16];
+         out_delta_lv1a = q_trig[21];
                        
       end
 

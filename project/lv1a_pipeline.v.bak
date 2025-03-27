@@ -79,7 +79,7 @@ input wire           clk;
 input wire           in_live;
 
     //// trigger type inputs ////
-input wire  [7   :0] in_int_lv1a;
+input wire  [15  :0] in_int_lv1a;
 input wire  [3   :0] in_ext_lv1a;
 input wire           in_delta_lv1a;
 input wire           ena;
@@ -101,7 +101,7 @@ input wire  [7   :0] delay_lv1b_req;
    ////////////
  
     //// trigger type outputs ////
-output reg  [7   :0] out_int_lv1a;
+output reg  [15  :0] out_int_lv1a;
 output reg  [3   :0] out_ext_lv1a;
 output reg           out_delta_lv1a;
 
@@ -146,7 +146,7 @@ reg                   get_first_clus;
 /// function include
 reg  [3 :0] nclus;
 reg  [15:0] et_raw;
-reg  [15:0] veto_raw;
+reg  [31:0] veto_raw;
 reg  [15:0] trig_raw;
 reg  [31:0] time_raw;
 
