@@ -1,6 +1,11 @@
 /* 
    Top CDT Design
    C. Lin, 2018.04.22
+   
+   2025.01.21
+   - v0.06.02 extend the "user_gap" to 32 bits.
+   - Remove enable funciton.
+   - Update to non-blocking design.
 */
 
 module clock_trig
@@ -10,7 +15,6 @@ module clock_trig
   
   in_live           , // reset
   user_gap          ,
-  user_ena          ,
   
 // output 
   out               ,
@@ -21,36 +25,25 @@ input wire         clk;
 
 // inputs
 input wire         in_live;
-input wire [19 :0] user_gap;
-input wire         user_ena;
+input wire [31 :0] user_gap;
 
 // output
 output reg         out;
 
-reg        [19 :0] cnt;
+reg        [31 :0] cnt;
 
 always @(posedge clk)
 begin
  
-   if( in_live == 1'b0 || user_ena == 1'b0 )
-      begin
-         cnt = 0;
-         out = 1'b0;
-      end
-   else
-      begin
-
-      out= 1'b0;
-
-      if( cnt == 0 )
-         out = 1'b1;
-      
-      if( cnt < user_gap )
-         cnt = cnt + 1;
-      else if( cnt == user_gap )
-         cnt = 0;
-
-      end  
+   if( in_live == 1'b0 )  begin
+      cnt <= 0;
+      out <= 1'b0;
+   end
+   
+   else begin
+       out <= ( cnt == 0 ) ? 1'b1 : 1'b0;
+       cnt <= ( cnt < user_gap ) ? (cnt + 1) : 0;
+   end  
       
 end
 
