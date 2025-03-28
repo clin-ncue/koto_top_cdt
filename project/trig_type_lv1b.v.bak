@@ -26,7 +26,6 @@ module trig_type_lv1b
   // output
   out_lv1b_raw      ,
   out_lv1b_scaled   ,
-  raw_cnt           ,
   scaled_cnt        
      
 );
@@ -49,7 +48,6 @@ input wire         user_ena;
 // output
 output reg         out_lv1b_raw;
 output reg         out_lv1b_scaled;
-output reg [31:0]  raw_cnt;
 output reg [31:0]  scaled_cnt;
 
 reg        [11:0]  prescale_cnt;
@@ -64,7 +62,6 @@ begin
  
    if( pre_live == 1'b0 && in_live==1'b1 )
       begin
-         raw_cnt = 0;
          scaled_cnt = 0;
          prescale_cnt = 0;
       end
@@ -94,8 +91,6 @@ begin
                 scaled_cnt = scaled_cnt + 1;
                 out_lv1b_scaled = 1'b1;
              end
-             
-         raw_cnt = raw_cnt + 1;
          
          if( prescale_cnt < user_prescale_q - 1 )
             prescale_cnt = prescale_cnt + 1;

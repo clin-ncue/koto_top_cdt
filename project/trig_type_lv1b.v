@@ -41,8 +41,8 @@ input wire [3 :0]  in_nclus;
 
 // register
 input wire [9 :0]  user_nclus;
-input wire [9 :0]  user_prescale_p;
-input wire [11:0]  user_prescale_q;
+input wire [15:0]  user_prescale_p;
+input wire [15:0]  user_prescale_q;
 input wire         user_ena;
 
 // output

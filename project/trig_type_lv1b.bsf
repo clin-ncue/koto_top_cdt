@@ -75,15 +75,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 144)
 		(input)
-		(text "user_prescale_p[9..0]" (rect 0 0 106 12)(font "Arial" ))
-		(text "user_prescale_p[9..0]" (rect 21 139 127 151)(font "Arial" ))
+		(text "user_prescale_p[15..0]" (rect 0 0 112 12)(font "Arial" ))
+		(text "user_prescale_p[15..0]" (rect 21 139 133 151)(font "Arial" ))
 		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
 		(pt 0 160)
 		(input)
-		(text "user_prescale_q[11..0]" (rect 0 0 112 12)(font "Arial" ))
-		(text "user_prescale_q[11..0]" (rect 21 155 133 167)(font "Arial" ))
+		(text "user_prescale_q[15..0]" (rect 0 0 112 12)(font "Arial" ))
+		(text "user_prescale_q[15..0]" (rect 21 155 133 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port

@@ -7,6 +7,10 @@
    - Remove trigger type pipeline from lv1b
    - Add trigger tag control part
    
+   2025.03.28
+   - Remove pedestal suppression (ps) logic.
+   - Expand # of internal triggers from 8 to 16. 
+   
 */
 
 module lv1b_pipeline
@@ -30,7 +34,6 @@ module lv1b_pipeline
   in_nclus          ,
   in_timestamp      , 
    
-  user_ps           , // to apply ps or not 
   delay_lv1         , // delay of lv1
   lv2_full          ,
   
@@ -39,7 +42,6 @@ module lv1b_pipeline
   out_lv1_inhibit   , // send signal to inform lv1a blocking plv1 issuing
   out_trig_tag      , // transmit to trigger tag ADC
   lv1_cnt           ,
-  lv1_cnt_ps        ,
   lv2_rej_cnt       ,
   out_early_lv1     
 
@@ -50,8 +52,8 @@ input wire          clk;
 
 input wire          in_live;
 input wire          in_lv1b_req;
-input wire  [7  :0] in_int_raw;
-input wire  [7  :0] in_int_scaled;
+input wire  [15 :0] in_int_raw;
+input wire  [15 :0] in_int_scaled;
 input wire  [3  :0] in_ext;
 input wire          in_delta;
 input wire  [15 :0] in_et_raw;
@@ -59,7 +61,6 @@ input wire  [31 :0] in_veto_raw;
 input wire  [3  :0] in_nclus;
 input wire  [31 :0] in_timestamp;
 
-input wire  [7  :0] user_ps;
 input wire  [7  :0] delay_lv1;
 input wire          lv2_full;
 
@@ -69,7 +70,6 @@ output reg          out_lv1_inhibit;
 output reg          out_early_lv1;
 output reg  [15 :0] out_trig_tag;
 output reg  [19 :0] lv1_cnt;
-output reg  [19 :0] lv1_cnt_ps;
 output reg  [31 :0] lv2_rej_cnt;
 
 
@@ -103,18 +103,13 @@ begin
         tag_req = 1'b0; 
         tag_cnt = 0;
         tag_id = 0;
-        
-        is_ps = 1'b0;
-        ps_cont = 0;
-        
-        cnt = 0;
-        ps_cont_idx = 0;      
+               
+        cnt = 0;    
      end
  
   if( pre_live == 1'b0 && in_live == 1'b1 )
      begin
         lv1_cnt = 0;
-        lv1_cnt_ps = 0;
         lv2_rej_cnt = 0;
      end
 
@@ -139,19 +134,9 @@ begin
          tag_req = 1'b1;
          tag_cnt = 0;
          out_early_lv1 = 1'b1;
-         ////////////////////////
-         ///// ps judgement /////
-         ////////////////////////
-          
-         if( (in_int_scaled & user_ps) == in_int_scaled && in_int_scaled > 0 && in_ext==0 )
-            is_ps = 1'b1;
-         else
-            is_ps = 1'b0;
          
          tag_id = cnt;
-         ps_cont[ cnt[3:0] ] = is_ps;
-         cnt = cnt + 1;
-                
+         cnt = cnt + 1;     
       end
      
    
@@ -172,7 +157,7 @@ begin
    7: [3 : 0] n-cluster
       [7 : 4] external trigger type
       [8]     delta trigger
-      [9]     pedestal suppression bit
+      [9]     pedestal suppression bit // this bit is omitted after 2025.03.28
       
    All the data should be transmitted within 20 clocks (less than the gate requirement).
 
@@ -190,13 +175,22 @@ begin
             3: out_trig_tag = in_veto_raw[31:16];
             4: out_trig_tag = in_timestamp[15: 0];
             5: out_trig_tag = in_timestamp[31:16];
-            6: out_trig_tag = { in_int_scaled , in_int_raw };
-            7: out_trig_tag = { 7'b000_0000 ,is_ps ,in_delta ,in_ext ,in_nclus };
+            //
+            // 6: out_trig_tag = { in_int_scaled , in_int_raw };
+            // (updated after 2025.03.28)
+            //
+            6: out_trig_tag = in_int_scaled;
+            // 
+            // 7: out_trig_tag = { 7'b000_0000 ,is_ps ,in_delta ,in_ext ,in_nclus };
+            // (updated after 2025.03.28)
+            //
+            7: out_trig_tag = { 7'b000_0000 ,1'b0 ,in_delta ,in_ext ,in_nclus };
             8: out_trig_tag = in_et_raw;
+            9: out_trig_tag = in_int_raw;
             default: out_trig_tag = 16'b0000_0000_0000_0000;
          endcase
 
-         if( tag_cnt == 8 )
+         if( tag_cnt == 10 )
             begin
                tag_cnt = 0;
                tag_req = 1'b0;
@@ -226,20 +220,7 @@ begin
    if( pipeline[delay_lv1] == 1'b1 )
       begin
          out_lv1 = 1'b1;
-      end
-
-// send lv1 w/ ps
-   if(   pipeline[delay_lv1+1] == 1'b1 ) 
-      begin
-         if( ps_cont[ ps_cont_idx ] == 1'b1 )
-            begin
-               out_lv1 = 1'b1;
-               lv1_cnt_ps = lv1_cnt_ps + 1;
-            end
-         
          lv1_cnt = lv1_cnt + 1;
-         ps_cont_idx = ps_cont_idx + 1;
-         
       end
                
    /////////////////
