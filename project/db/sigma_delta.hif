@@ -39749,6 +39749,14 @@ trig_type_lv1b:inst76
 trig_type_lv1b:inst117
 trig_type_lv1b:inst118
 trig_type_lv1b:inst119
+trig_type_lv1b:inst462
+trig_type_lv1b:inst463
+trig_type_lv1b:inst502
+trig_type_lv1b:inst503
+trig_type_lv1b:inst504
+trig_type_lv1b:inst505
+trig_type_lv1b:inst515
+trig_type_lv1b:inst516
 }
 # macro_sequence
 
@@ -99578,6 +99586,212 @@ clock_trig:inst256
 
 # end
 # entity
+lv1a_pipeline
+# storage
+db|sigma_delta.(93).cnf
+db|sigma_delta.(93).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+OFF
+}
+# case_sensitive
+# source_file
+lv1a_pipeline.v
+e67e1dba63b8944dde56485411c14f8c
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+OFF
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+PIPE
+256
+PARAMETER_SIGNED_DEC
+USR
+GATE
+20
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+lv1a_pipeline:inst116
+}
+# macro_sequence
+
+# end
+# entity
+int_dff02
+# storage
+db|sigma_delta.(125).cnf
+db|sigma_delta.(125).cnf
+# case_insensitive
+# source_file
+int_dff02.tdf
+6b5ad842429ed790172f8422b8b41b
+7
+# used_port {
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_ff.inc
+5b1f18ec4f969a147b22e8c42bf962ac
+}
+# hierarchies {
+int_dff02:inst120
+}
+# macro_sequence
+
+# end
+# entity
+stat_lv1a_raw
+# storage
+db|sigma_delta.(154).cnf
+db|sigma_delta.(154).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+OFF
+}
+# case_sensitive
+# source_file
+stat_lv1a_raw.v
+e71861149ab14878c53238b5121d561
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+OFF
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+stat_lv1a_raw:inst316
+}
+# macro_sequence
+
+# end
+# entity
 tdc_vme
 # storage
 db|sigma_delta.(72).cnf
@@ -99585,7 +99799,7 @@ db|sigma_delta.(72).cnf
 # case_insensitive
 # source_file
 tdc_vme.tdf
-5431faa6bf1a8ca1e2d26649582c42
+d375a7ffc61dd14e5342355e5d8a5aca
 7
 # used_port {
 vmewrite
@@ -114519,212 +114733,6 @@ tdc_vme:inst57
 
 # end
 # entity
-lv1a_pipeline
-# storage
-db|sigma_delta.(93).cnf
-db|sigma_delta.(93).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-OFF
-}
-# case_sensitive
-# source_file
-lv1a_pipeline.v
-e67e1dba63b8944dde56485411c14f8c
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-OFF
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-PIPE
-256
-PARAMETER_SIGNED_DEC
-USR
-GATE
-20
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-lv1a_pipeline:inst116
-}
-# macro_sequence
-
-# end
-# entity
-int_dff02
-# storage
-db|sigma_delta.(125).cnf
-db|sigma_delta.(125).cnf
-# case_insensitive
-# source_file
-int_dff02.tdf
-6b5ad842429ed790172f8422b8b41b
-7
-# used_port {
-q9
--1
-3
-q8
--1
-3
-q7
--1
-3
-q6
--1
-3
-q5
--1
-3
-q4
--1
-3
-q3
--1
-3
-q2
--1
-3
-q15
--1
-3
-q14
--1
-3
-q13
--1
-3
-q12
--1
-3
-q11
--1
-3
-q10
--1
-3
-q1
--1
-3
-q0
--1
-3
-enable
--1
-3
-data9
--1
-3
-data8
--1
-3
-data7
--1
-3
-data6
--1
-3
-data5
--1
-3
-data4
--1
-3
-data3
--1
-3
-data2
--1
-3
-data15
--1
-3
-data14
--1
-3
-data13
--1
-3
-data12
--1
-3
-data11
--1
-3
-data10
--1
-3
-data1
--1
-3
-data0
--1
-3
-clock
--1
-3
-}
-# include_file {
-lpm_ff.inc
-5b1f18ec4f969a147b22e8c42bf962ac
-}
-# hierarchies {
-int_dff02:inst120
-}
-# macro_sequence
-
-# end
-# entity
-stat_lv1a_raw
-# storage
-db|sigma_delta.(154).cnf
-db|sigma_delta.(154).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-OFF
-}
-# case_sensitive
-# source_file
-stat_lv1a_raw.v
-e71861149ab14878c53238b5121d561
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-OFF
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-stat_lv1a_raw:inst316
-}
-# macro_sequence
-
-# end
-# entity
 sigma_delta
 # storage
 db|sigma_delta.(0).cnf
@@ -114732,7 +114740,7 @@ db|sigma_delta.(0).cnf
 # case_insensitive
 # source_file
 sigma_delta.bdf
-5fb5b023ad233a4ab9cc7fdf6d6a2c2
+f0c84c8aabe347d8c4535d5ff265989
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

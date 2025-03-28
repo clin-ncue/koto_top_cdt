@@ -5,19 +5,19 @@ Slow Model Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.664 ns
-From           : inputbus[5]
-To             : LVDS_RX_Debug:inst187|err_cnt[2]
+Actual Time    : 8.494 ns
+From           : _ds[1]
+To             : tapdel10:inst13|del0
 From Clock     : --
-To Clock       : master_clock0
+To Clock       : LocalClock
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 30.056 ns
-From           : tdc_vme:inst57|m_ctrlreg28[26]
-To             : vme_data[26]
+Actual Time    : 28.156 ns
+From           : tdc_vme:inst57|m_ctrlreg56[17]
+To             : vme_data[17]
 From Clock     : _as
 To Clock       : --
 Failed Paths   : 0
@@ -25,8 +25,8 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.935 ns
-From           : _ds[0]
+Actual Time    : 14.168 ns
+From           : _ds[1]
 To             : _dtack
 From Clock     : --
 To Clock       : --
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.238 ns
-From           : vme_data[4]
-To             : tdc_vme:inst57|m_ctrlreg24[4]
+Actual Time    : 8.695 ns
+From           : vme_data[1]
+To             : tdc_vme:inst57|m_ctrlreg40[1]
 From Clock     : --
 To Clock       : _as
 Failed Paths   : 0
@@ -63,81 +63,81 @@ To Clock       : --
 Failed Paths   : 0
 
 Type           : Slow Model Clock Setup: 'altpll00:inst233|altpll:altpll_component|_clk0'
-Slack          : -1.980 ns
+Slack          : -1.887 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
-Actual Time    : 100.20 MHz ( period = 9.980 ns )
+Actual Time    : 101.14 MHz ( period = 9.887 ns )
 From           : line_dff:inst499|lpm_ff:lpm_ff_component|dffs[0]
 To             : lv1a_pipeline:inst116|clus_err
 From Clock     : altpll00:inst233|altpll:altpll_component|_clk0
 To Clock       : altpll00:inst233|altpll:altpll_component|_clk0
-Failed Paths   : 16992
+Failed Paths   : 18666
 
 Type           : Slow Model Clock Setup: 'altpll_fanout:inst514|altpll:altpll_component|_clk1'
-Slack          : 0.538 ns
+Slack          : 0.339 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
-From           : dff_one:inst147|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst141|dff_one:inst65|lpm_ff:lpm_ff_component|dffs[0]
+From           : dff_one:inst139|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst150|dff_one:inst65|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : altpll00:inst233|altpll:altpll_component|_clk0
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk1
 Failed Paths   : 0
 
 Type           : Slow Model Clock Setup: 'altpll_fanout:inst514|altpll:altpll_component|_clk2'
-Slack          : 0.736 ns
+Slack          : 1.109 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
-From           : dff_one:inst139|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst150|dff_one:inst67|lpm_ff:lpm_ff_component|dffs[0]
+From           : dff_one:inst147|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst141|dff_one:inst67|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : altpll00:inst233|altpll:altpll_component|_clk0
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk2
 Failed Paths   : 0
 
 Type           : Slow Model Clock Setup: 'altpll_fanout:inst514|altpll:altpll_component|_clk3'
-Slack          : 1.900 ns
+Slack          : 2.425 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
-From           : dff_one:inst139|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst150|dff_one:inst69|lpm_ff:lpm_ff_component|dffs[0]
+From           : dff_one:inst147|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst141|dff_one:inst69|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : altpll00:inst233|altpll:altpll_component|_clk0
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk3
 Failed Paths   : 0
 
 Type           : Slow Model Clock Setup: 'altpll_fanout:inst514|altpll:altpll_component|_clk4'
-Slack          : 3.415 ns
+Slack          : 3.770 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
-From           : dff_one:inst139|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst150|dff_one:inst71|lpm_ff:lpm_ff_component|dffs[0]
+From           : dff_one:inst147|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst141|dff_one:inst71|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : altpll00:inst233|altpll:altpll_component|_clk0
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk4
 Failed Paths   : 0
 
 Type           : Slow Model Clock Setup: 'altpll_fanout:inst514|altpll:altpll_component|_clk5'
-Slack          : 4.737 ns
+Slack          : 5.191 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
-From           : dff_one:inst139|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst150|dff_one:inst73|lpm_ff:lpm_ff_component|dffs[0]
+From           : dff_one:inst147|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst141|dff_one:inst73|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : altpll00:inst233|altpll:altpll_component|_clk0
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk5
 Failed Paths   : 0
 
 Type           : Slow Model Clock Setup: 'altpll_fanout:inst514|altpll:altpll_component|_clk0'
-Slack          : 6.321 ns
+Slack          : 6.793 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
-Actual Time    : 595.59 MHz ( period = 1.679 ns )
-From           : dff_one:inst139|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst150|dff_one:inst63|lpm_ff:lpm_ff_component|dffs[0]
+Actual Time    : Restricted to 816.99 MHz ( period = 1.224 ns )
+From           : dff_one:inst147|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst141|dff_one:inst63|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : altpll00:inst233|altpll:altpll_component|_clk0
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk0
 Failed Paths   : 0
 
 Type           : Slow Model Clock Setup: 'PLL_VME:inst22|altpll:altpll_component|_clk2'
-Slack          : 18.789 ns
+Slack          : 18.699 ns
 Required Time  : 31.25 MHz ( period = 32.000 ns )
-Actual Time    : 75.69 MHz ( period = 13.211 ns )
-From           : tdc_vme:inst57|m_ctrlreg20[1]
-To             : VME_thing:inst69|dff32:inst17|lpm_ff:lpm_ff_component|dffs[1]
+Actual Time    : 75.18 MHz ( period = 13.301 ns )
+From           : tdc_vme:inst57|ctrlreg3[16]
+To             : VME_thing:inst69|dff32:inst5|lpm_ff:lpm_ff_component|dffs[16]
 From Clock     : PLL_VME:inst22|altpll:altpll_component|_clk2
 To Clock       : PLL_VME:inst22|altpll:altpll_component|_clk2
 Failed Paths   : 0
@@ -152,16 +152,6 @@ From Clock     : 2_RX_CLK
 To Clock       : 2_RX_CLK
 Failed Paths   : 0
 
-Type           : Slow Model Clock Setup: '0_RX_CLK'
-Slack          : N/A
-Required Time  : None
-Actual Time    : Restricted to 475.29 MHz ( period = 2.104 ns )
-From           : GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ram_block7a0~porta_datain_reg15
-To             : GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ram_block7a15~porta_memory_reg0
-From Clock     : 0_RX_CLK
-To Clock       : 0_RX_CLK
-Failed Paths   : 0
-
 Type           : Slow Model Clock Setup: '1_RX_CLK'
 Slack          : N/A
 Required Time  : None
@@ -170,6 +160,16 @@ From           : GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_gene
 To             : GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ram_block7a15~porta_memory_reg0
 From Clock     : 1_RX_CLK
 To Clock       : 1_RX_CLK
+Failed Paths   : 0
+
+Type           : Slow Model Clock Setup: '0_RX_CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 475.29 MHz ( period = 2.104 ns )
+From           : GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ram_block7a0~porta_datain_reg15
+To             : GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram|ram_block7a15~porta_memory_reg0
+From Clock     : 0_RX_CLK
+To Clock       : 0_RX_CLK
 Failed Paths   : 0
 
 Type           : Slow Model Clock Setup: '3_RX_CLK'
@@ -186,44 +186,14 @@ Type           : Slow Model Clock Hold: 'altpll00:inst233|altpll:altpll_componen
 Slack          : 0.341 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
-From           : lv1b_pipeline:inst269|tag_id[1]
-To             : lv1b_pipeline:inst269|tag_id[1]
+From           : lv1b_pipeline:inst269|tag_id[0]
+To             : lv1b_pipeline:inst269|tag_id[0]
 From Clock     : altpll00:inst233|altpll:altpll_component|_clk0
 To Clock       : altpll00:inst233|altpll:altpll_component|_clk0
 Failed Paths   : 0
 
-Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk0'
-Slack          : 0.350 ns
-Required Time  : 125.00 MHz ( period = 8.000 ns )
-Actual Time    : N/A
-From           : fanout_clock_phase_sw:inst150|dff_one:inst63|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst150|dff_one:inst64|lpm_ff:lpm_ff_component|dffs[0]
-From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk0
-To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk0
-Failed Paths   : 0
-
-Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk3'
-Slack          : 0.350 ns
-Required Time  : 125.00 MHz ( period = 8.000 ns )
-Actual Time    : N/A
-From           : fanout_clock_phase_sw:inst141|dff16:inst46|lpm_ff:lpm_ff_component|dffs[15]
-To             : fanout_clock_phase_sw:inst141|dff16:inst47|lpm_ff:lpm_ff_component|dffs[15]
-From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk3
-To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk3
-Failed Paths   : 0
-
-Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk1'
-Slack          : 0.351 ns
-Required Time  : 125.00 MHz ( period = 8.000 ns )
-Actual Time    : N/A
-From           : fanout_clock_phase_sw:inst141|dff_one:inst66|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst141|dff16:inst41|lpm_ff:lpm_ff_component|dffs[15]
-From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk1
-To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk1
-Failed Paths   : 0
-
 Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk2'
-Slack          : 0.353 ns
+Slack          : 0.349 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
 From           : fanout_clock_phase_sw:inst150|dff16:inst44|lpm_ff:lpm_ff_component|dffs[15]
@@ -232,8 +202,18 @@ From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk2
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk2
 Failed Paths   : 0
 
+Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk1'
+Slack          : 0.351 ns
+Required Time  : 125.00 MHz ( period = 8.000 ns )
+Actual Time    : N/A
+From           : fanout_clock_phase_sw:inst150|dff_one:inst66|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst150|dff16:inst41|lpm_ff:lpm_ff_component|dffs[15]
+From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk1
+To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk1
+Failed Paths   : 0
+
 Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk4'
-Slack          : 0.355 ns
+Slack          : 0.351 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
 From           : fanout_clock_phase_sw:inst150|dff16:inst48|lpm_ff:lpm_ff_component|dffs[15]
@@ -242,12 +222,32 @@ From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk4
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk4
 Failed Paths   : 0
 
-Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk5'
-Slack          : 0.355 ns
+Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk0'
+Slack          : 0.353 ns
 Required Time  : 125.00 MHz ( period = 8.000 ns )
 Actual Time    : N/A
-From           : fanout_clock_phase_sw:inst150|dff_one:inst74|lpm_ff:lpm_ff_component|dffs[0]
-To             : fanout_clock_phase_sw:inst150|dff16:inst50|lpm_ff:lpm_ff_component|dffs[15]
+From           : fanout_clock_phase_sw:inst141|dff_one:inst63|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst141|dff_one:inst64|lpm_ff:lpm_ff_component|dffs[0]
+From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk0
+To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk3'
+Slack          : 0.353 ns
+Required Time  : 125.00 MHz ( period = 8.000 ns )
+Actual Time    : N/A
+From           : fanout_clock_phase_sw:inst141|dff_one:inst70|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst141|dff16:inst46|lpm_ff:lpm_ff_component|dffs[15]
+From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk3
+To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk3
+Failed Paths   : 0
+
+Type           : Slow Model Clock Hold: 'altpll_fanout:inst514|altpll:altpll_component|_clk5'
+Slack          : 0.357 ns
+Required Time  : 125.00 MHz ( period = 8.000 ns )
+Actual Time    : N/A
+From           : fanout_clock_phase_sw:inst141|dff_one:inst73|lpm_ff:lpm_ff_component|dffs[0]
+To             : fanout_clock_phase_sw:inst141|dff_one:inst74|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : altpll_fanout:inst514|altpll:altpll_component|_clk5
 To Clock       : altpll_fanout:inst514|altpll:altpll_component|_clk5
 Failed Paths   : 0
@@ -270,7 +270,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 16992
+Failed Paths   : 18666
 
 --------------------------------------------------------------------------------------
 
