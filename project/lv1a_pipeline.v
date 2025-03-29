@@ -356,9 +356,8 @@ begin
          out_veto_raw   = q_veto;
          out_timestamp  = q_time;
          out_int_lv1a   = q_trig[15:0];
-         out_ext_lv1a   = q_trig[20:16];
-         out_delta_lv1a = q_trig[21];
-                       
+         out_ext_lv1a   = q_trig[19:16];
+         out_delta_lv1a = q_trig[20];                      
       end
 
    out_lv1b_req = 1'b0;

@@ -150,7 +150,7 @@ reg                   get_first_clus;
 reg  [3 :0] nclus;
 reg  [15:0] et_raw;
 reg  [31:0] veto_raw;
-reg  [15:0] trig_raw;
+reg  [31:0] trig_raw;
 reg  [31:0] time_raw;
 
 wire [3 :0] q_nclus;
@@ -356,8 +356,8 @@ begin
          out_veto_raw   = q_veto;
          out_timestamp  = q_time;
          out_int_lv1a   = q_trig[15:0];
-         out_ext_lv1a   = q_trig[20:16];
-         out_delta_lv1a = q_trig[21];
+         out_ext_lv1a   = q_trig[19:16];
+         out_delta_lv1a = q_trig[20];
                        
       end
 

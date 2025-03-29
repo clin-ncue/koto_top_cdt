@@ -258,7 +258,7 @@ vme_data[22]                 : AE19      : bidir  : 3.3-V LVTTL       :         
 3_TXD[6]                     : AE21      : output : 3.3-V LVTTL       :         : 8         : Y              
 3_RXD[15]                    : AE22      : input  : 3.3-V LVTTL       :         : 8         : Y              
 3_ENABLE                     : AE23      : bidir  : 3.3-V LVTTL       :         : 8         : Y              
-TMS                          : AE24      : input  :                   :         : 8         :                
+altera_reserved_tms          : AE24      : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AE25      :        :                   :         : 1         :                
 GND*                         : AE26      :        :                   :         : 1         :                
 GND*                         : AE27      :        :                   :         : 1         :                
@@ -290,7 +290,7 @@ vme_data[29]                 : AF19      : bidir  : 3.3-V LVTTL       :         
 debug[11]                    : AF21      : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 3_RX_CLK                     : AF22      : input  : 3.3-V LVTTL       :         : 8         : Y              
 3_RXD[11]                    : AF23      : input  : 3.3-V LVTTL       :         : 8         : Y              
-TCK                          : AF24      : input  :                   :         : 8         :                
+altera_reserved_tck          : AF24      : input  : 3.3-V LVTTL       :         : 8         : N              
 VCCD_PLL8                    : AF25      : power  :                   : 1.2V    :           :                
 VCCA_PLL8                    : AF26      : power  :                   : 1.2V    :           :                
 VREFB1                       : AF27      : power  :                   :         : 1         :                
@@ -424,7 +424,7 @@ address[16]                  : AK24      : input  : 3.3-V LVTTL       :         
 3_TXD[12]                    : AK27      : output : 3.3-V LVTTL       :         : 8         : Y              
 3_TXD[2]                     : AK28      : output : 3.3-V LVTTL       :         : 8         : Y              
 3_RXD[12]                    : AK29      : input  : 3.3-V LVTTL       :         : 8         : Y              
-TRST                         : AK30      : input  :                   :         : 8         :                
+altera_reserved_ntrst        : AK30      : input  : 3.3-V LVTTL       :         : 8         : N              
 VREFB8                       : AK31      : power  :                   :         : 8         :                
 VCCIO1                       : AK32      : power  :                   : 2.5V    : 1         :                
 GND                          : AL1       : gnd    :                   :         :           :                
@@ -457,7 +457,7 @@ dir_trans                    : AL23      : output : 3.3-V LVTTL       :         
 3_TXD[13]                    : AL28      : output : 3.3-V LVTTL       :         : 8         : Y              
 3_TXD[8]                     : AL29      : output : 3.3-V LVTTL       :         : 8         : Y              
 nCONFIG                      : AL30      :        :                   :         : 8         :                
-TDI                          : AL31      : input  :                   :         : 8         :                
+altera_reserved_tdi          : AL31      : input  : 3.3-V LVTTL       :         : 8         : N              
 GND                          : AL32      : gnd    :                   :         :           :                
 GND                          : AM2       : gnd    :                   :         :           :                
 VCCIO7                       : AM3       : power  :                   : 3.3V    : 7         :                
@@ -523,7 +523,7 @@ DCLK                         : B31       :        :                   :         
 GND                          : B32       : gnd    :                   :         :           :                
 VCCIO5                       : C1        : power  :                   : 2.5V    : 5         :                
 VREFB4                       : C2        : power  :                   :         : 4         :                
-TDO                          : C3        : output :                   :         : 4         :                
+altera_reserved_tdo          : C3        : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : C4        :        :                   :         : 4         :                
 1_RXD[1]                     : C5        : input  : 3.3-V LVTTL       :         : 4         : Y              
 1_RX_CLK                     : C6        : input  : 3.3-V LVTTL       :         : 4         : Y              
