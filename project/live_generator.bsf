@@ -51,6 +51,13 @@ applicable agreement for further details.
 		(text "out_live" (rect 117 27 155 39)(font "Arial" ))
 		(line (pt 176 32)(pt 160 32)(line_width 1))
 	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "out_tena" (rect 0 0 42 12)(font "Arial" ))
+		(text "out_tena" (rect 113 43 155 55)(font "Arial" ))
+		(line (pt 176 48)(pt 160 48)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 160 80)(line_width 1))
 	)
