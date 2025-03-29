@@ -1217,4 +1217,5 @@ set_global_assignment -name SIGNALTAP_FILE opticalLinkTOP.stp
 set_global_assignment -name SIGNALTAP_FILE ofc1ErrorCheckTOP.stp
 set_global_assignment -name SIGNALTAP_FILE ofc1ErrorCheckTOPv3.stp
 set_global_assignment -name VERILOG_FILE demus_bus256_1to16.v
+set_global_assignment -name QIP_FILE bus32_mux16.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

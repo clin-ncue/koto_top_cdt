@@ -200,7 +200,13 @@ subdesign tdc_vme
   reg67[31..0]	: output;     -- same
   reg68[31..0]	: output;     -- same
   reg69[31..0]	: output;     -- same
-
+  
+  reg70[31..0]	: output;     -- same
+  reg71[31..0]	: output;     -- same
+  reg72[31..0]	: output;     -- same
+  reg73[31..0]	: output;     -- same
+  reg74[31..0]	: output;     -- same
+  
   
 
 
@@ -279,7 +285,12 @@ variable
   m_ctrlreg67[31..0]  : dff;		-- misc control registers
   m_ctrlreg68[31..0]  : dff;		-- misc control registers
   m_ctrlreg69[31..0]  : dff;		-- misc control registers
-  
+
+  m_ctrlreg70[31..0]  : dff;		-- misc control registers
+  m_ctrlreg71[31..0]  : dff;		-- misc control registers
+  m_ctrlreg72[31..0]  : dff;		-- misc control registers  
+  m_ctrlreg73[31..0]  : dff;		-- misc control registers
+  m_ctrlreg74[31..0]  : dff;		-- misc control registers  
  
   -- tri-state buffers for VME data lines
   datatri[31..0]  : tri_state_node;
@@ -351,6 +362,12 @@ variable
   m_ctrlwrite67   : node; 
   m_ctrlwrite68   : node; 
   m_ctrlwrite69   : node; 
+  
+  m_ctrlwrite70   : node; 
+  m_ctrlwrite71   : node; 
+  m_ctrlwrite72   : node; 
+  m_ctrlwrite73   : node; 
+  m_ctrlwrite74   : node; 
 
 begin
  
@@ -449,6 +466,11 @@ begin
   m_ctrlwrite68 = vmeas & vmewrite &(testmode==H"1")&(addr[26]==id)&(addr[25..2]==H"68");
   m_ctrlwrite69 = vmeas & vmewrite &(testmode==H"1")&(addr[26]==id)&(addr[25..2]==H"69");   
 
+  m_ctrlwrite70 = vmeas & vmewrite &(testmode==H"1")&(addr[26]==id)&(addr[25..2]==H"70");
+  m_ctrlwrite71 = vmeas & vmewrite &(testmode==H"1")&(addr[26]==id)&(addr[25..2]==H"71");
+  m_ctrlwrite72 = vmeas & vmewrite &(testmode==H"1")&(addr[26]==id)&(addr[25..2]==H"72");  
+  m_ctrlwrite73 = vmeas & vmewrite &(testmode==H"1")&(addr[26]==id)&(addr[25..2]==H"73");
+  m_ctrlwrite74 = vmeas & vmewrite &(testmode==H"1")&(addr[26]==id)&(addr[25..2]==H"74");  
   
   ctrlreg1[].d = data[];
   ctrlreg1[].clk = vme_ctrlwrite1;
@@ -572,6 +594,17 @@ begin
   m_ctrlreg69[].d = data[];
   m_ctrlreg69[].clk = m_ctrlwrite69;   
   
+  m_ctrlreg70[].d = data[];
+  m_ctrlreg70[].clk = m_ctrlwrite70; 
+  m_ctrlreg71[].d = data[];
+  m_ctrlreg71[].clk = m_ctrlwrite71; 
+  m_ctrlreg72[].d = data[];
+  m_ctrlreg72[].clk = m_ctrlwrite72; 
+  m_ctrlreg73[].d = data[];
+  m_ctrlreg73[].clk = m_ctrlwrite73; 
+  m_ctrlreg74[].d = data[];
+  m_ctrlreg74[].clk = m_ctrlwrite74;   
+  
   -- write memories via vme - (chip has to be in "test-mode")
  
    vme_wr_en1 = vmewrite & (addr[26]== id)& (addr[25..20]==H"11") & (testmode==H"1");
@@ -620,7 +653,7 @@ begin
   
   -- read DEADBE and status registers via vme
   if ((addr[26]== id) & (addr[25..2]==H"0")) then 
-    dataout[31..8].in = H"a00703";
+    dataout[31..8].in = H"a00704";
     dataout[7].in = GND;
     dataout[6].in = GND;
     dataout[5].in = GND;
@@ -1073,6 +1106,22 @@ begin
   if ((addr[26]== id) & (addr[25..2]==H"69")) then
     dataout[].in = m_ctrlreg69[].q;
   end if;
+  
+  if ((addr[26]== id) & (addr[25..2]==H"70")) then
+    dataout[].in = m_ctrlreg70[].q;
+  end if;
+  if ((addr[26]== id) & (addr[25..2]==H"71")) then
+    dataout[].in = m_ctrlreg71[].q;
+  end if;
+  if ((addr[26]== id) & (addr[25..2]==H"72")) then
+    dataout[].in = m_ctrlreg72[].q;
+  end if;
+  if ((addr[26]== id) & (addr[25..2]==H"73")) then
+    dataout[].in = m_ctrlreg73[].q;
+  end if;
+  if ((addr[26]== id) & (addr[25..2]==H"74")) then
+    dataout[].in = m_ctrlreg74[].q;
+  end if;
    -- put data on the vme bus
   
   dataout[].oe = vmeas & !vmewrite & addr[26]==id;
@@ -1152,5 +1201,9 @@ begin
   reg68[] = m_ctrlreg68[].q;
   reg69[] = m_ctrlreg69[].q;
 
-  
+  reg70[] = m_ctrlreg70[].q;
+  reg71[] = m_ctrlreg71[].q;
+  reg72[] = m_ctrlreg72[].q;
+  reg73[] = m_ctrlreg73[].q;
+  reg74[] = m_ctrlreg74[].q;
 end;

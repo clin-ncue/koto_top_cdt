@@ -150,7 +150,7 @@ reg                   get_first_clus;
 reg  [3 :0] nclus;
 reg  [15:0] et_raw;
 reg  [31:0] veto_raw;
-reg  [15:0] trig_raw;
+reg  [31:0] trig_raw;
 reg  [31:0] time_raw;
 
 wire [3 :0] q_nclus;
