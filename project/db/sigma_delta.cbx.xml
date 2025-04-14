@@ -13,6 +13,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|bypass_tlk_err:inst44|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_nie.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|lpm_compare27:inst334|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_hbl.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|rraw:inst411|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_ilk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|bus16_mux16:inst534|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_7me.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|counter7:inst19|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_bqi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|lpm_add_sub18:inst343|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_slj.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|sigma_delta|time_controller:inst36|raw_mem:_veto0mem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6eo1.tdf"/>

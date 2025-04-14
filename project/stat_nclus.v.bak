@@ -33,7 +33,7 @@ input wire         clk;
 input wire         in_live;
 input wire [3  :0] in_nclus;
 input wire         lv1b_req;
-input wire         in_int_scaled;
+input wire [7  :0] in_int_scaled;
 
 // output
 output reg [15:0]  clus0_cnt;
