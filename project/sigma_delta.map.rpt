@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sigma_delta
-Mon Apr 14 08:28:21 2025
+Tue Apr 15 01:32:22 2025
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -409,69 +409,69 @@ Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 401. Parameter Settings for User Entity Instance: line_dff:inst447|lpm_ff:lpm_ff_component
 402. Parameter Settings for User Entity Instance: line_dff:inst445|lpm_ff:lpm_ff_component
 403. Parameter Settings for User Entity Instance: bus16_mux16:inst534|lpm_mux:lpm_mux_component
-404. Parameter Settings for User Entity Instance: bus32_mux16:inst530|lpm_mux:lpm_mux_component
-405. Parameter Settings for User Entity Instance: bus32_mux16:inst529|lpm_mux:lpm_mux_component
-406. Parameter Settings for User Entity Instance: mux8_bus16:inst77|lpm_mux:lpm_mux_component
-407. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst11|lpm_ff:lpm_ff_component
-408. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst7|lpm_ff:lpm_ff_component
-409. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst7|lpm_ff:lpm_ff_component
-410. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst3|lpm_ff:lpm_ff_component
-411. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst2|lpm_ff:lpm_ff_component
-412. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst1|lpm_ff:lpm_ff_component
-413. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst|lpm_ff:lpm_ff_component
-414. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst8|lpm_ff:lpm_ff_component
-415. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst5|lpm_ff:lpm_ff_component
-416. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst9|lpm_ff:lpm_ff_component
-417. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst6|lpm_ff:lpm_ff_component
-418. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst4|lpm_ff:lpm_ff_component
-419. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst5|lpm_ff:lpm_ff_component
-420. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst7|lpm_ff:lpm_ff_component
-421. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst3|lpm_ff:lpm_ff_component
-422. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst2|lpm_ff:lpm_ff_component
-423. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst1|lpm_ff:lpm_ff_component
-424. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst|lpm_ff:lpm_ff_component
-425. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst8|lpm_ff:lpm_ff_component
-426. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst5|lpm_ff:lpm_ff_component
-427. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst9|lpm_ff:lpm_ff_component
-428. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst6|lpm_ff:lpm_ff_component
-429. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst|lpm_ff:lpm_ff_component
-430. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst12|lpm_ff:lpm_ff_component
-431. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst8|lpm_ff:lpm_ff_component
-432. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst6|lpm_ff:lpm_ff_component
-433. Parameter Settings for User Entity Instance: line_dff:inst49|lpm_ff:lpm_ff_component
-434. Parameter Settings for User Entity Instance: line_dff:inst499|lpm_ff:lpm_ff_component
-435. Parameter Settings for User Entity Instance: lpm_counter100:inst38|lpm_counter:lpm_counter_component
-436. Parameter Settings for User Entity Instance: dff16:inst198|lpm_ff:lpm_ff_component
-437. Parameter Settings for User Entity Instance: dff16:inst192|lpm_ff:lpm_ff_component
-438. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|mux6_bus16:inst|lpm_mux:lpm_mux_component
-439. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst42|lpm_ff:lpm_ff_component
-440. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst40|lpm_ff:lpm_ff_component
-441. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst64|lpm_ff:lpm_ff_component
-442. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst63|lpm_ff:lpm_ff_component
-443. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst43|lpm_ff:lpm_ff_component
-444. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst41|lpm_ff:lpm_ff_component
-445. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst66|lpm_ff:lpm_ff_component
-446. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst65|lpm_ff:lpm_ff_component
-447. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst45|lpm_ff:lpm_ff_component
-448. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst44|lpm_ff:lpm_ff_component
-449. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst68|lpm_ff:lpm_ff_component
-450. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst67|lpm_ff:lpm_ff_component
-451. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst47|lpm_ff:lpm_ff_component
-452. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst46|lpm_ff:lpm_ff_component
-453. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst70|lpm_ff:lpm_ff_component
-454. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst69|lpm_ff:lpm_ff_component
-455. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst49|lpm_ff:lpm_ff_component
-456. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst48|lpm_ff:lpm_ff_component
-457. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst72|lpm_ff:lpm_ff_component
-458. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst71|lpm_ff:lpm_ff_component
-459. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst51|lpm_ff:lpm_ff_component
-460. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst50|lpm_ff:lpm_ff_component
-461. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst74|lpm_ff:lpm_ff_component
-462. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst73|lpm_ff:lpm_ff_component
-463. Parameter Settings for User Entity Instance: dff_one:inst139|lpm_ff:lpm_ff_component
-464. Parameter Settings for User Entity Instance: align_trig_dff0:inst277|lpm_ff:lpm_ff_component
-465. Parameter Settings for User Entity Instance: align_trig_dff0:inst224|lpm_ff:lpm_ff_component
-466. Parameter Settings for User Entity Instance: trig_dff:inst264|lpm_ff:lpm_ff_component
+404. Parameter Settings for User Entity Instance: trig_dff:inst264|lpm_ff:lpm_ff_component
+405. Parameter Settings for User Entity Instance: bus32_mux16:inst530|lpm_mux:lpm_mux_component
+406. Parameter Settings for User Entity Instance: bus32_mux16:inst529|lpm_mux:lpm_mux_component
+407. Parameter Settings for User Entity Instance: mux8_bus16:inst77|lpm_mux:lpm_mux_component
+408. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst11|lpm_ff:lpm_ff_component
+409. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst7|lpm_ff:lpm_ff_component
+410. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst7|lpm_ff:lpm_ff_component
+411. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst3|lpm_ff:lpm_ff_component
+412. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst2|lpm_ff:lpm_ff_component
+413. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst1|lpm_ff:lpm_ff_component
+414. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst|lpm_ff:lpm_ff_component
+415. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst8|lpm_ff:lpm_ff_component
+416. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst5|lpm_ff:lpm_ff_component
+417. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst9|lpm_ff:lpm_ff_component
+418. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst2|dff_one:inst6|lpm_ff:lpm_ff_component
+419. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst4|lpm_ff:lpm_ff_component
+420. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst5|lpm_ff:lpm_ff_component
+421. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst7|lpm_ff:lpm_ff_component
+422. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst3|lpm_ff:lpm_ff_component
+423. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst2|lpm_ff:lpm_ff_component
+424. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst1|lpm_ff:lpm_ff_component
+425. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst|lpm_ff:lpm_ff_component
+426. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst8|lpm_ff:lpm_ff_component
+427. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst5|lpm_ff:lpm_ff_component
+428. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst9|lpm_ff:lpm_ff_component
+429. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|error_judgement:inst1|dff_one:inst6|lpm_ff:lpm_ff_component
+430. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst|lpm_ff:lpm_ff_component
+431. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst12|lpm_ff:lpm_ff_component
+432. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst8|lpm_ff:lpm_ff_component
+433. Parameter Settings for User Entity Instance: ofc1_err_manager:inst1|line_dff:inst6|lpm_ff:lpm_ff_component
+434. Parameter Settings for User Entity Instance: line_dff:inst49|lpm_ff:lpm_ff_component
+435. Parameter Settings for User Entity Instance: line_dff:inst499|lpm_ff:lpm_ff_component
+436. Parameter Settings for User Entity Instance: lpm_counter100:inst38|lpm_counter:lpm_counter_component
+437. Parameter Settings for User Entity Instance: dff16:inst198|lpm_ff:lpm_ff_component
+438. Parameter Settings for User Entity Instance: dff16:inst192|lpm_ff:lpm_ff_component
+439. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|mux6_bus16:inst|lpm_mux:lpm_mux_component
+440. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst42|lpm_ff:lpm_ff_component
+441. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst40|lpm_ff:lpm_ff_component
+442. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst64|lpm_ff:lpm_ff_component
+443. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst63|lpm_ff:lpm_ff_component
+444. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst43|lpm_ff:lpm_ff_component
+445. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst41|lpm_ff:lpm_ff_component
+446. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst66|lpm_ff:lpm_ff_component
+447. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst65|lpm_ff:lpm_ff_component
+448. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst45|lpm_ff:lpm_ff_component
+449. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst44|lpm_ff:lpm_ff_component
+450. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst68|lpm_ff:lpm_ff_component
+451. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst67|lpm_ff:lpm_ff_component
+452. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst47|lpm_ff:lpm_ff_component
+453. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst46|lpm_ff:lpm_ff_component
+454. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst70|lpm_ff:lpm_ff_component
+455. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst69|lpm_ff:lpm_ff_component
+456. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst49|lpm_ff:lpm_ff_component
+457. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst48|lpm_ff:lpm_ff_component
+458. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst72|lpm_ff:lpm_ff_component
+459. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst71|lpm_ff:lpm_ff_component
+460. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst51|lpm_ff:lpm_ff_component
+461. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff16:inst50|lpm_ff:lpm_ff_component
+462. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst74|lpm_ff:lpm_ff_component
+463. Parameter Settings for User Entity Instance: fanout_clock_phase_sw:inst150|dff_one:inst73|lpm_ff:lpm_ff_component
+464. Parameter Settings for User Entity Instance: dff_one:inst139|lpm_ff:lpm_ff_component
+465. Parameter Settings for User Entity Instance: align_trig_dff0:inst277|lpm_ff:lpm_ff_component
+466. Parameter Settings for User Entity Instance: align_trig_dff0:inst224|lpm_ff:lpm_ff_component
 467. Parameter Settings for User Entity Instance: trig_dff:inst260|lpm_ff:lpm_ff_component
 468. Parameter Settings for User Entity Instance: line_dff:inst293|lpm_ff:lpm_ff_component
 469. Parameter Settings for User Entity Instance: line_dff:inst312|lpm_ff:lpm_ff_component
@@ -588,7 +588,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-------------------------------+------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Mon Apr 14 08:28:21 2025    ;
+; Analysis & Synthesis Status   ; Successful - Tue Apr 15 01:32:22 2025    ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                 ; sigma_delta                              ;
 ; Top-level Entity Name         ; sigma_delta                              ;
@@ -857,6 +857,7 @@ applicable agreement for further details.
 ; rraw2.tdf                        ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/rraw2.tdf                      ;
 ; bus16_mux16.tdf                  ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/bus16_mux16.tdf                ;
 ; db/mux_7me.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/workspace/firmware/TOP-CDT/main/project/db/mux_7me.tdf                 ;
+; trig_dff.tdf                     ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/trig_dff.tdf                   ;
 ; bus32_mux16.tdf                  ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/bus32_mux16.tdf                ;
 ; db/mux_4me.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/workspace/firmware/TOP-CDT/main/project/db/mux_4me.tdf                 ;
 ; mux8_bus16.tdf                   ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/mux8_bus16.tdf                 ;
@@ -871,7 +872,6 @@ applicable agreement for further details.
 ; mux6_bus16.tdf                   ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/mux6_bus16.tdf                 ;
 ; db/mux_rmc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/workspace/firmware/TOP-CDT/main/project/db/mux_rmc.tdf                 ;
 ; align_trig_dff0.tdf              ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/align_trig_dff0.tdf            ;
-; trig_dff.tdf                     ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/trig_dff.tdf                   ;
 ; altpll_fanout.v                  ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/altpll_fanout.v                ;
 ; bus16_dff.tdf                    ; yes             ; Auto-Found Wizard-Generated File         ; C:/workspace/firmware/TOP-CDT/main/project/bus16_dff.tdf                  ;
 ; db/cntr_knh.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/workspace/firmware/TOP-CDT/main/project/db/cntr_knh.tdf                ;
@@ -929,7 +929,7 @@ applicable agreement for further details.
 +----------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                   ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+--------------+
-; |sigma_delta                                 ; 20975 (14)        ; 17003 (0)    ; 920064            ; 0            ; 0       ; 0         ; 0         ; 82   ; 0            ; |sigma_delta                                                                                                          ;              ;
+; |sigma_delta                                 ; 20995 (14)        ; 17025 (0)    ; 920064            ; 0            ; 0       ; 0         ; 0         ; 82   ; 0            ; |sigma_delta                                                                                                          ;              ;
 ;    |GLINK_fifo:inst10|                       ; 14 (0)            ; 13 (0)       ; 256               ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|GLINK_fifo:inst10                                                                                        ; work         ;
 ;       |dcfifo:dcfifo_component|              ; 14 (0)            ; 13 (0)       ; 256               ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|GLINK_fifo:inst10|dcfifo:dcfifo_component                                                                ; work         ;
 ;          |dcfifo_f7i1:auto_generated|        ; 14 (2)            ; 13 (0)       ; 256               ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|GLINK_fifo:inst10|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated                                     ; work         ;
@@ -959,13 +959,13 @@ applicable agreement for further details.
 ;             |altsyncram_3ou:fifo_ram|        ; 0 (0)             ; 0 (0)        ; 256               ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|altsyncram_3ou:fifo_ram             ; work         ;
 ;             |dffpipe_c2e:rdaclr|             ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|GLINK_fifo:inst98|dcfifo:dcfifo_component|dcfifo_f7i1:auto_generated|dffpipe_c2e:rdaclr                  ; work         ;
 ;    |LVDS_RX_Debug:inst160|                   ; 93 (93)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst160                                                                                    ; work         ;
-;    |LVDS_RX_Debug:inst161|                   ; 94 (94)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst161                                                                                    ; work         ;
+;    |LVDS_RX_Debug:inst161|                   ; 93 (93)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst161                                                                                    ; work         ;
 ;    |LVDS_RX_Debug:inst162|                   ; 93 (93)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst162                                                                                    ; work         ;
 ;    |LVDS_RX_Debug:inst186|                   ; 93 (93)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst186                                                                                    ; work         ;
 ;    |LVDS_RX_Debug:inst187|                   ; 93 (93)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst187                                                                                    ; work         ;
 ;    |LVDS_RX_Debug:inst189|                   ; 93 (93)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst189                                                                                    ; work         ;
-;    |LVDS_RX_Debug:inst244|                   ; 94 (94)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst244                                                                                    ; work         ;
-;    |LVDS_RX_Debug:inst91|                    ; 94 (94)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst91                                                                                     ; work         ;
+;    |LVDS_RX_Debug:inst244|                   ; 93 (93)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst244                                                                                    ; work         ;
+;    |LVDS_RX_Debug:inst91|                    ; 93 (93)           ; 52 (52)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|LVDS_RX_Debug:inst91                                                                                     ; work         ;
 ;    |OL_Controller:inst188|                   ; 63 (63)           ; 70 (70)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|OL_Controller:inst188                                                                                    ; work         ;
 ;    |OL_Controller:inst212|                   ; 131 (131)         ; 86 (86)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|OL_Controller:inst212                                                                                    ; work         ;
 ;    |OL_Controller:inst216|                   ; 63 (63)           ; 70 (70)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|OL_Controller:inst216                                                                                    ; work         ;
@@ -1111,7 +1111,7 @@ applicable agreement for further details.
 ;       |lpm_mux:lpm_mux_component|            ; 1 (0)             ; 1 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|bypass_tlk_err:inst44|lpm_mux:lpm_mux_component                                                          ; work         ;
 ;          |mux_nie:auto_generated|            ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|bypass_tlk_err:inst44|lpm_mux:lpm_mux_component|mux_nie:auto_generated                                   ; work         ;
 ;    |clock_trig:inst256|                      ; 101 (101)         ; 33 (33)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|clock_trig:inst256                                                                                       ; work         ;
-;    |clus_ofc_err:inst294|                    ; 44 (44)           ; 28 (28)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|clus_ofc_err:inst294                                                                                     ; work         ;
+;    |clus_ofc_err:inst294|                    ; 43 (43)           ; 28 (28)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|clus_ofc_err:inst294                                                                                     ; work         ;
 ;    |clus_ofc_err_decoder:inst363|            ; 6 (6)             ; 2 (2)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|clus_ofc_err_decoder:inst363                                                                             ; work         ;
 ;    |cycle_measurer:inst512|                  ; 45 (45)           ; 39 (39)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|cycle_measurer:inst512                                                                                   ; work         ;
 ;    |dc_err_center:inst367|                   ; 8 (8)             ; 7 (7)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|dc_err_center:inst367                                                                                    ; work         ;
@@ -1121,7 +1121,7 @@ applicable agreement for further details.
 ;       |lpm_ff:lpm_ff_component|              ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|delta_dff04:inst221|lpm_ff:lpm_ff_component                                                              ; work         ;
 ;    |delta_dff04:inst229|                     ; 0 (0)             ; 1 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|delta_dff04:inst229                                                                                      ; work         ;
 ;       |lpm_ff:lpm_ff_component|              ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|delta_dff04:inst229|lpm_ff:lpm_ff_component                                                              ; work         ;
-;    |delta_factory:inst282|                   ; 184 (184)         ; 51 (51)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|delta_factory:inst282                                                                                    ; work         ;
+;    |delta_factory:inst282|                   ; 181 (181)         ; 51 (51)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|delta_factory:inst282                                                                                    ; work         ;
 ;    |demux_bus256_1to16:inst528|              ; 16 (16)           ; 2544 (2544)  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|demux_bus256_1to16:inst528                                                                               ; work         ;
 ;    |dff16:inst125|                           ; 0 (0)             ; 16 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|dff16:inst125                                                                                            ; work         ;
 ;       |lpm_ff:lpm_ff_component|              ; 0 (0)             ; 16 (16)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|dff16:inst125|lpm_ff:lpm_ff_component                                                                    ; work         ;
@@ -1441,6 +1441,7 @@ applicable agreement for further details.
 ;    |lpm_dff12:inst274|                       ; 1 (0)             ; 1 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|lpm_dff12:inst274                                                                                        ; work         ;
 ;       |lpm_ff:lpm_ff_component|              ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|lpm_dff12:inst274|lpm_ff:lpm_ff_component                                                                ; work         ;
 ;    |lv1_delay:inst456|                       ; 27 (27)           ; 22 (22)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|lv1_delay:inst456                                                                                        ; work         ;
+;    |lv1_delay:inst536|                       ; 27 (27)           ; 22 (22)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|lv1_delay:inst536                                                                                        ; work         ;
 ;    |lv1a_pipeline:inst116|                   ; 3945 (3945)       ; 1631 (1631)  ; 107520            ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|lv1a_pipeline:inst116                                                                                    ; work         ;
 ;       |nclus_mem:_nclusmem|                  ; 0 (0)             ; 0 (0)        ; 4096              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|lv1a_pipeline:inst116|nclus_mem:_nclusmem                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 4096              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|lv1a_pipeline:inst116|nclus_mem:_nclusmem|altsyncram:altsyncram_component                                ; work         ;
@@ -1636,8 +1637,8 @@ applicable agreement for further details.
 ;    |stat_veto:inst487|                       ; 44 (44)           ; 34 (34)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|stat_veto:inst487                                                                                        ; work         ;
 ;    |stat_veto:inst55|                        ; 44 (44)           ; 34 (34)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|stat_veto:inst55                                                                                         ; work         ;
 ;    |tapdel10:inst13|                         ; 1 (1)             ; 6 (6)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|tapdel10:inst13                                                                                          ; work         ;
-;    |tdc_vme:inst57|                          ; 3311 (3311)       ; 2020 (2020)  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|tdc_vme:inst57                                                                                           ; work         ;
-;    |time_controller:inst36|                  ; 535 (535)         ; 330 (330)    ; 25088             ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|time_controller:inst36                                                                                   ; work         ;
+;    |tdc_vme:inst57|                          ; 3315 (3315)       ; 2020 (2020)  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|tdc_vme:inst57                                                                                           ; work         ;
+;    |time_controller:inst36|                  ; 530 (530)         ; 330 (330)    ; 25088             ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|time_controller:inst36                                                                                   ; work         ;
 ;       |et_raw_mem:_etmem|                    ; 0 (0)             ; 0 (0)        ; 8704              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|time_controller:inst36|et_raw_mem:_etmem                                                                 ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8704              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|time_controller:inst36|et_raw_mem:_etmem|altsyncram:altsyncram_component                                 ; work         ;
 ;             |altsyncram_8eo1:auto_generated| ; 0 (0)             ; 0 (0)        ; 8704              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|time_controller:inst36|et_raw_mem:_etmem|altsyncram:altsyncram_component|altsyncram_8eo1:auto_generated  ; work         ;
@@ -1708,7 +1709,7 @@ applicable agreement for further details.
 ;    |trig_type_lv1b:inst504|                  ; 95 (95)           ; 47 (47)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|trig_type_lv1b:inst504                                                                                   ; work         ;
 ;    |trig_type_lv1b:inst505|                  ; 95 (95)           ; 47 (47)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|trig_type_lv1b:inst505                                                                                   ; work         ;
 ;    |trig_type_lv1b:inst515|                  ; 97 (97)           ; 47 (47)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|trig_type_lv1b:inst515                                                                                   ; work         ;
-;    |trig_type_lv1b:inst516|                  ; 94 (94)           ; 47 (47)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|trig_type_lv1b:inst516                                                                                   ; work         ;
+;    |trig_type_lv1b:inst516|                  ; 95 (95)           ; 47 (47)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|trig_type_lv1b:inst516                                                                                   ; work         ;
 ;    |trig_type_lv1b:inst64|                   ; 96 (96)           ; 47 (47)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|trig_type_lv1b:inst64                                                                                    ; work         ;
 ;    |trig_type_lv1b:inst65|                   ; 95 (95)           ; 47 (47)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|trig_type_lv1b:inst65                                                                                    ; work         ;
 ;    |trig_type_lv1b:inst66|                   ; 95 (95)           ; 47 (47)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sigma_delta|trig_type_lv1b:inst66                                                                                    ; work         ;
@@ -1853,7 +1854,6 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; lv1b_pipeline:inst269|pipeline[0]                                                           ; Merged with lv1b_pipeline:inst269|out_early_lv1                                         ;
 ; time_controller:inst36|waddr_veto0[0]                                                       ; Merged with time_controller:inst36|waddr_veto1[0]                                       ;
 ; time_controller:inst36|waddr_et[0]                                                          ; Merged with time_controller:inst36|waddr_veto1[0]                                       ;
-; time_controller:inst36|rena_et                                                              ; Merged with time_controller:inst36|rena_veto1                                           ;
 ; time_controller:inst36|waddr_veto0[1]                                                       ; Merged with time_controller:inst36|waddr_veto1[1]                                       ;
 ; time_controller:inst36|waddr_et[1]                                                          ; Merged with time_controller:inst36|waddr_veto1[1]                                       ;
 ; time_controller:inst36|waddr_veto0[2]                                                       ; Merged with time_controller:inst36|waddr_veto1[2]                                       ;
@@ -1897,7 +1897,8 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; OL_Controller:inst218|counter[0..14]                                                        ; Lost fanout                                                                             ;
 ; OL_Controller:inst216|counter[0..14]                                                        ; Lost fanout                                                                             ;
 ; OL_Controller:inst188|counter[0..14]                                                        ; Lost fanout                                                                             ;
-; time_controller:inst36|rena_veto0                                                           ; Merged with time_controller:inst36|rena_veto1                                           ;
+; time_controller:inst36|rena_veto0                                                           ; Merged with time_controller:inst36|rena_et                                              ;
+; time_controller:inst36|rena_veto1                                                           ; Merged with time_controller:inst36|rena_et                                              ;
 ; trig_type_lv1a_delta:inst243|tmp_delay_et[0..8]                                             ; Lost fanout                                                                             ;
 ; Total Number of Removed Registers = 1331                                                    ;                                                                                         ;
 +---------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -1928,168 +1929,169 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|lv1a_pipeline:inst116|lv1a_cnt[1]                                                                                    ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|lv1a_pipeline:inst116|lv1a_rej_cnt[12]                                                                               ;
-; 3:1                ; 49 bits   ; 98 ALUTs      ; 0 ALUTs              ; 98 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|veto1_tmp0[4]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|lv1b_pipeline:inst269|lv2_rej_cnt[28]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|lv1a_pipeline:inst116|lv1a_cnt[7]                                                                                    ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|lv1a_pipeline:inst116|lv1a_rej_cnt[0]                                                                                ;
+; 3:1                ; 49 bits   ; 98 ALUTs      ; 0 ALUTs              ; 98 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|veto0_tmp0[4]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|lv1b_pipeline:inst269|lv2_rej_cnt[0]                                                                                 ;
 ; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a_delta:inst243|ndelta[0]                                                                               ;
-; 3:1                ; 256 bits  ; 512 ALUTs     ; 512 ALUTs            ; 0 ALUTs                ; Yes        ; |sigma_delta|rraw_sw:inst415|lpm_mux:lpm_mux_component|mux_5me:auto_generated|external_latency_ffsa[49]                           ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus8_cnt[15]                                                                                      ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus7_cnt[3]                                                                                       ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus6_cnt[4]                                                                                       ;
+; 3:1                ; 256 bits  ; 512 ALUTs     ; 512 ALUTs            ; 0 ALUTs                ; Yes        ; |sigma_delta|rraw_sw:inst415|lpm_mux:lpm_mux_component|mux_5me:auto_generated|external_latency_ffsa[43]                           ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus8_cnt[11]                                                                                      ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus7_cnt[9]                                                                                       ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus6_cnt[11]                                                                                      ;
 ; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus5_cnt[15]                                                                                      ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus4_cnt[12]                                                                                      ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus3_cnt[2]                                                                                       ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus2_cnt[10]                                                                                      ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus1_cnt[3]                                                                                       ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus0_cnt[12]                                                                                      ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst160|ctrl[1]                                                                                        ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst162|ctrl[1]                                                                                        ;
-; 3:1                ; 10 bits   ; 20 ALUTs      ; 0 ALUTs              ; 20 ALUTs               ; Yes        ; |sigma_delta|lv1_delay:inst456|delay[5]                                                                                           ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst91|ctrl[1]                                                                                         ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst161|ctrl[0]                                                                                        ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus4_cnt[13]                                                                                      ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus3_cnt[6]                                                                                       ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus2_cnt[13]                                                                                      ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus1_cnt[11]                                                                                      ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clus0_cnt[9]                                                                                       ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst160|ctrl[0]                                                                                        ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst162|ctrl[0]                                                                                        ;
+; 3:1                ; 10 bits   ; 20 ALUTs      ; 0 ALUTs              ; 20 ALUTs               ; Yes        ; |sigma_delta|lv1_delay:inst456|delay[1]                                                                                           ;
+; 3:1                ; 10 bits   ; 20 ALUTs      ; 0 ALUTs              ; 20 ALUTs               ; Yes        ; |sigma_delta|lv1_delay:inst536|delay[1]                                                                                           ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst91|ctrl[0]                                                                                         ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst161|ctrl[1]                                                                                        ;
 ; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst186|ctrl[1]                                                                                        ;
 ; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst187|ctrl[0]                                                                                        ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst189|ctrl[0]                                                                                        ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst244|ctrl[0]                                                                                        ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|spill_cnt:inst508|spill_cnt[2]                                                                                       ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst407|scaled_cnt[19]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst413|scaled_cnt[30]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst315|scaled_cnt[7]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst327|scaled_cnt[9]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst254|scaled_cnt[19]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst245|scaled_cnt[19]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst159|scaled_cnt[23]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst156|scaled_cnt[10]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst200|scaled_cnt[0]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst180|scaled_cnt[22]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst183|scaled_cnt[3]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst185|scaled_cnt[20]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst174|scaled_cnt[13]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst173|scaled_cnt[3]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst158|scaled_cnt[20]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst111|scaled_cnt[24]                                                                                ;
-; 3:1                ; 31 bits   ; 62 ALUTs      ; 0 ALUTs              ; 62 ALUTs               ; Yes        ; |sigma_delta|cycle_measurer:inst512|cnt[4]                                                                                        ;
-; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; Yes        ; |sigma_delta|lv1b_pipeline:inst269|tag_cnt[2]                                                                                     ;
-; 3:1                ; 23 bits   ; 46 ALUTs      ; 0 ALUTs              ; 46 ALUTs               ; Yes        ; |sigma_delta|live_delay:inst494|cnt[16]                                                                                           ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |sigma_delta|clock_trig:inst256|cnt[28]                                                                                           ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|lv1a_pipeline:inst116|cnt_delta[6]                                                                                   ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst189|ctrl[1]                                                                                        ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst244|ctrl[1]                                                                                        ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|spill_cnt:inst508|spill_cnt[4]                                                                                       ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst407|scaled_cnt[21]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst413|scaled_cnt[0]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst315|scaled_cnt[23]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst327|scaled_cnt[12]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst254|scaled_cnt[1]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst245|scaled_cnt[6]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst159|scaled_cnt[26]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst156|scaled_cnt[15]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst200|scaled_cnt[25]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst180|scaled_cnt[21]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst183|scaled_cnt[12]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst185|scaled_cnt[7]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst174|scaled_cnt[21]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst173|scaled_cnt[11]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst158|scaled_cnt[26]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst111|scaled_cnt[23]                                                                                ;
+; 3:1                ; 31 bits   ; 62 ALUTs      ; 0 ALUTs              ; 62 ALUTs               ; Yes        ; |sigma_delta|cycle_measurer:inst512|cnt[27]                                                                                       ;
+; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; Yes        ; |sigma_delta|lv1b_pipeline:inst269|tag_cnt[0]                                                                                     ;
+; 3:1                ; 23 bits   ; 46 ALUTs      ; 0 ALUTs              ; 46 ALUTs               ; Yes        ; |sigma_delta|live_delay:inst494|cnt[12]                                                                                           ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |sigma_delta|clock_trig:inst256|cnt[11]                                                                                           ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|lv1a_pipeline:inst116|cnt_delta[3]                                                                                   ;
 ; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a_delta:inst243|cnt[5]                                                                                  ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst515|scaled_cnt[2]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst505|scaled_cnt[28]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst504|scaled_cnt[14]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst503|scaled_cnt[28]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst502|scaled_cnt[27]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst463|scaled_cnt[27]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst462|scaled_cnt[0]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst516|scaled_cnt[0]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst119|scaled_cnt[4]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst118|scaled_cnt[7]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst117|scaled_cnt[27]                                                                                ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst76|scaled_cnt[29]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst74|scaled_cnt[24]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst66|scaled_cnt[3]                                                                                  ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst65|scaled_cnt[21]                                                                                 ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst64|scaled_cnt[25]                                                                                 ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst515|prescale_cnt[2]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst505|prescale_cnt[6]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst504|prescale_cnt[8]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst503|prescale_cnt[8]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst502|prescale_cnt[5]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst463|prescale_cnt[8]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst462|prescale_cnt[10]                                                                              ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst516|prescale_cnt[1]                                                                               ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst515|scaled_cnt[6]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst505|scaled_cnt[17]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst504|scaled_cnt[2]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst503|scaled_cnt[15]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst502|scaled_cnt[3]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst463|scaled_cnt[2]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst462|scaled_cnt[1]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst516|scaled_cnt[1]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst119|scaled_cnt[1]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst118|scaled_cnt[2]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst117|scaled_cnt[25]                                                                                ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst76|scaled_cnt[23]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst74|scaled_cnt[1]                                                                                  ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst66|scaled_cnt[23]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst65|scaled_cnt[22]                                                                                 ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 32 ALUTs             ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst64|scaled_cnt[15]                                                                                 ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst515|prescale_cnt[11]                                                                              ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst505|prescale_cnt[5]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst504|prescale_cnt[9]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst503|prescale_cnt[4]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst502|prescale_cnt[1]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst463|prescale_cnt[2]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst462|prescale_cnt[6]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst516|prescale_cnt[6]                                                                               ;
 ; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst119|prescale_cnt[6]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst118|prescale_cnt[1]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst117|prescale_cnt[0]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst76|prescale_cnt[10]                                                                               ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst74|prescale_cnt[6]                                                                                ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst66|prescale_cnt[2]                                                                                ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst65|prescale_cnt[5]                                                                                ;
-; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst64|prescale_cnt[0]                                                                                ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst118|prescale_cnt[6]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst117|prescale_cnt[9]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst76|prescale_cnt[6]                                                                                ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst74|prescale_cnt[11]                                                                               ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst66|prescale_cnt[5]                                                                                ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst65|prescale_cnt[8]                                                                                ;
+; 3:1                ; 12 bits   ; 24 ALUTs      ; 0 ALUTs              ; 24 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1b:inst64|prescale_cnt[1]                                                                                ;
 ; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst407|prescale_cnt[12]                                                                              ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst413|prescale_cnt[2]                                                                               ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst315|prescale_cnt[8]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst413|prescale_cnt[14]                                                                              ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst315|prescale_cnt[10]                                                                              ;
 ; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst327|prescale_cnt[11]                                                                              ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst254|prescale_cnt[14]                                                                              ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst245|prescale_cnt[7]                                                                               ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst159|prescale_cnt[3]                                                                               ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst156|prescale_cnt[15]                                                                              ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst200|prescale_cnt[1]                                                                               ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst180|prescale_cnt[4]                                                                               ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst183|prescale_cnt[10]                                                                              ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst185|prescale_cnt[6]                                                                               ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst174|prescale_cnt[11]                                                                              ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst173|prescale_cnt[5]                                                                               ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst158|prescale_cnt[1]                                                                               ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst111|prescale_cnt[11]                                                                              ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clusN_cnt[12]                                                                                      ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|lv1a_pipeline:inst116|delay_plv1[7]                                                                                  ;
-; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a_delta:inst243|et_raw[14]                                                                              ;
-; 3:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a_delta:inst243|veto_raw[2]                                                                             ;
-; 3:1                ; 18 bits   ; 36 ALUTs      ; 0 ALUTs              ; 36 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a_delta:inst243|delay_veto[8]                                                                           ;
-; 4:1                ; 13 bits   ; 26 ALUTs      ; 0 ALUTs              ; 26 ALUTs               ; Yes        ; |sigma_delta|trig_factory:inst271|gap_cnt[9]                                                                                      ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |sigma_delta|trig_factory:inst271|iheader[0]                                                                                      ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_factory:inst271|trig_cnt[12]                                                                                    ;
-; 4:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |sigma_delta|delta_factory:inst282|gap_cnt[0]                                                                                     ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst254|prescale_cnt[6]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst245|prescale_cnt[10]                                                                              ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst159|prescale_cnt[4]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst156|prescale_cnt[13]                                                                              ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst200|prescale_cnt[2]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst180|prescale_cnt[5]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst183|prescale_cnt[2]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst185|prescale_cnt[10]                                                                              ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst174|prescale_cnt[6]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst173|prescale_cnt[0]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst158|prescale_cnt[3]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a:inst111|prescale_cnt[4]                                                                               ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus:inst43|clusN_cnt[15]                                                                                      ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|lv1a_pipeline:inst116|delay_plv1[1]                                                                                  ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a_delta:inst243|et_raw[7]                                                                               ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a_delta:inst243|veto_raw[0]                                                                             ;
+; 3:1                ; 18 bits   ; 36 ALUTs      ; 0 ALUTs              ; 36 ALUTs               ; Yes        ; |sigma_delta|trig_type_lv1a_delta:inst243|delay_et[4]                                                                             ;
+; 4:1                ; 13 bits   ; 26 ALUTs      ; 0 ALUTs              ; 26 ALUTs               ; Yes        ; |sigma_delta|trig_factory:inst271|gap_cnt[12]                                                                                     ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |sigma_delta|trig_factory:inst271|iheader[1]                                                                                      ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|trig_factory:inst271|trig_cnt[11]                                                                                    ;
+; 4:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |sigma_delta|delta_factory:inst282|gap_cnt[11]                                                                                    ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |sigma_delta|delta_factory:inst282|iheader[0]                                                                                     ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|delta_factory:inst282|trig_cnt[11]                                                                                   ;
-; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|et_err:inst307|dc_cnt[7]                                                                                             ;
-; 4:1                ; 5 bits    ; 10 ALUTs      ; 5 ALUTs              ; 5 ALUTs                ; Yes        ; |sigma_delta|et_ofc_err:inst56|dc_cnt[4]                                                                                          ;
-; 4:1                ; 5 bits    ; 10 ALUTs      ; 5 ALUTs              ; 5 ALUTs                ; Yes        ; |sigma_delta|et_ofc_err:inst56|tlk_cnt[1]                                                                                         ;
-; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|et_err:inst307|tlk_cnt[7]                                                                                            ;
-; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|et_err:inst467|dc_cnt[6]                                                                                             ;
-; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|et_err:inst467|tlk_cnt[0]                                                                                            ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |sigma_delta|delta_factory:inst282|trig_cnt[12]                                                                                   ;
+; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|et_err:inst307|dc_cnt[1]                                                                                             ;
+; 4:1                ; 5 bits    ; 10 ALUTs      ; 5 ALUTs              ; 5 ALUTs                ; Yes        ; |sigma_delta|et_ofc_err:inst56|dc_cnt[0]                                                                                          ;
+; 4:1                ; 5 bits    ; 10 ALUTs      ; 5 ALUTs              ; 5 ALUTs                ; Yes        ; |sigma_delta|et_ofc_err:inst56|tlk_cnt[3]                                                                                         ;
+; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|et_err:inst307|tlk_cnt[6]                                                                                            ;
+; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|et_err:inst467|dc_cnt[0]                                                                                             ;
+; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |sigma_delta|et_err:inst467|tlk_cnt[6]                                                                                            ;
 ; 4:1                ; 5 bits    ; 10 ALUTs      ; 5 ALUTs              ; 5 ALUTs                ; Yes        ; |sigma_delta|clus_ofc_err:inst294|tlk_cnt[0]                                                                                      ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_et_delta_ptn[7]                                                                  ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_et_align_ptn[8]                                                                  ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_veto0_align_ptn[8]                                                               ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_veto1_align_ptn[3]                                                               ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_veto0_delta_ptn[2]                                                               ;
-; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_veto1_delta_ptn[2]                                                               ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus0_cnt[6]                                                                                  ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus1_cnt[1]                                                                                  ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus2_cnt[5]                                                                                  ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus3_cnt[12]                                                                                 ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus4_cnt[11]                                                                                 ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_et_delta_ptn[5]                                                                  ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_et_align_ptn[0]                                                                  ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_veto0_align_ptn[5]                                                               ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_veto1_align_ptn[7]                                                               ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_veto0_delta_ptn[4]                                                               ;
+; 3:1                ; 9 bits    ; 18 ALUTs      ; 0 ALUTs              ; 18 ALUTs               ; Yes        ; |sigma_delta|time_controller:inst36|status_delay_veto1_delta_ptn[7]                                                               ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus0_cnt[2]                                                                                  ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus1_cnt[15]                                                                                 ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus2_cnt[0]                                                                                  ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus3_cnt[6]                                                                                  ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus4_cnt[13]                                                                                 ;
 ; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus5_cnt[0]                                                                                  ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus6_cnt[5]                                                                                  ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus6_cnt[14]                                                                                 ;
 ; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus7_cnt[14]                                                                                 ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus8_cnt[2]                                                                                  ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clusN_cnt[7]                                                                                  ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|OL_Controller:inst188|data_out[9]                                                                                    ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|OL_Controller:inst212|data_out[6]                                                                                    ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|OL_Controller:inst216|data_out[9]                                                                                    ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|OL_Controller:inst218|data_out[5]                                                                                    ;
-; 17:1               ; 6 bits    ; 66 ALUTs      ; 48 ALUTs             ; 18 ALUTs               ; Yes        ; |sigma_delta|lv1b_pipeline:inst269|out_trig_tag[13]                                                                               ;
-; 17:1               ; 9 bits    ; 99 ALUTs      ; 54 ALUTs             ; 45 ALUTs               ; Yes        ; |sigma_delta|lv1b_pipeline:inst269|out_trig_tag[7]                                                                                ;
-; 9:1                ; 16 bits   ; 96 ALUTs      ; 96 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|bus16_mux16:inst534|lpm_mux:lpm_mux_component|mux_7me:auto_generated|external_reg[6]                                 ;
-; 16:1               ; 64 bits   ; 640 ALUTs     ; 640 ALUTs            ; 0 ALUTs                ; Yes        ; |sigma_delta|bus32_mux16:inst529|lpm_mux:lpm_mux_component|mux_4me:auto_generated|external_reg[15]                                ;
-; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst160|pipeline[13]                                                                                   ;
-; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst162|pipeline[17]                                                                                   ;
-; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst91|pipeline[16]                                                                                    ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clus8_cnt[14]                                                                                 ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 16 ALUTs             ; 16 ALUTs               ; Yes        ; |sigma_delta|stat_nclus_rev:inst533|clusN_cnt[14]                                                                                 ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|OL_Controller:inst188|data_out[8]                                                                                    ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|OL_Controller:inst212|data_out[3]                                                                                    ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|OL_Controller:inst216|data_out[12]                                                                                   ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|OL_Controller:inst218|data_out[1]                                                                                    ;
+; 17:1               ; 6 bits    ; 66 ALUTs      ; 48 ALUTs             ; 18 ALUTs               ; Yes        ; |sigma_delta|lv1b_pipeline:inst269|out_trig_tag[15]                                                                               ;
+; 17:1               ; 9 bits    ; 99 ALUTs      ; 54 ALUTs             ; 45 ALUTs               ; Yes        ; |sigma_delta|lv1b_pipeline:inst269|out_trig_tag[8]                                                                                ;
+; 9:1                ; 16 bits   ; 96 ALUTs      ; 96 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|bus16_mux16:inst534|lpm_mux:lpm_mux_component|mux_7me:auto_generated|external_reg[12]                                ;
+; 16:1               ; 64 bits   ; 640 ALUTs     ; 640 ALUTs            ; 0 ALUTs                ; Yes        ; |sigma_delta|bus32_mux16:inst530|lpm_mux:lpm_mux_component|mux_4me:auto_generated|external_reg[27]                                ;
+; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst160|pipeline[3]                                                                                    ;
+; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst162|pipeline[4]                                                                                    ;
+; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst91|pipeline[3]                                                                                     ;
 ; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst161|pipeline[10]                                                                                   ;
-; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst186|pipeline[5]                                                                                    ;
-; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst187|pipeline[16]                                                                                   ;
-; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst189|pipeline[12]                                                                                   ;
-; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst244|pipeline[3]                                                                                    ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|ofc1_err_manager:inst1|error_judgement:inst2|error_decoder:inst4|cnt[1]                                              ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|cnt[1]                                              ;
-; 4:1                ; 31 bits   ; 62 ALUTs      ; 31 ALUTs             ; 31 ALUTs               ; Yes        ; |sigma_delta|live_generator:inst496|cnt[29]                                                                                       ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst160|err_cnt[2]                                                                                     ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst162|err_cnt[8]                                                                                     ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst91|err_cnt[14]                                                                                     ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst161|err_cnt[4]                                                                                     ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst186|err_cnt[6]                                                                                     ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst187|err_cnt[9]                                                                                     ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst189|err_cnt[9]                                                                                     ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst244|err_cnt[15]                                                                                    ;
+; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst186|pipeline[3]                                                                                    ;
+; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst187|pipeline[12]                                                                                   ;
+; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst189|pipeline[17]                                                                                   ;
+; 3:1                ; 17 bits   ; 34 ALUTs      ; 17 ALUTs             ; 17 ALUTs               ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst244|pipeline[1]                                                                                    ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|ofc1_err_manager:inst1|error_judgement:inst2|error_decoder:inst4|cnt[0]                                              ;
+; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |sigma_delta|ofc1_err_manager:inst1|error_judgement:inst1|error_decoder:inst4|cnt[0]                                              ;
+; 4:1                ; 31 bits   ; 62 ALUTs      ; 31 ALUTs             ; 31 ALUTs               ; Yes        ; |sigma_delta|live_generator:inst496|cnt[19]                                                                                       ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst160|err_cnt[6]                                                                                     ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst162|err_cnt[10]                                                                                    ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst91|err_cnt[3]                                                                                      ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst161|err_cnt[3]                                                                                     ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst186|err_cnt[3]                                                                                     ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst187|err_cnt[3]                                                                                     ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst189|err_cnt[3]                                                                                     ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; Yes        ; |sigma_delta|LVDS_RX_Debug:inst244|err_cnt[3]                                                                                     ;
 ; 3:1                ; 9 bits    ; 18 ALUTs      ; 9 ALUTs              ; 9 ALUTs                ; No         ; |sigma_delta|time_controller:inst36|raddr_start_et                                                                                ;
 ; 3:1                ; 9 bits    ; 18 ALUTs      ; 9 ALUTs              ; 9 ALUTs                ; No         ; |sigma_delta|time_controller:inst36|raddr_start_veto0                                                                             ;
 ; 3:1                ; 9 bits    ; 18 ALUTs      ; 9 ALUTs              ; 9 ALUTs                ; No         ; |sigma_delta|time_controller:inst36|raddr_start_veto1                                                                             ;
-; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|mux8_bus16:inst77|lpm_mux:lpm_mux_component|mux_tmc:auto_generated|l2_w5_n1_mux_dataout                              ;
+; 4:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|mux8_bus16:inst77|lpm_mux:lpm_mux_component|mux_tmc:auto_generated|l2_w0_n1_mux_dataout                              ;
 ; 3:1                ; 10 bits   ; 20 ALUTs      ; 10 ALUTs             ; 10 ALUTs               ; No         ; |sigma_delta|restrict_ntrig:inst89|cnt                                                                                            ;
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|time_controller:inst36|rena_veto0                                                                                    ;
+; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|time_controller:inst36|rena_veto1                                                                                    ;
 ; 3:1                ; 27 bits   ; 54 ALUTs      ; 54 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|time_controller:inst36|raddr_veto1                                                                                   ;
 ; 3:1                ; 5 bits    ; 10 ALUTs      ; 10 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|lv1b_pipeline:inst269|tag_cnt                                                                                        ;
 ; 3:1                ; 10 bits   ; 20 ALUTs      ; 20 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|lv1b_pipeline:inst269|tag_id                                                                                         ;
@@ -2097,10 +2099,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; 3:1                ; 9 bits    ; 18 ALUTs      ; 18 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|time_controller:inst36|delta_trig_cnt                                                                                ;
 ; 3:1                ; 9 bits    ; 18 ALUTs      ; 18 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|time_controller:inst36|align_trig_cnt                                                                                ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|OL_Controller:inst188|Selector20                                                                                     ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|OL_Controller:inst212|Selector19                                                                                     ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|OL_Controller:inst216|Selector19                                                                                     ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|OL_Controller:inst218|Selector19                                                                                     ;
-; 10:1               ; 16 bits   ; 96 ALUTs      ; 96 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|trig_type_lv1b:inst64|Mux0                                                                                           ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|OL_Controller:inst212|Selector20                                                                                     ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|OL_Controller:inst216|Selector20                                                                                     ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |sigma_delta|OL_Controller:inst218|Selector20                                                                                     ;
+; 10:1               ; 16 bits   ; 96 ALUTs      ; 96 ALUTs             ; 0 ALUTs                ; No         ; |sigma_delta|trig_type_lv1b:inst117|Mux0                                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -10044,6 +10046,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: trig_dff:inst264|lpm_ff:lpm_ff_component ;
++------------------------+------------+-------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                            ;
++------------------------+------------+-------------------------------------------------+
+; LPM_WIDTH              ; 1          ; Signed Integer                                  ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                         ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                         ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                         ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                         ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                         ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS   ; ON         ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS ; ON         ; IGNORE_CASCADE                                  ;
++------------------------+------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: bus32_mux16:inst530|lpm_mux:lpm_mux_component ;
 +------------------------+------------+------------------------------------------------------+
@@ -11227,25 +11248,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                           ;
 ; IGNORE_CASCADE_BUFFERS ; ON         ; IGNORE_CASCADE                                         ;
 +------------------------+------------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: trig_dff:inst264|lpm_ff:lpm_ff_component ;
-+------------------------+------------+-------------------------------------------------+
-; Parameter Name         ; Value      ; Type                                            ;
-+------------------------+------------+-------------------------------------------------+
-; LPM_WIDTH              ; 1          ; Signed Integer                                  ;
-; LPM_AVALUE             ; UNUSED     ; Untyped                                         ;
-; LPM_SVALUE             ; UNUSED     ; Untyped                                         ;
-; LPM_FFTYPE             ; DFF        ; Untyped                                         ;
-; DEVICE_FAMILY          ; Stratix II ; Untyped                                         ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped                                         ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS   ; ON         ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS ; ON         ; IGNORE_CASCADE                                  ;
-+------------------------+------------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -14207,7 +14209,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; rraw2.tdf                               ; Project Directory  ; work    ; 4c97421c9e01ed0f9d91c5c6fce851f  ;
 ; rraw_sw.tdf                             ; Project Directory  ; work    ; 89b0fb9cb3ee4476352aeb32e3554a8  ;
 ; show_counter.vhd                        ; Project Directory  ; work    ; 7827fdf68129c53d16b66c14953a6bf2 ;
-; sigma_delta.bdf                         ; Project Directory  ; work    ; 59f1cc6e436c4a6cb5c0e5ea11a835f  ;
+; sigma_delta.bdf                         ; Project Directory  ; work    ; 39411d3afa6ffee56350d04fcc0295c  ;
 ; signal_capture.v                        ; Project Directory  ; work    ; fd368236e6b61816cddf4283cae5612d ;
 ; sim_input_switch.tdf                    ; Project Directory  ; work    ; 34f5638b9616ecd68a42ea5d9a4e7    ;
 ; spill_cnt.v                             ; Project Directory  ; work    ; d84411059b529ec1d9a73352bc8a478  ;
@@ -14219,7 +14221,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stat_veto.v                             ; Project Directory  ; work    ; 4c26d03878f44bd512cd1ca0e3df6aec ;
 ; stop_status.v                           ; Project Directory  ; work    ; ebe3187d37bd8241c52eae8d5ff923   ;
 ; tapdel10.tdf                            ; Project Directory  ; work    ; a4d8cbee7d6a6b928ae38c42be53257  ;
-; tdc_vme.tdf                             ; Project Directory  ; work    ; d5a2f9ce9fbfcdbcad496889ca9ea54  ;
+; tdc_vme.tdf                             ; Project Directory  ; work    ; ac1b7bfe38260c6c8dcee51edffb41   ;
 ; time_controller.v                       ; Project Directory  ; work    ; cb3021143e35935ac3351548949b0    ;
 ; time_dff02.tdf                          ; Project Directory  ; work    ; d4bc4a5bcc08574b72eaf4d7d1d8f4   ;
 ; time_dff04.tdf                          ; Project Directory  ; work    ; 4837c7e03282d3d51e42feba4623ac77 ;
@@ -14483,7 +14485,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Mon Apr 14 08:25:24 2025
+    Info: Processing started: Tue Apr 15 01:29:28 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sigma_delta -c sigma_delta
 Warning: Tcl Script File clustering_db/lpm_dff0.qip not found
     Info: set_global_assignment -name QIP_FILE clustering_db/lpm_dff0.qip
@@ -16018,6 +16020,11 @@ Warning (10230): Verilog HDL assignment warning at stat_nclus_rev.v(78): truncat
 Warning (10230): Verilog HDL assignment warning at stat_nclus_rev.v(79): truncated value with size 32 to match size of target (16)
 Warning (10230): Verilog HDL assignment warning at stat_nclus_rev.v(80): truncated value with size 32 to match size of target (16)
 Warning (10230): Verilog HDL assignment warning at stat_nclus_rev.v(81): truncated value with size 32 to match size of target (16)
+Warning: Using design file trig_dff.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: trig_dff
+Info: Elaborating entity "trig_dff" for hierarchy "trig_dff:inst264"
+Info: Elaborating entity "restrict_ntrig" for hierarchy "restrict_ntrig:inst89"
+Warning (10230): Verilog HDL assignment warning at restrict_ntrig.v(49): truncated value with size 32 to match size of target (10)
 Warning: Using design file bus32_mux16.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: bus32_mux16
 Info: Elaborating entity "bus32_mux16" for hierarchy "bus32_mux16:inst530"
@@ -16093,11 +16100,6 @@ Info: Elaborating entity "mux_rmc" for hierarchy "fanout_clock_phase_sw:inst150|
 Warning: Using design file align_trig_dff0.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: align_trig_dff0
 Info: Elaborating entity "align_trig_dff0" for hierarchy "align_trig_dff0:inst277"
-Warning: Using design file trig_dff.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: trig_dff
-Info: Elaborating entity "trig_dff" for hierarchy "trig_dff:inst264"
-Info: Elaborating entity "restrict_ntrig" for hierarchy "restrict_ntrig:inst89"
-Warning (10230): Verilog HDL assignment warning at restrict_ntrig.v(49): truncated value with size 32 to match size of target (10)
 Info: Elaborating entity "trig_factory" for hierarchy "trig_factory:inst271"
 Warning (10230): Verilog HDL assignment warning at trig_factory.v(51): truncated value with size 32 to match size of target (13)
 Warning (10230): Verilog HDL assignment warning at trig_factory.v(67): truncated value with size 32 to match size of target (16)
@@ -16530,15 +16532,15 @@ Warning: Open-drain buffer(s) that do not directly drive top-level pin(s) are re
     Warning: Converted the fanout from the open-drain buffer "vme_interface:inst2|$00002" to the node "vme_interface:inst2|_" into a wire
     Warning: Converted the fanout from the open-drain buffer "vme_interface:inst2|$00003" to the node "vme_interface:inst2|_" into a wire
 Info: Performing gate-level register retiming
-Info: Not allowed to move 12145 registers
+Info: Not allowed to move 12167 registers
     Info: Not allowed to move at least 45 registers because they are in a sequence of registers directly fed by input pins
     Info: Not allowed to move at least 18 registers because they feed output pins directly
-    Info: Not allowed to move at least 9373 registers because they are fed by registers in a different clock domain
+    Info: Not allowed to move at least 9395 registers because they are fed by registers in a different clock domain
     Info: Not allowed to move at least 2702 registers because they feed registers in a different clock domain
     Info: Not allowed to move at least 3 registers because they feed clock or asynchronous control signals of other registers
     Info: Not allowed to move at least 4 registers due to user assignments
 Info: The Quartus II software applied gate-level register retiming to 1 clock domains
-    Info: The Quartus II software applied gate-level register retiming to clock "altpll00:inst233|altpll:altpll_component|_clk0": created 3 new registers, removed 0 registers, left 8784 registers untouched
+    Info: The Quartus II software applied gate-level register retiming to clock "altpll00:inst233|altpll:altpll_component|_clk0": created 3 new registers, removed 0 registers, left 8806 registers untouched
 Warning: TRI or OPNDRN buffers permanently enabled
     Warning: Node "0_ENABLE~synth"
     Warning: Node "1_ENABLE~synth"
@@ -16664,19 +16666,19 @@ Info: 164 registers lost all their fanouts during netlist optimizations. The fir
     Info: Register "OL_Controller:inst212|mode~7" lost all its fanouts during netlist optimizations.
     Info: Register "OL_Controller:inst216|mode~6" lost all its fanouts during netlist optimizations.
     Info: List truncated at 100 items
-Info: Implemented 32700 device resources after synthesis - the final resource count might be different
+Info: Implemented 32721 device resources after synthesis - the final resource count might be different
     Info: Implemented 145 input pins
     Info: Implemented 272 output pins
     Info: Implemented 160 bidirectional pins
-    Info: Implemented 31134 logic cells
+    Info: Implemented 31155 logic cells
     Info: Implemented 986 RAM segments
     Info: Implemented 3 PLLs
 Info: Generated suppressed messages file C:/workspace/firmware/TOP-CDT/main/project/sigma_delta.map.smsg
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 362 warnings
-    Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Mon Apr 14 08:28:22 2025
-    Info: Elapsed time: 00:02:58
-    Info: Total CPU time (on all processors): 00:02:58
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Tue Apr 15 01:32:24 2025
+    Info: Elapsed time: 00:02:56
+    Info: Total CPU time (on all processors): 00:02:57
 
 
 +------------------------------------------+

@@ -1,5 +1,5 @@
 Partition Merge report for sigma_delta
-Mon Apr 14 08:28:29 2025
+Tue Apr 15 01:32:30 2025
 Quartus II 64-Bit Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -39,15 +39,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Partition Merge Summary                                                  ;
 +-------------------------------+------------------------------------------+
-; Partition Merge Status        ; Successful - Mon Apr 14 08:28:29 2025    ;
+; Partition Merge Status        ; Successful - Tue Apr 15 01:32:30 2025    ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                 ; sigma_delta                              ;
 ; Top-level Entity Name         ; sigma_delta                              ;
 ; Family                        ; Stratix II                               ;
 ; Logic utilization             ; N/A                                      ;
-;     Combinational ALUTs       ; 21,947                                   ;
-;     Dedicated logic registers ; 19,409                                   ;
-; Total registers               ; 19409                                    ;
+;     Combinational ALUTs       ; 21,967                                   ;
+;     Dedicated logic registers ; 19,431                                   ;
+; Total registers               ; 19431                                    ;
 ; Total pins                    ; 343                                      ;
 ; Total virtual pins            ; 0                                        ;
 ; Total block memory bits       ; 1,081,856                                ;
@@ -398,32 +398,32 @@ applicable agreement for further details.
 +-----------------------------------------------+--------+------------------+--------------------------------+
 ; Statistic                                     ; Top    ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ;
 +-----------------------------------------------+--------+------------------+--------------------------------+
-; Estimated ALUTs Used                          ; 20975  ; 92               ; 880                            ;
-; Dedicated logic registers                     ; 17003  ; 79               ; 2327                           ;
+; Estimated ALUTs Used                          ; 20995  ; 92               ; 880                            ;
+; Dedicated logic registers                     ; 17025  ; 79               ; 2327                           ;
 ;                                               ;        ;                  ;                                ;
-; Estimated ALUTs Unavailable                   ; 505    ; 2                ; 27                             ;
+; Estimated ALUTs Unavailable                   ; 504    ; 2                ; 27                             ;
 ;                                               ;        ;                  ;                                ;
-; Total combinational functions                 ; 20975  ; 92               ; 880                            ;
+; Total combinational functions                 ; 20995  ; 92               ; 880                            ;
 ; Combinational ALUT usage by number of inputs  ;        ;                  ;                                ;
-;     -- 7 input functions                      ; 37     ; 1                ; 0                              ;
+;     -- 7 input functions                      ; 36     ; 1                ; 0                              ;
 ;     -- 6 input functions                      ; 6706   ; 15               ; 393                            ;
-;     -- 5 input functions                      ; 6517   ; 16               ; 211                            ;
-;     -- 4 input functions                      ; 5133   ; 13               ; 30                             ;
-;     -- <=3 input functions                    ; 2582   ; 47               ; 246                            ;
+;     -- 5 input functions                      ; 6558   ; 16               ; 211                            ;
+;     -- 4 input functions                      ; 5112   ; 13               ; 30                             ;
+;     -- <=3 input functions                    ; 2583   ; 47               ; 246                            ;
 ;                                               ;        ;                  ;                                ;
 ; Combinational ALUTs by mode                   ;        ;                  ;                                ;
-;     -- normal mode                            ; 20908  ; 91               ; 853                            ;
-;     -- extended LUT mode                      ; 37     ; 1                ; 0                              ;
+;     -- normal mode                            ; 20929  ; 91               ; 853                            ;
+;     -- extended LUT mode                      ; 36     ; 1                ; 0                              ;
 ;     -- arithmetic mode                        ; 30     ; 0                ; 27                             ;
 ;     -- shared arithmetic mode                 ; 0      ; 0                ; 0                              ;
 ;                                               ;        ;                  ;                                ;
-; Estimated ALUT/register pairs used            ; 29196  ; 102              ; 2576                           ;
+; Estimated ALUT/register pairs used            ; 29217  ; 102              ; 2576                           ;
 ;                                               ;        ;                  ;                                ;
-; Total registers                               ; 17003  ; 79               ; 2327                           ;
-;     -- Dedicated logic registers              ; 17003  ; 79               ; 2327                           ;
+; Total registers                               ; 17025  ; 79               ; 2327                           ;
+;     -- Dedicated logic registers              ; 17025  ; 79               ; 2327                           ;
 ;     -- I/O registers                          ; 0      ; 0                ; 0                              ;
 ;                                               ;        ;                  ;                                ;
-; Estimated ALMs:  partially or completely used ; 14606  ; 51               ; 1289                           ;
+; Estimated ALMs:  partially or completely used ; 14616  ; 52               ; 1290                           ;
 ;                                               ;        ;                  ;                                ;
 ; Virtual pins                                  ; 0      ; 0                ; 0                              ;
 ; I/O pins                                      ; 343    ; 0                ; 0                              ;
@@ -440,8 +440,8 @@ applicable agreement for further details.
 ;     -- Registered Output Connections          ; 302    ; 316              ; 0                              ;
 ;                                               ;        ;                  ;                                ;
 ; Internal Connections                          ;        ;                  ;                                ;
-;     -- Total Connections                      ; 169767 ; 912              ; 14434                          ;
-;     -- Registered Connections                 ; 69725  ; 739              ; 11277                          ;
+;     -- Total Connections                      ; 169936 ; 912              ; 14434                          ;
+;     -- Registered Connections                 ; 69818  ; 739              ; 11277                          ;
 ;                                               ;        ;                  ;                                ;
 ; External Connections                          ;        ;                  ;                                ;
 ;     -- Top                                    ; 0      ; 108              ; 2963                           ;
@@ -475,39 +475,39 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 +-----------------------------------------------+------------------------------------------------+
 ; Resource                                      ; Usage                                          ;
 +-----------------------------------------------+------------------------------------------------+
-; Estimated ALUTs Used                          ; 21947                                          ;
-; Dedicated logic registers                     ; 19409                                          ;
+; Estimated ALUTs Used                          ; 21967                                          ;
+; Dedicated logic registers                     ; 19431                                          ;
 ;                                               ;                                                ;
-; Estimated ALUTs Unavailable                   ; 535                                            ;
+; Estimated ALUTs Unavailable                   ; 533                                            ;
 ;                                               ;                                                ;
-; Total combinational functions                 ; 21947                                          ;
+; Total combinational functions                 ; 21967                                          ;
 ; Combinational ALUT usage by number of inputs  ;                                                ;
-;     -- 7 input functions                      ; 38                                             ;
+;     -- 7 input functions                      ; 37                                             ;
 ;     -- 6 input functions                      ; 7114                                           ;
-;     -- 5 input functions                      ; 6744                                           ;
-;     -- 4 input functions                      ; 5176                                           ;
-;     -- <=3 input functions                    ; 2875                                           ;
+;     -- 5 input functions                      ; 6785                                           ;
+;     -- 4 input functions                      ; 5155                                           ;
+;     -- <=3 input functions                    ; 2876                                           ;
 ;                                               ;                                                ;
 ; Combinational ALUTs by mode                   ;                                                ;
-;     -- normal mode                            ; 21852                                          ;
-;     -- extended LUT mode                      ; 38                                             ;
+;     -- normal mode                            ; 21873                                          ;
+;     -- extended LUT mode                      ; 37                                             ;
 ;     -- arithmetic mode                        ; 57                                             ;
 ;     -- shared arithmetic mode                 ; 0                                              ;
 ;                                               ;                                                ;
-; Estimated ALUT/register pairs used            ; 30780                                          ;
+; Estimated ALUT/register pairs used            ; 30820                                          ;
 ;                                               ;                                                ;
-; Total registers                               ; 19409                                          ;
-;     -- Dedicated logic registers              ; 19409                                          ;
+; Total registers                               ; 19431                                          ;
+;     -- Dedicated logic registers              ; 19431                                          ;
 ;     -- I/O registers                          ; 0                                              ;
 ;                                               ;                                                ;
-; Estimated ALMs:  partially or completely used ; 15,390                                         ;
+; Estimated ALMs:  partially or completely used ; 15,410                                         ;
 ;                                               ;                                                ;
 ; I/O pins                                      ; 343                                            ;
 ; Total block memory bits                       ; 1081856                                        ;
 ; Total PLLs                                    ; 3                                              ;
 ; Maximum fan-out node                          ; altpll00:inst233|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                               ; 13529                                          ;
-; Total fan-out                                 ; 172858                                         ;
+; Maximum fan-out                               ; 13551                                          ;
+; Total fan-out                                 ; 173027                                         ;
 ; Average fan-out                               ; 4.03                                           ;
 +-----------------------------------------------+------------------------------------------------+
 
@@ -542,7 +542,7 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Partition Merge
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Mon Apr 14 08:28:23 2025
+    Info: Processing started: Tue Apr 15 01:32:25 2025
 Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off sigma_delta -c sigma_delta --merge=on
 Warning: Tcl Script File clustering_db/lpm_dff0.qip not found
     Info: set_global_assignment -name QIP_FILE clustering_db/lpm_dff0.qip
@@ -586,16 +586,16 @@ Warning: Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clkswitch"
     Warning (15610): No output dependent on input pin "master_clock3"
     Warning (15610): No output dependent on input pin "master_clock4"
-Info: Implemented 35327 device resources after synthesis - the final resource count might be different
+Info: Implemented 35348 device resources after synthesis - the final resource count might be different
     Info: Implemented 149 input pins
     Info: Implemented 119 output pins
     Info: Implemented 80 bidirectional pins
-    Info: Implemented 33831 logic cells
+    Info: Implemented 33852 logic cells
     Info: Implemented 1144 RAM segments
     Info: Implemented 3 PLLs
 Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4574 megabytes
-    Info: Processing ended: Mon Apr 14 08:28:30 2025
+    Info: Peak virtual memory: 4576 megabytes
+    Info: Processing ended: Tue Apr 15 01:32:32 2025
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:07
 

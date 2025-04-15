@@ -140326,6 +140326,124 @@ clusN_cnt[14] <= clusN_cnt[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clusN_cnt[15] <= clusN_cnt[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|sigma_delta|lv1_delay:inst536
+clk => pre_live.CLK
+clk => delay[0]~reg0.CLK
+clk => delay[1]~reg0.CLK
+clk => delay[2]~reg0.CLK
+clk => delay[3]~reg0.CLK
+clk => delay[4]~reg0.CLK
+clk => delay[5]~reg0.CLK
+clk => delay[6]~reg0.CLK
+clk => delay[7]~reg0.CLK
+clk => delay[8]~reg0.CLK
+clk => delay[9]~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => is_first_lv1.CLK
+lv1 => always0.IN1
+live => always0.IN1
+live => pre_live.DATAIN
+live => is_first_lv1.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+live => cnt.OUTPUTSELECT
+ena_delta => always0.IN1
+delay[0] <= delay[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[1] <= delay[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[2] <= delay[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[3] <= delay[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[4] <= delay[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[5] <= delay[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[6] <= delay[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[7] <= delay[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[8] <= delay[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+delay[9] <= delay[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sigma_delta|trig_dff:inst264
+clock => lpm_ff:lpm_ff_component.clock
+data => lpm_ff:lpm_ff_component.data[0]
+q <= lpm_ff:lpm_ff_component.q[0]
+
+
+|sigma_delta|trig_dff:inst264|lpm_ff:lpm_ff_component
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sigma_delta|restrict_ntrig:inst89
+clk => ena_lv1~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+rst => cnt.OUTPUTSELECT
+user_ena => always0.IN0
+user_ena => always0.IN1
+user_ena => ena_lv1.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+user_ena => cnt.OUTPUTSELECT
+early_lv1 => always0.IN1
+ntrig[0] => LessThan0.IN20
+ntrig[1] => LessThan0.IN19
+ntrig[2] => LessThan0.IN18
+ntrig[3] => LessThan0.IN17
+ntrig[4] => LessThan0.IN16
+ntrig[5] => LessThan0.IN15
+ntrig[6] => LessThan0.IN14
+ntrig[7] => LessThan0.IN13
+ntrig[8] => LessThan0.IN12
+ntrig[9] => LessThan0.IN11
+ena_lv1 <= ena_lv1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |sigma_delta|stat_veto:inst478
 clk => pre_veto.CLK
 clk => pre_live.CLK
@@ -150327,74 +150445,6 @@ sclr => ~NO_FANOUT~
 sset => ~NO_FANOUT~
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|sigma_delta|trig_dff:inst264
-clock => lpm_ff:lpm_ff_component.clock
-data => lpm_ff:lpm_ff_component.data[0]
-q <= lpm_ff:lpm_ff_component.q[0]
-
-
-|sigma_delta|trig_dff:inst264|lpm_ff:lpm_ff_component
-data[0] => dffs[0].DATAIN
-clock => dffs[0].CLK
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|sigma_delta|restrict_ntrig:inst89
-clk => ena_lv1~reg0.CLK
-clk => cnt[0].CLK
-clk => cnt[1].CLK
-clk => cnt[2].CLK
-clk => cnt[3].CLK
-clk => cnt[4].CLK
-clk => cnt[5].CLK
-clk => cnt[6].CLK
-clk => cnt[7].CLK
-clk => cnt[8].CLK
-clk => cnt[9].CLK
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-rst => cnt.OUTPUTSELECT
-user_ena => always0.IN0
-user_ena => always0.IN1
-user_ena => ena_lv1.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-user_ena => cnt.OUTPUTSELECT
-early_lv1 => always0.IN1
-ntrig[0] => LessThan0.IN20
-ntrig[1] => LessThan0.IN19
-ntrig[2] => LessThan0.IN18
-ntrig[3] => LessThan0.IN17
-ntrig[4] => LessThan0.IN16
-ntrig[5] => LessThan0.IN15
-ntrig[6] => LessThan0.IN14
-ntrig[7] => LessThan0.IN13
-ntrig[8] => LessThan0.IN12
-ntrig[9] => LessThan0.IN11
-ena_lv1 <= ena_lv1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sigma_delta|trig_dff:inst260
