@@ -40592,12 +40592,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "m_register_23[23..16]" (rect 8208 3376 8315 3388)(font "Arial" ))
-	(pt 8312 3384)
-	(pt 8352 3384)
-	(bus)
-)
-(connector
 	(pt 8328 3400)
 	(pt 8352 3400)
 )
@@ -42758,6 +42752,12 @@ applicable agreement for further details.
 	(text "s_register_135[31..16]" (rect 8656 3672 8765 3684)(font "Arial" ))
 	(pt 8592 3680)
 	(pt 8640 3680)
+	(bus)
+)
+(connector
+	(text "m_register_39[7..0]" (rect 8208 3376 8303 3388)(font "Arial" ))
+	(pt 8312 3384)
+	(pt 8352 3384)
 	(bus)
 )
 (junction (pt 1048 -896))
